@@ -1,0 +1,19 @@
+{
+  "name": "grog",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Grog — competitor casino originals scout. Plain Playwright, per-casino flow files, screenshots + report. No AI.",
+  "scripts": {
+    "grog": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
