@@ -241,9 +241,11 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
       listingSelector?: string;
       listingUrl?: string;
       recoverText?: string | string[];
+      capture?: boolean;
     },
   ): Promise<Snapshot> => {
     const category = o?.category ?? "originals";
+    const capture = o?.capture ?? true;
     const waitFor = o?.waitFor;
     const settle = o?.settle ?? 2500;
     const nav = o?.nav ?? "goto";
@@ -278,6 +280,51 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
         ? o.recoverText
         : [o.recoverText]
       : [];
+    const writeArtifacts = async (): Promise<Snapshot> => {
+      const snap: Snapshot = {
+        casino: opts.casino,
+        category,
+        capturedAt,
+        games: gamesIn,
+      };
+      await writeFile(
+        path.join(runDir, "games.json"),
+        JSON.stringify(snap, null, 2),
+      );
+      const cats = [...new Set(gamesIn.map((g) => g.category).filter(Boolean))];
+      let links: string;
+      if (cats.length > 1) {
+        links = cats
+          .map((c) => {
+            const urls = gamesIn
+              .filter((g) => g.category === c)
+              .map((g) => g.url)
+              .filter(Boolean);
+            return `# ${c} (${urls.length})\n${urls.join("\n")}`;
+          })
+          .join("\n\n");
+      } else {
+        links = gamesIn
+          .map((g) => g.url)
+          .filter(Boolean)
+          .join("\n");
+      }
+      await writeFile(
+        path.join(runDir, "links.txt"),
+        links + (links ? "\n" : ""),
+      );
+      return snap;
+    };
+
+    if (!capture) {
+      for (const g of gamesIn) record(g);
+      const snap = await writeArtifacts();
+      log(
+        `links-only: ${gamesIn.length} link(s) → ${path.relative(DATA_DIR, runDir)} (games.json + links.txt)`,
+      );
+      return snap;
+    }
+
     const cap = Number(process.env.GROG_LIMIT) || 0;
     const toShoot = cap ? gamesIn.slice(0, cap) : gamesIn;
     log(`${gamesIn.length} on page · capturing ${toShoot.length} (${nav})`);
@@ -381,16 +428,7 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
       }
     }
     for (const g of gamesIn) record(g);
-    const snap: Snapshot = {
-      casino: opts.casino,
-      category,
-      capturedAt,
-      games: gamesIn,
-    };
-    await writeFile(
-      path.join(runDir, "games.json"),
-      JSON.stringify(snap, null, 2),
-    );
+    const snap = await writeArtifacts();
     log(
       `snapshot: ${gamesIn.length} game(s), ${shot} shot(s) → ${path.relative(DATA_DIR, runDir)}`,
     );

@@ -4,10 +4,15 @@ import { SNAPSHOTS_DIR, REPORT_PATH } from "./paths.js";
 import type { Snapshot } from "./types.js";
 
 const esc = (s: string) =>
-  (s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
+  (s || "").replace(
+    /[&<>"]/g,
+    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!,
+  );
 
 async function latestSnapshots(): Promise<Snapshot[]> {
-  const casinos = await readdir(SNAPSHOTS_DIR, { withFileTypes: true }).catch(() => []);
+  const casinos = await readdir(SNAPSHOTS_DIR, { withFileTypes: true }).catch(
+    () => [],
+  );
   const out: Snapshot[] = [];
   for (const c of casinos) {
     if (!c.isDirectory()) continue;
@@ -19,7 +24,9 @@ async function latestSnapshots(): Promise<Snapshot[]> {
     const latest = runs[runs.length - 1];
     if (!latest) continue;
     try {
-      const snap: Snapshot = JSON.parse(await readFile(path.join(dir, latest, "games.json"), "utf8"));
+      const snap: Snapshot = JSON.parse(
+        await readFile(path.join(dir, latest, "games.json"), "utf8"),
+      );
       out.push(snap);
     } catch {
       /* skip a malformed/half-written snapshot */
@@ -31,29 +38,61 @@ async function latestSnapshots(): Promise<Snapshot[]> {
 export async function buildReport(): Promise<string> {
   const snaps = await latestSnapshots();
   const totalGames = snaps.reduce((n, s) => n + s.games.length, 0);
-  const totalShots = snaps.reduce((n, s) => n + s.games.filter((g) => g.screenshot).length, 0);
+  const totalShots = snaps.reduce(
+    (n, s) => n + s.games.filter((g) => g.screenshot).length,
+    0,
+  );
+
+  const CAT_LABELS: Record<string, string> = {
+    "new-releases": "🆕 New Releases",
+    slots: "🔥 Trending Slots",
+    "stake-originals": "⭐ Originals",
+    originals: "⭐ Originals",
+  };
+  const CAT_ORDER = ["new-releases", "slots", "stake-originals", "originals"];
+  const catLabel = (c: string) =>
+    CAT_LABELS[c] ||
+    (c
+      ? c.replace(/-/g, " ").replace(/\b\w/g, (m) => m.toUpperCase())
+      : "Other");
+
+  const card = (g: (typeof snaps)[number]["games"][number]) => {
+    const img = g.screenshot
+      ? `<img loading="lazy" src="${esc(g.screenshot)}" alt="${esc(g.name)}">`
+      : g.thumb
+        ? `<img loading="lazy" src="${esc(g.thumb)}" alt="${esc(g.name)}">`
+        : `<div class="ph">no screenshot</div>`;
+    const link = g.url
+      ? `<a href="${esc(g.url)}" target="_blank">${esc(g.url)}</a>`
+      : `<span class="nourl">no url</span>`;
+    return `<div class="card"><div class="shot">${img}</div>
+            <div class="body"><div class="nm">${esc(g.name)}</div>
+            <div class="url">${link}</div></div></div>`;
+  };
 
   const sections = snaps
     .map((s) => {
-      const cards = s.games
-        .map((g) => {
-          const img = g.screenshot
-            ? `<img loading="lazy" src="${esc(g.screenshot)}" alt="${esc(g.name)}">`
-            : g.thumb
-            ? `<img loading="lazy" src="${esc(g.thumb)}" alt="${esc(g.name)}">`
-            : `<div class="ph">no screenshot</div>`;
-          const link = g.url
-            ? `<a href="${esc(g.url)}" target="_blank">${esc(g.url)}</a>`
-            : `<span class="nourl">no url</span>`;
-          return `<div class="card"><div class="shot">${img}</div>
-            <div class="body"><div class="nm">${esc(g.name)}</div>
-            <div class="meta"><span class="cat">${esc(s.category || "")}</span></div>
-            <div class="url">${link}</div></div></div>`;
+      const groups = new Map<string, typeof s.games>();
+      for (const g of s.games) {
+        const key = g.category || s.category || "other";
+        (groups.get(key) ?? groups.set(key, []).get(key)!).push(g);
+      }
+      const keys = [...groups.keys()].sort((a, b) => {
+        const ia = CAT_ORDER.indexOf(a);
+        const ib = CAT_ORDER.indexOf(b);
+        return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+      });
+      const subs = keys
+        .map((k) => {
+          const gs = groups.get(k)!;
+          const cards = gs.map(card).join("\n");
+          return `<h3 class="cat-head">${esc(catLabel(k))} <span class="muted">${gs.length}</span></h3>
+        <div class="grid">${cards}</div>`;
         })
         .join("\n");
       const when = (s.capturedAt || "").slice(0, 16).replace("T", " ");
       return `<section><h2>${esc(s.casino)} <span class="muted">— ${s.games.length} games · captured ${esc(when)}</span></h2>
-        <div class="grid">${cards}</div></section>`;
+        ${subs}</section>`;
     })
     .join("\n");
 
@@ -71,6 +110,8 @@ export async function buildReport(): Promise<string> {
   .stat .n{font-size:24px;font-weight:700} .stat .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
   h2{font-size:16px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:34px 0 14px}
   h2 .muted{font-weight:400;font-size:13px} .muted{color:var(--muted)}
+  h3.cat-head{font-size:14px;margin:22px 0 10px;display:flex;align-items:center;gap:8px;color:var(--text)}
+  h3.cat-head .muted{font-size:12px;font-weight:400;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1px 9px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
   .shot{aspect-ratio:16/10;background:#0c0f1a;display:flex;align-items:center;justify-content:center;overflow:hidden}

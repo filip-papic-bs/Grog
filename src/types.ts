@@ -6,6 +6,7 @@ export interface Game {
   thumb?: string;
   id?: string;
   screenshot?: string;
+  category?: string;
 }
 
 export interface Snapshot {
@@ -50,6 +51,7 @@ export interface Ctx {
       listingSelector?: string;
       listingUrl?: string;
       recoverText?: string | string[];
+      capture?: boolean;
     },
   ): Promise<Snapshot>;
   record(game: Game): void;

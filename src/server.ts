@@ -43,15 +43,19 @@ function broadcast(run: Run, event: string, data: string) {
   for (const res of run.listeners) res.write(payload);
 }
 
-function startRun(
-  casinos: string[],
-  opts: { profile?: string; proxy?: string },
-): Run {
+const DEFAULT_PROFILE = ".profile/stake";
+
+function startRun(casinos: string[]): Run {
   const id = `run_${++runSeq}_${Date.now()}`;
 
-  const args = ["tsx", "src/cli.ts", "run", ...casinos];
-  if (opts.profile) args.push("--profile", opts.profile);
-  if (opts.proxy) args.push("--proxy", opts.proxy);
+  const args = [
+    "tsx",
+    "src/cli.ts",
+    "run",
+    ...casinos,
+    "--profile",
+    DEFAULT_PROFILE,
+  ];
 
   const child = spawn("npx", args, {
     cwd: ROOT,
@@ -291,7 +295,7 @@ const server = http.createServer(async (req, res) => {
       );
       if (!casinos.length)
         return json(res, 400, { error: "no valid casinos selected" });
-      const run = startRun(casinos, body.options || {});
+      const run = startRun(casinos);
       return json(res, 200, { runId: run.id, casinos });
     }
 

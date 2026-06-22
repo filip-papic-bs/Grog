@@ -81,13 +81,6 @@ function updateRunBar() {
   $("#btn-run").disabled = n === 0 || state.running;
 }
 
-function readOptions() {
-  return {
-    profile: $("#opt-profile").value.trim() || undefined,
-    proxy: $("#opt-proxy").value.trim() || undefined,
-  };
-}
-
 function appendLog(line) {
   const body = $("#console-body");
   const span = document.createElement("span");
@@ -173,7 +166,7 @@ async function runAnalysis() {
     const res = await fetch("/api/run", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ casinos, options: readOptions() }),
+      body: JSON.stringify({ casinos }),
     });
     const data = await res.json();
     if (res.status === 409 && data.runId) {
