@@ -4,24 +4,15 @@ import type { Human } from "./types.js";
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const rnd = (min: number, max: number) => Math.floor(min + Math.random() * (max - min));
 
-// Common overlay buttons that otherwise block the page / dominate screenshots.
 const DISMISS_WORDS = [
   "accept all", "accept", "i agree", "agree", "got it", "allow all", "allow",
   "enter", "i am over", "over 18", "18+", "yes", "continue", "ok", "confirm",
   "close", "dismiss",
 ];
 
-/**
- * No human-simulation theater. The anti-bot gate is Cloudflare at site ENTRY,
- * handled by the browser itself (real Chrome + a warmed profile) — not by
- * mouse-wiggling or random pauses while browsing. So these are purely functional:
- * navigate, scroll to load lazy tiles, dismiss overlays, and an explicit `pause`
- * for the rare flow that genuinely needs to wait.
- */
 export function makeHuman(page: Page): Human {
   const vp = () => page.viewportSize() ?? { width: 1366, height: 850 };
 
-  // A real, explicit wait when a flow asks for one (no auto/random theater though).
   const pause = async (minMs?: number, maxMs?: number) => {
     if (minMs == null) return;
     const lo = maxMs == null ? minMs : Math.min(minMs, maxMs);
@@ -33,9 +24,6 @@ export function makeHuman(page: Page): Human {
     await page.mouse.wheel(0, px);
   };
 
-  // Scroll to the bottom to trigger lazy-loading. The only wait here is a short,
-  // functional pause so lazy content can load — and it bails as soon as the page
-  // height stops growing.
   const scrollToBottom = async (o?: { steps?: number }) => {
     const steps = o?.steps ?? 40;
     let lastHeight = 0;

@@ -1,26 +1,41 @@
-import { writeFile } from "node:fs/promises";
-import { REPORT_PATH } from "./paths.js";
-import { Db, type GameRow } from "./db.js";
+import { readdir, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { SNAPSHOTS_DIR, REPORT_PATH } from "./paths.js";
+import type { Snapshot } from "./types.js";
 
 const esc = (s: string) =>
   (s || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
 
-export async function buildReport(db?: Db): Promise<string> {
-  const owned = !db;
-  const database = db ?? new Db();
-  const rows = database.all();
-
-  const byCasino = new Map<string, GameRow[]>();
-  for (const r of rows) {
-    if (!byCasino.has(r.casino)) byCasino.set(r.casino, []);
-    byCasino.get(r.casino)!.push(r);
+async function latestSnapshots(): Promise<Snapshot[]> {
+  const casinos = await readdir(SNAPSHOTS_DIR, { withFileTypes: true }).catch(() => []);
+  const out: Snapshot[] = [];
+  for (const c of casinos) {
+    if (!c.isDirectory()) continue;
+    const dir = path.join(SNAPSHOTS_DIR, c.name);
+    const runs = (await readdir(dir, { withFileTypes: true }).catch(() => []))
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name)
+      .sort();
+    const latest = runs[runs.length - 1];
+    if (!latest) continue;
+    try {
+      const snap: Snapshot = JSON.parse(await readFile(path.join(dir, latest, "games.json"), "utf8"));
+      out.push(snap);
+    } catch {
+      /* skip a malformed/half-written snapshot */
+    }
   }
+  return out.sort((a, b) => a.casino.localeCompare(b.casino));
+}
 
-  const totalShots = rows.filter((r) => r.screenshot).length;
-  const sections = [...byCasino.entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]))
-    .map(([casino, games]) => {
-      const cards = games
+export async function buildReport(): Promise<string> {
+  const snaps = await latestSnapshots();
+  const totalGames = snaps.reduce((n, s) => n + s.games.length, 0);
+  const totalShots = snaps.reduce((n, s) => n + s.games.filter((g) => g.screenshot).length, 0);
+
+  const sections = snaps
+    .map((s) => {
+      const cards = s.games
         .map((g) => {
           const img = g.screenshot
             ? `<img loading="lazy" src="${esc(g.screenshot)}" alt="${esc(g.name)}">`
@@ -30,21 +45,21 @@ export async function buildReport(db?: Db): Promise<string> {
           const link = g.url
             ? `<a href="${esc(g.url)}" target="_blank">${esc(g.url)}</a>`
             : `<span class="nourl">no url</span>`;
-          const when = (g.first_seen || "").slice(0, 10);
           return `<div class="card"><div class="shot">${img}</div>
             <div class="body"><div class="nm">${esc(g.name)}</div>
-            <div class="meta"><span class="cat">${esc(g.category || "")}</span><span class="date">${when}</span></div>
+            <div class="meta"><span class="cat">${esc(s.category || "")}</span></div>
             <div class="url">${link}</div></div></div>`;
         })
         .join("\n");
-      return `<section><h2>${esc(casino)} <span class="muted">— ${games.length} catalogued</span></h2>
+      const when = (s.capturedAt || "").slice(0, 16).replace("T", " ");
+      return `<section><h2>${esc(s.casino)} <span class="muted">— ${s.games.length} games · captured ${esc(when)}</span></h2>
         <div class="grid">${cards}</div></section>`;
     })
     .join("\n");
 
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grog — Catalog</title>
+<title>Grog — Snapshots</title>
 <style>
   :root{--bg:#0a0d17;--surface:#141a2a;--line:#283049;--text:#eef1f8;--muted:#8b94ae;--accent:#2ee6a6;}
   *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);
@@ -66,17 +81,16 @@ export async function buildReport(db?: Db): Promise<string> {
   .url{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .url a{color:var(--accent);text-decoration:none} .nourl{color:var(--muted)}
 </style></head><body><div class="wrap">
-  <h1>🏴‍☠️ Grog — Catalog</h1>
-  <div class="sub">Generated ${new Date().toLocaleString()} · plain Playwright · persistent catalog (SQLite)</div>
+  <h1>🏴‍☠️ Grog — Snapshots</h1>
+  <div class="sub">Generated ${new Date().toLocaleString()} · plain Playwright · latest snapshot per casino</div>
   <div class="stats">
-    <div class="stat"><div class="n">${byCasino.size}</div><div class="l">Casinos</div></div>
-    <div class="stat"><div class="n">${rows.length}</div><div class="l">Games catalogued</div></div>
+    <div class="stat"><div class="n">${snaps.length}</div><div class="l">Casinos</div></div>
+    <div class="stat"><div class="n">${totalGames}</div><div class="l">Games in latest snapshots</div></div>
     <div class="stat"><div class="n">${totalShots}</div><div class="l">Screenshots</div></div>
   </div>
-  ${sections || '<div class="muted">Catalog empty. Try: npm run grog -- run stake --profile .profile/stake</div>'}
+  ${sections || '<div class="muted">No snapshots yet. Try: npm run grog -- run stake --profile .profile/stake</div>'}
 </div></body></html>`;
 
   await writeFile(REPORT_PATH, html);
-  if (owned) database.close();
   return REPORT_PATH;
 }

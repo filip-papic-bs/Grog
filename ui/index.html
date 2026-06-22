@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grog — Casino Originals Console</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏴‍☠️</text></svg>" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">🏴‍☠️</div>
+        <div class="brand-text">
+          <h1>GROG</h1>
+          <span>casino originals scout</span>
+        </div>
+      </div>
+
+      <nav class="tabs" id="tabs">
+        <button class="tab is-active" data-view="analyze"><span>Analyze</span></button>
+        <button class="tab" data-view="reports"><span>Reports</span></button>
+      </nav>
+
+      <div class="status" id="status" title="server">
+        <span class="dot"></span><span class="status-label">online</span>
+      </div>
+    </header>
+
+    <main class="stage">
+      <!-- ANALYZE ------------------------------------------------------- -->
+      <section class="view is-active" id="view-analyze">
+        <div class="view-head">
+          <h2>Choose casinos to analyze</h2>
+          <p class="muted">Each run opens every original, screenshots it, and writes a timestamped snapshot.</p>
+        </div>
+
+        <div class="casino-grid" id="casino-grid">
+          <div class="skeleton-row">loading casinos…</div>
+        </div>
+
+        <div class="panel options" id="options">
+          <div class="options-note">Real Chrome &amp; headless/headful are set per casino. These just tune the run:</div>
+          <div class="options-row">
+            <label class="field">
+              <span>Profile dir <em>persists Cloudflare clearance</em></span>
+              <input type="text" id="opt-profile" placeholder=".profile/stake" />
+            </label>
+            <label class="field">
+              <span>Proxy / VPN <em>for ISP-blocked domains</em></span>
+              <input type="text" id="opt-proxy" placeholder="http://user:pass@host:8080" />
+            </label>
+          </div>
+        </div>
+
+        <div class="run-bar">
+          <div class="run-summary" id="run-summary"><span class="count">0</span> selected</div>
+          <button class="btn-run" id="btn-run" disabled>
+            <span class="btn-run-glow"></span>
+            <span class="label">Run analysis</span>
+          </button>
+        </div>
+
+        <div class="panel console" id="console-panel" hidden>
+          <div class="console-head">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <span class="console-title" id="console-title">run output</span>
+            <span class="console-state" id="console-state"></span>
+            <button class="btn-stop" id="btn-stop" hidden>■ Stop</button>
+          </div>
+          <pre class="console-body" id="console-body"></pre>
+        </div>
+      </section>
+
+      <!-- REPORTS ------------------------------------------------------- -->
+      <section class="view" id="view-reports">
+        <div class="view-head">
+          <h2 id="reports-title">Reports</h2>
+          <p class="muted" id="reports-sub">Previous snapshots, newest first.</p>
+        </div>
+
+        <div id="reports-list" class="reports-list"></div>
+
+        <div id="report-detail" class="report-detail" hidden>
+          <button class="btn-back" id="btn-back">← all snapshots</button>
+          <div class="detail-head" id="detail-head"></div>
+          <div class="game-grid" id="game-grid"></div>
+        </div>
+
+        <div class="empty" id="reports-empty" hidden>
+          <div class="empty-mark">🗺️</div>
+          <h3>No snapshots yet</h3>
+          <p class="muted">Run an analysis from the Analyze tab to create your first snapshot.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

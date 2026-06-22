@@ -1,18 +1,36 @@
-import { chromium, type BrowserContext } from "playwright";
-import { mkdir } from "node:fs/promises";
+import { chromium, type Browser, type BrowserContext } from "playwright";
+import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { makeHuman } from "./human.js";
-import type { Ctx, Game, CollectSpec } from "./types.js";
-import type { Db } from "./db.js";
-import { DATA_DIR, screenshotsDir, slugify } from "./paths.js";
+import type { Ctx, Game, CollectSpec, Snapshot } from "./types.js";
+import { DATA_DIR, snapshotsDirFor, slugify } from "./paths.js";
 
 export interface SessionOpts {
   casino: string;
   headless: boolean;
-  db: Db;
-  profileDir?: string; // persistent profile (keeps a solved Cloudflare challenge alive)
-  channel?: string;    // e.g. "chrome" to drive real Google Chrome instead of bundled Chromium
-  fresh?: boolean;     // ignore the DB and re-screenshot everything
+  profileDir?: string;
+  channel?: string;
+  proxyServer?: string;
+}
+
+function parseProxy(
+  s?: string,
+): { server: string; username?: string; password?: string } | undefined {
+  if (!s) return undefined;
+  try {
+    const u = new URL(s);
+    const server = `${u.protocol}//${u.host}`;
+    if (u.username) {
+      return {
+        server,
+        username: decodeURIComponent(u.username),
+        password: decodeURIComponent(u.password),
+      };
+    }
+    return { server };
+  } catch {
+    return { server: s };
+  }
 }
 
 export interface Session {
@@ -32,8 +50,6 @@ function slugFromUrl(u: string): string {
 
 export async function startSession(opts: SessionOpts): Promise<Session> {
   const viewport = { width: 1366, height: 850 };
-  // No userAgent override: a hardcoded UA that disagrees with the real engine
-  // version is a bot tell. Let the browser report its own (correct) UA.
   const contextOpts = {
     viewport,
     locale: "en-US",
@@ -43,28 +59,33 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
   const launchArgs = [
     "--disable-blink-features=AutomationControlled",
     "--disable-features=IsolateOrigins,site-per-process",
+    "--disable-background-timer-throttling",
+    "--disable-renderer-backgrounding",
+    "--disable-backgrounding-occluded-windows",
   ];
 
+  const proxy = parseProxy(opts.proxyServer);
+
   let context: BrowserContext;
+  let browser: Browser | undefined;
   if (opts.profileDir) {
     context = await chromium.launchPersistentContext(opts.profileDir, {
       headless: opts.headless,
       channel: opts.channel,
       args: launchArgs,
+      proxy,
       ...contextOpts,
     });
   } else {
-    const browser = await chromium.launch({
+    browser = await chromium.launch({
       headless: opts.headless,
       channel: opts.channel,
       args: launchArgs,
+      proxy,
     });
     context = await browser.newContext(contextOpts);
   }
 
-  // (1) tsx/esbuild injects a `__name(...)` helper into page.evaluate callbacks that
-  //     isn't defined in the browser → "__name is not defined". Shim it (identity).
-  // (2) Scrub navigator.webdriver (the #1 automation tell) on every page/frame.
   await context.addInitScript(
     "globalThis.__name = globalThis.__name || ((f) => f);" +
       "try { Object.defineProperty(navigator, 'webdriver', { get: () => undefined }); } catch (e) {}",
@@ -73,7 +94,18 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
   const page = context.pages()[0] ?? (await context.newPage());
   const human = makeHuman(page);
 
-  const shotsDir = screenshotsDir(opts.casino);
+  let dead = false;
+  const markDead = () => {
+    dead = true;
+  };
+  page.on("close", markDead);
+  context.on("close", markDead);
+  browser?.on("disconnected", markDead);
+
+  const capturedAt = new Date().toISOString();
+  const stamp = capturedAt.replace(/[:.]/g, "-").replace("T", "_").slice(0, 19);
+  const runDir = path.join(snapshotsDirFor(opts.casino), stamp);
+  const shotsDir = path.join(runDir, "shots");
   await mkdir(shotsDir, { recursive: true });
 
   const games: Game[] = [];
@@ -102,14 +134,23 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
         if (!target) return "";
         if (attr) {
           const v = target.getAttribute(attr) || "";
-          if ((attr === "href" || attr === "src") && v && !/^https?:/i.test(v)) {
-            try { return new URL(v, location.href).href; } catch { return v; }
+          if (
+            (attr === "href" || attr === "src") &&
+            v &&
+            !/^https?:/i.test(v)
+          ) {
+            try {
+              return new URL(v, location.href).href;
+            } catch {
+              return v;
+            }
           }
           return v;
         }
         return (target.textContent || "").trim();
       };
-      const out: { name: string; url: string; thumb: string; id: string }[] = [];
+      const out: { name: string; url: string; thumb: string; id: string }[] =
+        [];
       const tiles = Array.from(document.querySelectorAll(s.tile));
       for (const el of tiles) {
         out.push({
@@ -123,18 +164,22 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
       return out;
     }, spec);
 
-    // collect sees ALL games (that's the point — so we can diff). No cap here.
     const result: Game[] = [];
     const dedup = new Set<string>();
     for (const r of raw) {
       const name = (r.name || "").trim();
       const url = (r.url || "").trim();
       const id = (r.id || "").trim();
-      if (!name && !url && !id) continue; // skip empties — never fabricate
+      if (!name && !url && !id) continue;
       const key = id || slugFromUrl(url) || name.toLowerCase();
       if (dedup.has(key)) continue;
       dedup.add(key);
-      result.push({ name: name || url, url, thumb: r.thumb || undefined, id: id || undefined });
+      result.push({
+        name: name || url,
+        url,
+        thumb: r.thumb || undefined,
+        id: id || undefined,
+      });
     }
     return result;
   };
@@ -147,64 +192,133 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
     record(game);
   };
 
-  const gameKey = (g: Game): string =>
-    (g.id && g.id.trim()) || slugFromUrl(g.url) || slugify(g.name) || "x";
-
-  // Wait for a game to render after navigation (shared by goto + click modes).
-  const waitForGame = async (waitFor: string | undefined, settle: number) => {
+  const loadAndIdle = async () => {
     await page.waitForLoadState("load", { timeout: 15000 }).catch(() => {});
-    // Brief best-effort only: live game clients stream constantly and never go
-    // "networkidle", so a long timeout here is pure dead time. The `settle` below
-    // is the real "let the game draw its first frame" wait.
-    await page.waitForLoadState("networkidle", { timeout: 1500 }).catch(() => {});
+    await page
+      .waitForLoadState("networkidle", { timeout: 1500 })
+      .catch(() => {});
+  };
+
+  const waitForRender = async (waitFor: string | undefined, settle: number) => {
     if (waitFor) {
-      await page.waitForSelector(waitFor, { state: "visible", timeout: 4000 }).catch(() => {});
+      await page
+        .waitForSelector(waitFor, { state: "visible", timeout: 6000 })
+        .catch(() => {});
     }
     await page.waitForTimeout(settle);
   };
 
-  const screenshotNew = async (
+  const withTimeout = <T>(
+    p: Promise<T>,
+    ms: number,
+    label: string,
+  ): Promise<T> => {
+    let timer: ReturnType<typeof setTimeout>;
+    const guard = new Promise<T>((_, rej) => {
+      timer = setTimeout(
+        () => rej(new Error(`timed out after ${ms}ms (${label})`)),
+        ms,
+      );
+    });
+    return Promise.race([p, guard]).finally(() => clearTimeout(timer));
+  };
+
+  const looksBroken = async (phrases: string[]): Promise<boolean> => {
+    if (!phrases.length) return false;
+    const txt = (
+      (await page.textContent("body").catch(() => "")) || ""
+    ).toLowerCase();
+    return phrases.some((p) => txt.includes(p.toLowerCase()));
+  };
+
+  const snapshot = async (
     gamesIn: Game[],
     o?: {
       category?: string;
       waitFor?: string;
       settle?: number;
-      nav?: "goto" | "click"; // "click" = client-side nav (SPAs like Stake)
-      listingSelector?: string; // for "click": what to wait for after going back
+      nav?: "goto" | "click";
+      listingSelector?: string;
+      listingUrl?: string;
+      recoverText?: string | string[];
     },
-  ): Promise<void> => {
+  ): Promise<Snapshot> => {
     const category = o?.category ?? "originals";
     const waitFor = o?.waitFor;
     const settle = o?.settle ?? 2500;
     const nav = o?.nav ?? "goto";
     const listingSelector = o?.listingSelector;
-    const cap = Number(process.env.GROG_LIMIT) || 0; // cap NEW games (quick tests)
-    // Preload every known id for this casino ONCE, then diff each tile in memory.
-    const seen = opts.fresh ? new Set<string>() : opts.db.idsForCasino(opts.casino);
-    const toShoot = gamesIn.filter((g) => !seen.has(gameKey(g).toLowerCase()));
-    const skipped = gamesIn.length - toShoot.length;
-    log(`${gamesIn.length} on page · ${skipped} already checked · ${toShoot.length} to capture (${nav})`);
+    const listingUrl = o?.listingUrl;
+
+    const ensureListing = async (): Promise<boolean> => {
+      if (dead || !listingSelector) return !dead;
+      const here = await page
+        .waitForSelector(listingSelector, { state: "visible", timeout: 8000 })
+        .then(() => true)
+        .catch(() => false);
+      if (here) return true;
+      if (!listingUrl) return false;
+      const where = page.url().startsWith("about:")
+        ? "about:blank"
+        : "off the listing";
+      log(`   listing lost (${where}) — reopening ${listingUrl}`);
+      await page
+        .goto(listingUrl, { waitUntil: "domcontentloaded", timeout: 30000 })
+        .catch(() => {});
+      return page
+        .waitForSelector(listingSelector, { state: "visible", timeout: 30000 })
+        .then(() => true)
+        .catch(() => {
+          log(`   ⚠ listing still not back`);
+          return false;
+        });
+    };
+    const recoverText = o?.recoverText
+      ? Array.isArray(o.recoverText)
+        ? o.recoverText
+        : [o.recoverText]
+      : [];
+    const cap = Number(process.env.GROG_LIMIT) || 0;
+    const toShoot = cap ? gamesIn.slice(0, cap) : gamesIn;
+    log(`${gamesIn.length} on page · capturing ${toShoot.length} (${nav})`);
+
+    const PER_GAME_MS = 35_000;
 
     let shot = 0;
-    let processed = 0;
-
+    let misses = 0;
     for (const g of toShoot) {
-      if (cap && processed >= cap) break;
-      processed++;
+      if (dead) {
+        log(
+          `⚠ browser closed — aborting after ${shot} shot(s), saving partial snapshot`,
+        );
+        break;
+      }
       const path = (() => {
-        try { return new URL(g.url).pathname; } catch { return g.url; }
+        try {
+          return new URL(g.url).pathname;
+        } catch {
+          return g.url;
+        }
       })();
 
-      try {
+      if (nav === "click") await ensureListing();
+
+      const open = async () => {
         if (nav === "click") {
-          // Client-side navigation: click the tile in the listing (no hard reload,
-          // so the SPA session/Cloudflare clearance is preserved and it won't bounce).
           const tile = page.locator(`a[href$='${path}']`).first();
           await tile.scrollIntoViewIfNeeded().catch(() => {});
           log(`→ ${g.name}: clicking ${path}`);
-          await tile.click({ timeout: 10000 });
+          try {
+            await tile.click({ timeout: 6000 });
+          } catch {
+            log(`   click intercepted by an overlay — forcing`);
+            await tile.click({ timeout: 6000, force: true });
+          }
           await page
-            .waitForURL((u) => u.pathname.endsWith(path) || u.href.includes(path), { timeout: 20000 })
+            .waitForURL(
+              (u) => u.pathname.endsWith(path) || u.href.includes(path),
+              { timeout: 15000 },
+            )
             .catch(() => {});
         } else {
           log(`→ ${g.name}: opening ${g.url}`);
@@ -212,37 +326,75 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
           await human.dismiss();
         }
 
-        await waitForGame(waitFor, settle);
-        const landed = page.url().replace(/^https?:\/\//, "");
-        const reached = page.url().includes(path);
-        log(`   ${reached ? "at" : "⚠ NOT on game, at"} ${landed}`);
-        await shoot(g);
-        shot++;
+        await loadAndIdle();
 
-        if (nav === "click") {
-          await page.goBack({ waitUntil: "domcontentloaded" }).catch(() => {});
-          if (listingSelector) {
-            await page
-              .waitForSelector(listingSelector, { state: "visible", timeout: 30000 })
-              .catch(() => {});
-          }
+        for (
+          let tries = 0;
+          tries < 2 && (await looksBroken(recoverText));
+          tries++
+        ) {
+          log(`   error page detected — refreshing (${tries + 1}/2)`);
+          await page.reload({ waitUntil: "domcontentloaded" }).catch(() => {});
+          await loadAndIdle();
         }
+
+        await waitForRender(waitFor, settle);
+      };
+
+      try {
+        await withTimeout(open(), PER_GAME_MS, g.name);
       } catch (e) {
-        log(`screenshot failed for ${g.name}: ${e}`);
+        log(
+          `   ⚠ ${g.name}: ${e instanceof Error ? e.message : e} — capturing as-is and moving on`,
+        );
       }
 
-      opts.db.add({
-        casino: opts.casino,
-        game_id: gameKey(g),
-        name: g.name,
-        url: g.url,
-        thumb: g.thumb ?? null,
-        category,
-        screenshot: g.screenshot ?? null,
-        first_seen: new Date().toISOString(),
-      });
+      const url = page.url();
+      const landed = url.replace(/^https?:\/\//, "");
+      const onChallenge = /__cf_chl|cdn-cgi\/challenge/.test(url);
+      const reached = url.includes(path) && !onChallenge;
+      if (onChallenge) {
+        log(
+          `   ⚠ ${g.name}: bounced to a Cloudflare challenge — skipping screenshot`,
+        );
+      } else {
+        log(`   ${reached ? "at" : "⚠ NOT on game, at"} ${landed}`);
+        await shoot(g).catch((e) =>
+          log(`   screenshot failed for ${g.name}: ${e}`),
+        );
+        shot++;
+      }
+
+      misses = reached ? 0 : misses + 1;
+      if (misses >= 5) {
+        log(
+          `⚠ ${misses} games in a row failed — session looks broken, saving partial snapshot`,
+        );
+        break;
+      }
+
+      if (nav === "click") {
+        await page
+          .goBack({ waitUntil: "domcontentloaded", timeout: 10000 })
+          .catch(() => {});
+        await ensureListing();
+      }
     }
-    log(`done: ${shot} screenshot(s) captured`);
+    for (const g of gamesIn) record(g);
+    const snap: Snapshot = {
+      casino: opts.casino,
+      category,
+      capturedAt,
+      games: gamesIn,
+    };
+    await writeFile(
+      path.join(runDir, "games.json"),
+      JSON.stringify(snap, null, 2),
+    );
+    log(
+      `snapshot: ${gamesIn.length} game(s), ${shot} shot(s) → ${path.relative(DATA_DIR, runDir)}`,
+    );
+    return snap;
   };
 
   const log = (msg: string) => console.log(`   ${msg}`);
@@ -254,7 +406,7 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
     casino: opts.casino,
     collect,
     shoot,
-    screenshotNew,
+    snapshot,
     record,
     log,
   };
@@ -263,6 +415,7 @@ export async function startSession(opts: SessionOpts): Promise<Session> {
     games,
     async close() {
       await context.close().catch(() => {});
+      await browser?.close().catch(() => {});
     },
   };
 }

@@ -35,7 +35,7 @@ const casino: Casino = {
   name: "Example",
   startUrl: "https://example.com/casino/originals",
 
-  async flow({ page, human, collect, screenshotNew, log }) {
+  async flow({ page, human, collect, snapshot, log }) {
     // 1) open the listing page and let the tiles load
     await human.goto(casino.startUrl);
     await human.dismiss();
@@ -45,8 +45,9 @@ const casino: Casino = {
     await human.scrollToBottom();
 
     // 2) collect the real games (TUNE THESE SELECTORS for the casino).
-    //    `id` is the game's stable id from the grid cell — the dedup key. If the
-    //    cell has no id, omit it and the key falls back to the URL slug.
+    //    `id` is the game's stable id from the grid cell, used to de-duplicate
+    //    tiles and name the screenshot file. If the cell has no id, omit it and
+    //    the key falls back to the URL slug.
     const games = await collect({
       tile: "a[href*='/game']",
       id: "img@id",
@@ -56,19 +57,21 @@ const casino: Casino = {
     });
     log(`found ${games.length} games`);
 
-    // 3) skip anything already in the DB; screenshot + store only the new ones.
-    await screenshotNew(games, { category: "originals" });
+    // 3) screenshot every game and write a timestamped snapshot for this casino
+    //    (data/snapshots/<casino>/<stamp>/). Every run captures the full listing
+    //    fresh — no history dedup — so two snapshots can be diffed later.
+    await snapshot(games, { category: "originals" });
   },
 };
 export default casino;
 
 /* -------------------------------------------------------------------------
  * SPA CASINOS (e.g. Stake): a hard goto() to a game URL reloads the page and can
- * bounce back to the home page. Pass nav:"click" so screenshotNew CLICKS each
+ * bounce back to the home page. Pass nav:"click" so snapshot CLICKS each
  * tile (client-side navigation) instead, and listingSelector so it can wait for
  * the grid again after going back:
  *
- *   await screenshotNew(games, {
+ *   await snapshot(games, {
  *     category: "originals",
  *     nav: "click",
  *     listingSelector: TILE,

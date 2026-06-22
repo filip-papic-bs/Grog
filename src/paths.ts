@@ -5,11 +5,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const ROOT = path.resolve(__dirname, "..");
 export const DATA_DIR = path.join(ROOT, "data");
-export const SHOTS_DIR = path.join(DATA_DIR, "screenshots");
+export const SNAPSHOTS_DIR = path.join(DATA_DIR, "snapshots");
 export const CASINOS_DIR = path.join(ROOT, "casinos");
 export const REPORT_PATH = path.join(DATA_DIR, "report.html");
 
-export const screenshotsDir = (casino: string) => path.join(SHOTS_DIR, slugify(casino));
+export const snapshotsDirFor = (casino: string) => path.join(SNAPSHOTS_DIR, slugify(casino));
 
 export function slugify(s: string): string {
   return (

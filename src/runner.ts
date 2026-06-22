@@ -3,7 +3,6 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { startSession } from "./session.js";
 import type { Casino } from "./types.js";
-import type { Db } from "./db.js";
 import { CASINOS_DIR } from "./paths.js";
 
 export async function listCasinos(): Promise<string[]> {
@@ -25,22 +24,19 @@ async function loadCasino(name: string): Promise<Casino> {
 
 export async function runCasino(
   name: string,
-  db: Db,
-  opts: { headless?: boolean; profileDir?: string; channel?: string; fresh?: boolean },
+  opts: { headless?: boolean; profileDir?: string; channel?: string; proxyServer?: string },
 ): Promise<void> {
   const casino = await loadCasino(name);
-  // Precedence: explicit CLI flag > per-casino setting > global default.
   const headless = opts.headless ?? casino.headless ?? false;
-  const channel = opts.channel ?? casino.channel;
-  const how = `${headless ? "headless" : "headful"}${channel ? `, ${channel}` : ""}`;
+  const channel = opts.channel ?? casino.channel ?? "chrome";
+  const how = `${headless ? "headless" : "headful"}${channel ? `, ${channel}` : ""}${opts.proxyServer ? ", proxied" : ""}`;
   console.log(`\n▶ ${casino.name}  (${how})`);
   const session = await startSession({
     casino: casino.name,
     headless,
     profileDir: opts.profileDir,
     channel,
-    db,
-    fresh: opts.fresh,
+    proxyServer: opts.proxyServer,
   });
 
   try {
@@ -50,5 +46,5 @@ export async function runCasino(
   } finally {
     await session.close();
   }
-  console.log(`■ ${casino.name}: ${db.countForCasino(casino.name)} game(s) catalogued total`);
+  console.log(`■ ${casino.name}: ${session.games.length} game(s) in snapshot`);
 }
