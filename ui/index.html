@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Grog — Casino Originals Console</title>
+    <title>Grog — Casino Trends Console</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏴‍☠️</text></svg>" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -16,7 +16,7 @@
         <div class="brand-mark">🏴‍☠️</div>
         <div class="brand-text">
           <h1>GROG</h1>
-          <span>casino originals scout</span>
+          <span>casino trends scout</span>
         </div>
       </div>
 
@@ -64,22 +64,25 @@
       <!-- REPORTS ------------------------------------------------------- -->
       <section class="view" id="view-reports">
         <div class="view-head">
-          <h2 id="reports-title">Reports</h2>
-          <p class="muted" id="reports-sub">Previous snapshots, newest first.</p>
+          <h2 id="reports-title">Slot Trend Report</h2>
+          <p class="muted" id="reports-sub">AI read of Stake's trending &amp; new slots — themes, mechanics, visual direction.</p>
         </div>
 
-        <div id="reports-list" class="reports-list"></div>
-
-        <div id="report-detail" class="report-detail" hidden>
-          <button class="btn-back" id="btn-back">← all snapshots</button>
-          <div class="detail-head" id="detail-head"></div>
-          <div class="game-grid" id="game-grid"></div>
+        <div id="trend-status" class="trend-status" hidden>
+          <span class="spinner" aria-hidden="true"></span>
+          <span id="trend-status-text">Analyzing games with AI…</span>
         </div>
 
-        <div class="empty" id="reports-empty" hidden>
-          <div class="empty-mark">🗺️</div>
-          <h3>No snapshots yet</h3>
-          <p class="muted">Run an analysis from the Analyze tab to create your first snapshot.</p>
+        <div class="report-versions" id="report-versions" hidden></div>
+
+        <div id="trend-frame-wrap" hidden>
+          <iframe id="trend-frame" class="trend-frame" title="AI trend report"></iframe>
+        </div>
+
+        <div class="empty" id="trend-empty" hidden>
+          <div class="empty-mark">📊</div>
+          <h3>No trend report yet</h3>
+          <p class="muted">Run a harvest — <code>npm run grog -- run stake</code> — and it auto-generates a report here.</p>
         </div>
       </section>
     </main>

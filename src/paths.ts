@@ -8,6 +8,7 @@ export const DATA_DIR = path.join(ROOT, "data");
 export const SNAPSHOTS_DIR = path.join(DATA_DIR, "snapshots");
 export const CASINOS_DIR = path.join(ROOT, "casinos");
 export const REPORT_PATH = path.join(DATA_DIR, "report.html");
+export const REPORTS_DIR = path.join(DATA_DIR, "reports");
 
 export const snapshotsDirFor = (casino: string) => path.join(SNAPSHOTS_DIR, slugify(casino));
 

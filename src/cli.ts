@@ -38,6 +38,13 @@ async function main() {
     return;
   }
 
+  if (cmd === "analyze") {
+    const { runAnalysis } = await import("./analyze.js");
+    const p = await runAnalysis();
+    console.log(`✔ Trend report: ${p}\n  open: file://${p}`);
+    return;
+  }
+
   if (cmd === "run") {
     let names = positional;
     if (names.length === 0 || names[0] === "all") names = await listCasinos();
@@ -50,6 +57,18 @@ async function main() {
     }
     const p = await buildReport();
     console.log(`\n✔ Report: file://${p}`);
+
+    // Pipeline: once the harvest is done, immediately generate the AI trend
+    // report from the fresh snapshot (skip with --no-ai). Stake-only for now.
+    if (flags["no-ai"] !== true && names.includes("stake")) {
+      try {
+        const { runAnalysis } = await import("./analyze.js");
+        const tp = await runAnalysis();
+        console.log(`✔ Trend report: file://${tp}`);
+      } catch (err) {
+        console.log(`✖ analyze: ${err instanceof Error ? err.message : err}`);
+      }
+    }
     return;
   }
 
@@ -64,6 +83,10 @@ Usage:
   npm run grog run <name>            run one casino (e.g. betfury)
   npm run grog run all               run every casino
   npm run grog report                rebuild the HTML report (latest snapshots)
+  npm run grog analyze               AI slot-trend report from the latest snapshot
+                                     (OpenRouter; set OPENROUTER_API_KEY in .env;
+                                     GROG_AI_MODEL to pick the model, GROG_AI_WEB=1
+                                     to let it web-search each game)
 
 Flags:
   --headless          force headless (overrides a casino's own setting)

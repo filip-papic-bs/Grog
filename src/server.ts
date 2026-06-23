@@ -4,8 +4,50 @@ import { readdir, readFile, stat } from "node:fs/promises";
 import { createReadStream } from "node:fs";
 import path from "node:path";
 import { listCasinos } from "./runner.js";
-import { DATA_DIR, SNAPSHOTS_DIR, ROOT } from "./paths.js";
+import { DATA_DIR, SNAPSHOTS_DIR, REPORTS_DIR, ROOT } from "./paths.js";
 import type { Snapshot } from "./types.js";
+
+interface ReportMeta {
+  stamp: string;
+  when: string;
+  capturedAt?: string;
+  counts?: Record<string, number>;
+  url: string;
+}
+
+async function listReports(): Promise<ReportMeta[]> {
+  const dirs = await readdir(REPORTS_DIR, { withFileTypes: true }).catch(
+    () => [],
+  );
+  const out: ReportMeta[] = [];
+  for (const d of dirs) {
+    if (!d.isDirectory()) continue;
+    const htmlPath = path.join(REPORTS_DIR, d.name, "report.html");
+    try {
+      await stat(htmlPath);
+    } catch {
+      continue;
+    }
+    let meta: { generatedAt?: string; capturedAt?: string; counts?: Record<string, number> } = {};
+    try {
+      meta = JSON.parse(
+        await readFile(path.join(REPORTS_DIR, d.name, "report.json"), "utf8"),
+      );
+    } catch {
+      /* report.json missing/old — fall back to mtime below */
+    }
+    const when =
+      meta.generatedAt || (await stat(htmlPath)).mtime.toISOString();
+    out.push({
+      stamp: d.name,
+      when,
+      capturedAt: meta.capturedAt,
+      counts: meta.counts,
+      url: `/data/reports/${d.name}/report.html`,
+    });
+  }
+  return out.sort((a, b) => (a.stamp < b.stamp ? 1 : -1));
+}
 
 const UI_DIR = path.join(ROOT, "ui");
 const PORT = Number(process.env.GROG_UI_PORT) || 5000;
@@ -45,17 +87,8 @@ function broadcast(run: Run, event: string, data: string) {
 
 const DEFAULT_PROFILE = ".profile/stake";
 
-function startRun(casinos: string[]): Run {
+function launch(args: string[], casinos: string[]): Run {
   const id = `run_${++runSeq}_${Date.now()}`;
-
-  const args = [
-    "tsx",
-    "src/cli.ts",
-    "run",
-    ...casinos,
-    "--profile",
-    DEFAULT_PROFILE,
-  ];
 
   const child = spawn("npx", args, {
     cwd: ROOT,
@@ -109,6 +142,17 @@ function startRun(casinos: string[]): Run {
     finalize(1);
   });
   return run;
+}
+
+function startRun(casinos: string[]): Run {
+  return launch(
+    ["tsx", "src/cli.ts", "run", ...casinos, "--profile", DEFAULT_PROFILE],
+    casinos,
+  );
+}
+
+function startAnalyze(): Run {
+  return launch(["tsx", "src/cli.ts", "analyze"], ["analyze"]);
 }
 
 function stopRun(run: Run): boolean {
@@ -198,6 +242,7 @@ async function serveFile(res: http.ServerResponse, file: string) {
       "content-type":
         MIME[path.extname(file).toLowerCase()] || "application/octet-stream",
       "content-length": st.size,
+      "cache-control": "no-cache, no-store, must-revalidate",
     });
     createReadStream(file).pipe(res);
   } catch {
@@ -297,6 +342,20 @@ const server = http.createServer(async (req, res) => {
         return json(res, 400, { error: "no valid casinos selected" });
       const run = startRun(casinos);
       return json(res, 200, { runId: run.id, casinos });
+    }
+
+    if (p === "/api/reports") {
+      return json(res, 200, await listReports());
+    }
+
+    if (p === "/api/analyze" && req.method === "POST") {
+      if (activeRun)
+        return json(res, 409, {
+          error: "a run is already in progress",
+          runId: activeRun,
+        });
+      const run = startAnalyze();
+      return json(res, 200, { runId: run.id, casinos: run.casinos });
     }
 
     const stopMatch = p.match(/^\/api\/run\/([^/]+)\/stop$/);

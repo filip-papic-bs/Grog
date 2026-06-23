@@ -213,9 +213,6 @@ async function stopRun() {
 $("#btn-run").addEventListener("click", runAnalysis);
 $("#btn-stop").addEventListener("click", stopRun);
 
-// ---- reports ---------------------------------------------------------------
-let reportsLoaded = false;
-
 function fmtWhen(iso) {
   if (!iso) return "";
   const d = new Date(iso);
@@ -229,99 +226,140 @@ function fmtWhen(iso) {
   });
 }
 
-async function loadReports(silent) {
-  $("#report-detail").hidden = true;
-  $("#reports-list").hidden = false;
-  if (!silent)
-    $("#reports-list").innerHTML =
-      `<div class="skeleton-row">loading snapshots…</div>`;
-  let snaps = [];
-  try {
-    snaps = await (await fetch("/api/snapshots")).json();
-  } catch {
-    /* ignore */
+function showSpinner(on, text) {
+  const s = $("#trend-status");
+  s.classList.remove("is-error");
+  if (on) {
+    $("#trend-status-text").textContent = text || "Analyzing games with AI…";
+    s.hidden = false;
+  } else {
+    s.hidden = true;
   }
-  reportsLoaded = true;
-  const empty = $("#reports-empty");
-  const list = $("#reports-list");
-  if (!snaps.length) {
-    list.innerHTML = "";
-    empty.hidden = false;
-    return;
-  }
-  empty.hidden = true;
-  list.innerHTML = snaps
-    .map(
-      (
-        s,
-      ) => `<div class="snap-row" data-casino="${s.casinoSlug}" data-stamp="${s.stamp}">
-        <div class="snap-badge">${initials(s.casino)}</div>
-        <div class="snap-main">
-          <div class="snap-casino">${s.casino}</div>
-          <div class="snap-when">${fmtWhen(s.capturedAt)}</div>
-        </div>
-        <div class="snap-stats">
-          <div><div class="n">${s.count}</div><div class="k">games</div></div>
-          <div><div class="n">${s.shots}</div><div class="k">shots</div></div>
-        </div>
-        <div class="snap-go">→</div>
-      </div>`,
-    )
-    .join("");
 }
 
-$("#reports-list").addEventListener("click", (e) => {
-  const row = e.target.closest(".snap-row");
-  if (row) openSnapshot(row.dataset.casino, row.dataset.stamp);
-});
-$("#btn-back").addEventListener("click", () => {
-  $("#report-detail").hidden = true;
-  $("#reports-list").hidden = false;
-});
+function showTrendError(msg) {
+  const s = $("#trend-status");
+  s.classList.add("is-error");
+  $("#trend-status-text").textContent = "⚠ " + msg;
+  s.hidden = false;
+}
 
-async function openSnapshot(casinoSlug, stamp) {
-  let snap;
+let reportVersions = [];
+
+function selectReport(stamp) {
+  const r = reportVersions.find((v) => v.stamp === stamp);
+  if (!r) return;
+  $$(".rv-row").forEach((el) =>
+    el.classList.toggle("is-active", el.dataset.stamp === stamp),
+  );
+  $("#trend-frame").src = r.url + "?t=" + Date.now();
+  $("#trend-frame-wrap").hidden = false;
+}
+
+async function loadReportFrame(selectStamp) {
   try {
-    snap = await (
-      await fetch(
-        `/api/snapshot?casino=${encodeURIComponent(casinoSlug)}&stamp=${encodeURIComponent(stamp)}`,
-      )
-    ).json();
+    reportVersions = await (await fetch("/api/reports")).json();
   } catch {
+    reportVersions = [];
+  }
+  const list = $("#report-versions");
+  if (!reportVersions.length) {
+    list.hidden = true;
+    list.innerHTML = "";
+    $("#trend-frame-wrap").hidden = true;
+    $("#trend-empty").hidden = false;
     return;
   }
-  $("#reports-list").hidden = true;
-  $("#reports-empty").hidden = true;
-  const detail = $("#report-detail");
-  detail.hidden = false;
-
-  $("#detail-head").innerHTML = `<h3>${snap.casino}</h3>
-    <span class="tag">${snap.category || "originals"}</span>
-    <span class="tag">${fmtWhen(snap.capturedAt)}</span>
-    <span class="tag">${snap.games.length} games</span>`;
-
-  $("#game-grid").innerHTML = snap.games
-    .map((g) => {
-      const src = g.screenshot ? `/data/${g.screenshot}` : g.thumb || "";
-      const img = src
-        ? `<img loading="lazy" src="${src}" alt="${esc(g.name)}">`
-        : `<div class="ph">no screenshot</div>`;
-      const url = g.url
-        ? `<a href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.url)}</a>`
-        : "<span class='muted'>no url</span>";
-      return `<div class="game-card"><div class="game-shot">${img}</div>
-        <div class="game-body"><div class="game-name">${esc(g.name)}</div>
-        <div class="game-url">${url}</div></div></div>`;
+  $("#trend-empty").hidden = true;
+  list.hidden = false;
+  list.innerHTML = reportVersions
+    .map((v, i) => {
+      const c = v.counts || {};
+      const sub = [
+        c.slots != null ? c.slots + " trending" : null,
+        c.newReleases != null ? c.newReleases + " new" : null,
+      ]
+        .filter(Boolean)
+        .join(" · ");
+      return `<button class="rv-row" data-stamp="${v.stamp}">
+        <span class="rv-when">${fmtWhen(v.when)}${i === 0 ? ' <span class="rv-latest">latest</span>' : ""}</span>
+        <span class="rv-sub">${sub}</span>
+      </button>`;
     })
     .join("");
-  detail.scrollIntoView({ behavior: "smooth", block: "start" });
+  const target =
+    (selectStamp && reportVersions.find((v) => v.stamp === selectStamp)) ||
+    reportVersions[0];
+  selectReport(target.stamp);
 }
 
-const esc = (s) =>
-  (s || "").replace(
-    /[&<>"]/g,
-    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c],
-  );
+$("#report-versions").addEventListener("click", (e) => {
+  const row = e.target.closest(".rv-row");
+  if (row) selectReport(row.dataset.stamp);
+});
+
+async function loadReports() {
+  let st = {};
+  try {
+    st = await (await fetch("/api/state")).json();
+  } catch {
+    /* server unreachable */
+  }
+  if (st.activeRun && (st.casinos || []).includes("analyze")) {
+    await awaitTrendRun(st.activeRun);
+    return;
+  }
+  showSpinner(false);
+  await loadReportFrame();
+}
+
+async function awaitTrendRun(runId) {
+  $("#trend-frame-wrap").hidden = true;
+  $("#trend-empty").hidden = true;
+  showSpinner(true, "Analyzing games with AI… (~20–30s)");
+
+  const r = await new Promise((resolve) => {
+    let last = "";
+    let errLine = "";
+    let done = false;
+    const finish = (v) => {
+      if (done) return;
+      done = true;
+      resolve(v);
+    };
+    const es = new EventSource(`/api/run/${runId}/stream`);
+    const guard = setTimeout(() => {
+      es.close();
+      finish({ code: "timeout", last, errLine });
+    }, 150_000);
+    es.addEventListener("line", (e) => {
+      const l = e.data.replace(/\\n/g, " ").trim();
+      if (!l || l === "1") return;
+      last = l;
+      if (!errLine && /error/i.test(l))
+        errLine = l.replace(/^Error:\s*/i, "").replace(/\s+at\s.*$/, "");
+    });
+    es.addEventListener("done", (e) => {
+      clearTimeout(guard);
+      es.close();
+      finish({ code: e.data, last, errLine });
+    });
+    es.onerror = () => {
+      clearTimeout(guard);
+      es.close();
+      finish({ code: "?", last, errLine });
+    };
+  });
+
+  if (r.code === "timeout") {
+    showTrendError("analysis timed out — restart the server and try again");
+  } else if (r.code !== "0" && r.code !== "?") {
+    showTrendError(r.errLine || r.last || "analysis failed");
+  } else {
+    showSpinner(false);
+    await loadReportFrame();
+  }
+}
 
 async function boot() {
   try {
