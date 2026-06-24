@@ -3,8 +3,15 @@ import path from "node:path";
 import { ROOT, SNAPSHOTS_DIR, REPORTS_DIR } from "./paths.js";
 import type { Snapshot, Game } from "./types.js";
 
-const MODEL = process.env.GROG_AI_MODEL || "google/gemini-2.5-flash-lite";
-const WEB = process.env.GROG_AI_WEB === "1";
+// Resolve these at CALL time (after loadEnv() has populated process.env from
+// .env) — NOT at import time, or the value is captured as undefined before
+// .env is read, and `model: undefined` becomes the literal string "undefined".
+export function aiModel(): string {
+  return process.env.MODEL || "google/gemini-2.5-flash-lite";
+}
+export function aiWeb(): boolean {
+  return process.env.GROG_AI_WEB === "1";
+}
 
 interface AiGame {
   i: number;
@@ -16,8 +23,9 @@ interface AiGame {
 }
 type Enriched = Game & { ai?: AiGame | null };
 
-function loadEnv() {
-  if (process.env.OPENROUTER_API_KEY) return;
+export function loadEnv() {
+  // Always load .env (not just when the key is missing) so MODEL/GROG_AI_WEB
+  // and friends are picked up too, not only OPENROUTER_API_KEY.
   try {
     (process as unknown as { loadEnvFile: (p: string) => void }).loadEnvFile(
       path.join(ROOT, ".env"),
@@ -27,17 +35,44 @@ function loadEnv() {
   }
 }
 
-async function chat(
+export async function chat(
   messages: { role: string; content: string }[],
-  opts: { json?: boolean; temperature?: number } = {},
+  opts: {
+    json?: boolean;
+    temperature?: number;
+    maxTokens?: number;
+    timeoutMs?: number;
+    // OpenRouter reasoning control. For reasoning models (e.g. glm-5.2) the
+    // hidden reasoning stream eats the entire max_tokens budget on mechanical
+    // tasks, leaving content empty (finish_reason=length, content_len=0). Pass
+    // { effort: "low" } / { enabled: false } to rein it in.
+    reasoning?: Record<string, unknown>;
+  } = {},
 ): Promise<string> {
   const key = process.env.OPENROUTER_API_KEY;
   if (!key) throw new Error("OPENROUTER_API_KEY not set (put it in .env)");
+  const timeoutMs = opts.timeoutMs ?? 90_000;
+  const reqModel = aiModel() + (aiWeb() ? ":online" : "");
+  const body = {
+    model: reqModel,
+    messages,
+    temperature: opts.temperature ?? 0.3,
+    ...(opts.maxTokens ? { max_tokens: opts.maxTokens } : {}),
+    ...(opts.json ? { response_format: { type: "json_object" } } : {}),
+    ...(opts.reasoning ? { reasoning: opts.reasoning } : {}),
+  };
   const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), 90_000);
-  let res: Response;
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  const started = Date.now();
+  console.log(
+    `   → OpenRouter model=${reqModel} json=${!!opts.json} max_tokens=${opts.maxTokens ?? "default"} temp=${body.temperature} msgs=${messages.length} timeout=${timeoutMs}ms`,
+  );
+  // NOTE: the whole request — fetch (headers) AND res.json() (body download) —
+  // is inside the guarded block, so the abort timer covers the body stream too.
+  // (Reasoning models send 200 headers fast, then stream the completion slowly;
+  // clearing the timer right after fetch() left the body read with no timeout.)
   try {
-    res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       signal: ctrl.signal,
       headers: {
@@ -46,33 +81,41 @@ async function chat(
         "HTTP-Referer": "https://localhost/grog",
         "X-Title": "Grog",
       },
-      body: JSON.stringify({
-        model: MODEL + (WEB ? ":online" : ""),
-        messages,
-        temperature: opts.temperature ?? 0.3,
-        ...(opts.json ? { response_format: { type: "json_object" } } : {}),
-      }),
+      body: JSON.stringify(body),
     });
-  } catch (e) {
-    throw new Error(
-      ctrl.signal.aborted
-        ? "OpenRouter request timed out after 90s"
-        : `OpenRouter request failed: ${e instanceof Error ? e.message : e}`,
+    console.log(`   ← HTTP ${res.status} headers in ${Date.now() - started}ms`);
+    if (!res.ok)
+      throw new Error(
+        `OpenRouter ${res.status}: ${(await res.text()).slice(0, 300)}`,
+      );
+    const data = (await res.json()) as {
+      choices?: { message?: { content?: string }; finish_reason?: string }[];
+      usage?: { total_tokens?: number; cost?: number };
+      error?: { message?: string };
+    };
+    const choice = data.choices?.[0];
+    const content = choice?.message?.content ?? "";
+    console.log(
+      `   ← body in ${Date.now() - started}ms · finish_reason=${choice?.finish_reason ?? "?"} content_len=${content.length} tokens=${data.usage?.total_tokens ?? "?"} cost=$${data.usage?.cost ?? "?"}`,
     );
+    if (!content)
+      console.log(
+        `   ⚠ empty content — error=${JSON.stringify(data.error ?? null)} choice=${JSON.stringify(choice ?? null).slice(0, 400)}`,
+      );
+    return content;
+  } catch (e) {
+    const ms = Date.now() - started;
+    if (ctrl.signal.aborted)
+      throw new Error(
+        `OpenRouter aborted after ${ms}ms (hit ${timeoutMs}ms timeout) — request never completed (headers may have arrived, body stalled)`,
+      );
+    throw e instanceof Error ? e : new Error(String(e));
   } finally {
     clearTimeout(timer);
   }
-  if (!res.ok)
-    throw new Error(
-      `OpenRouter ${res.status}: ${(await res.text()).slice(0, 300)}`,
-    );
-  const data = (await res.json()) as {
-    choices?: { message?: { content?: string } }[];
-  };
-  return data.choices?.[0]?.message?.content ?? "";
 }
 
-function parseJsonLoose(s: string): { games?: AiGame[] } {
+export function parseJsonLoose(s: string): { games?: AiGame[] } {
   const fenced = s.match(/```(?:json)?\s*([\s\S]*?)```/);
   const body = fenced ? fenced[1] : s;
   const a = body.indexOf("{");
@@ -92,8 +135,8 @@ function slugOf(url: string): string {
   }
 }
 
-async function stakeRuns(): Promise<string[]> {
-  const dir = path.join(SNAPSHOTS_DIR, "stake");
+async function casinoRuns(casino: string): Promise<string[]> {
+  const dir = path.join(SNAPSHOTS_DIR, casino);
   const runs = (await readdir(dir, { withFileTypes: true }).catch(() => []))
     .filter((d) => d.isDirectory())
     .map((d) => d.name)
@@ -109,19 +152,22 @@ async function readSnap(file: string): Promise<Snapshot | null> {
   }
 }
 
-async function enrich(games: Game[]): Promise<Enriched[]> {
-  if (!games.length) return [];
-  const list = games.map((g, i) => ({
-    i,
-    name: g.name,
-    slug: slugOf(g.url),
-    category: g.category,
-  }));
+// Classifying every pooled game in one LLM call makes the JSON output blow past
+// max_tokens (a ~200-game pool emits >32k tokens), which truncates the response
+// mid-array → invalid JSON → nothing usable. So we split into small batches that
+// each emit valid JSON well under the cap and merge the results by global index.
+const ENRICH_BATCH = 30;
+const ENRICH_CONCURRENCY = 4;
+
+type EnrichItem = { i: number; name: string; slug: string; category?: string };
+
+async function enrichBatch(list: EnrichItem[]): Promise<AiGame[]> {
   const sys =
     "You are a slots-industry analyst. For each online casino slot, infer its theme, visual style and core mechanics from the game name and provider slug, using your knowledge of real slots. If you don't recognise a title, infer from the name and set confidence 'low'. Be concise and consistent in your labels.";
   const user =
     `Games (JSON):\n${JSON.stringify(list)}\n\n` +
     `Return STRICT JSON: {"games":[{"i":<index>,"provider":"","theme":"","style":"","mechanics":["",...],"confidence":"high|med|low"}]}.\n` +
+    `- Echo back the SAME "i" index given for each game.\n` +
     `- provider: studio name from the slug (e.g. "Pragmatic Play", "Hacksaw Gaming").\n` +
     `- theme: ONE short canonical phrase, reuse the same wording across games (e.g. "Candy/Sweets", "Ancient Egypt", "Greek mythology", "Fruit", "Sports", "Horror", "Adventure", "Irish luck", "Aztec/Maya", "Animals", "Fantasy").\n` +
     `- style: visual style (e.g. "vibrant cartoon", "realistic 3D", "neon/cyber", "cute/chibi", "dark/gritty").\n` +
@@ -135,11 +181,36 @@ async function enrich(games: Game[]): Promise<Enriched[]> {
       { json: true },
     ),
   );
-  const byI = new Map((out.games ?? []).map((x) => [x.i, x]));
+  return out.games ?? [];
+}
+
+async function enrich(games: Game[]): Promise<Enriched[]> {
+  if (!games.length) return [];
+  const list: EnrichItem[] = games.map((g, i) => ({
+    i,
+    name: g.name,
+    slug: slugOf(g.url),
+    category: g.category,
+  }));
+  const batches: EnrichItem[][] = [];
+  for (let i = 0; i < list.length; i += ENRICH_BATCH)
+    batches.push(list.slice(i, i + ENRICH_BATCH));
+  console.log(
+    `   classifying in ${batches.length} batch(es) of ≤${ENRICH_BATCH} (concurrency ${ENRICH_CONCURRENCY})…`,
+  );
+  const byI = new Map<number, AiGame>();
+  for (let i = 0; i < batches.length; i += ENRICH_CONCURRENCY) {
+    const group = batches.slice(i, i + ENRICH_CONCURRENCY);
+    const results = await Promise.all(group.map((b) => enrichBatch(b)));
+    for (const batch of results) for (const x of batch) byI.set(x.i, x);
+  }
   return games.map((g, i) => ({ ...g, ai: byI.get(i) ?? null }));
 }
 
-async function trendBrief(enriched: Enriched[]): Promise<string> {
+async function trendBrief(
+  enriched: Enriched[],
+  casinoLabel: string,
+): Promise<string> {
   const compact = enriched.map((g) => ({
     name: g.name,
     cat: g.category,
@@ -151,7 +222,7 @@ async function trendBrief(enriched: Enriched[]): Promise<string> {
   const sys =
     "You are a slots trend analyst advising a casino operator (BitStarz). Be sharp, concrete and pattern-focused — no fluff, no per-game recaps.";
   const user =
-    `Competitor (Stake) slot data — "new-releases" = just launched, "slots" = currently trending/most played — each tagged with theme/style/mechanics:\n` +
+    `Competitor (${casinoLabel}) slot data — "new-releases" = just launched, the trending category = currently most played — each tagged with theme/style/mechanics:\n` +
     `${JSON.stringify(compact)}\n\n` +
     `Write a CONCISE trend brief in markdown (~350-450 words, tight bullets). Use these sections exactly:\n` +
     `## Trending themes\n(rank the top themes with rough counts, note new vs trending)\n` +
@@ -166,13 +237,13 @@ async function trendBrief(enriched: Enriched[]): Promise<string> {
   );
 }
 
-const esc = (s: string) =>
+export const esc = (s: string) =>
   (s || "").replace(
     /[&<>]/g,
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]!,
   );
 
-function mdToHtml(md: string): string {
+export function mdToHtml(md: string): string {
   const lines = md.split(/\r?\n/);
   let html = "";
   let inList = false;
@@ -233,27 +304,42 @@ function cardSection(title: string, games: Enriched[]): string {
     <div class="ggrid">${games.map(gameCard).join("\n")}</div></section>`;
 }
 
-export async function runAnalysis(): Promise<string> {
+export async function runAnalysis(casino = "stake"): Promise<string> {
   loadEnv();
-  const runs = await stakeRuns();
+  const runs = await casinoRuns(casino);
   if (!runs.length)
-    throw new Error("no stake snapshot yet — run `grog run stake` first");
+    throw new Error(
+      `no ${casino} snapshot yet — run \`grog run ${casino}\` first`,
+    );
   const currentFile = runs[runs.length - 1];
   const stamp = path.basename(path.dirname(currentFile));
   const current = await readSnap(currentFile);
   if (!current) throw new Error("latest snapshot is unreadable");
   const prev = runs.length > 1 ? await readSnap(runs[runs.length - 2]) : null;
+  const casinoLabel = current.casino || casino;
 
   const byCat = (s: Snapshot | null, c: string) =>
     (s?.games ?? []).filter((g) => g.category === c);
 
+  // Categories vary per casino: every flow emits "new-releases", a trending
+  // rail ("slots" on Stake, "popular" elsewhere), and an originals rail named
+  // "originals" or "<casino>-originals". Resolve them from what's present.
+  const cats = [...new Set((current.games ?? []).map((g) => g.category || ""))];
+  const trendingCat = cats.includes("slots")
+    ? "slots"
+    : cats.includes("popular")
+      ? "popular"
+      : "";
+  const originalsCat =
+    cats.find((c) => c === "originals" || c.endsWith("-originals")) || "";
+
   const newReleases = byCat(current, "new-releases");
-  const slots = byCat(current, "slots");
+  const slots = trendingCat ? byCat(current, trendingCat) : [];
 
   const prevOrigUrls = new Set(
-    byCat(prev, "stake-originals").map((g) => g.url),
+    (originalsCat ? byCat(prev, originalsCat) : []).map((g) => g.url),
   );
-  const origAll = byCat(current, "stake-originals");
+  const origAll = originalsCat ? byCat(current, originalsCat) : [];
   const newOriginals = prev
     ? origAll.filter((g) => !prevOrigUrls.has(g.url))
     : [];
@@ -264,7 +350,7 @@ export async function runAnalysis(): Promise<string> {
       : "No new originals since the previous run.";
 
   console.log(
-    `analyzing with ${MODEL}${WEB ? " (web)" : ""} — ${newReleases.length} new, ${slots.length} trending, originals ${prev ? newOriginals.length + " new" : "baseline (ignored)"}…`,
+    `analyzing with ${aiModel()}${aiWeb() ? " (web)" : ""} — ${newReleases.length} new, ${slots.length} trending, originals ${prev ? newOriginals.length + " new" : "baseline (ignored)"}…`,
   );
 
   const toEnrich = [...newReleases, ...slots, ...newOriginals];
@@ -274,7 +360,8 @@ export async function runAnalysis(): Promise<string> {
 
   console.log("writing trend brief…");
   const brief = await trendBrief(
-    enriched.filter((g) => g.category !== "stake-originals"),
+    enriched.filter((g) => g.category !== originalsCat),
+    casinoLabel,
   );
 
   const when = new Date().toLocaleString();
@@ -311,16 +398,16 @@ export async function runAnalysis(): Promise<string> {
   .mech{background:#0c0f1a;border:1px solid var(--line);color:var(--muted);font-size:10px;padding:1px 7px;border-radius:20px}
 </style></head><body><div class="wrap">
   <h1>🏴‍☠️ Grog — Slot Trend Report</h1>
-  <div class="sub">Generated ${esc(when)} · snapshot ${esc(stamp)} · source: Stake · model: ${esc(MODEL)}${WEB ? " + web" : ""}</div>
+  <div class="sub">Generated ${esc(when)} · snapshot ${esc(stamp)} · source: ${esc(casinoLabel)} · model: ${esc(aiModel())}${aiWeb() ? " + web" : ""}</div>
   <div class="brief">${mdToHtml(brief)}</div>
-  ${cardSection("🔥 Trending Slots", pick("slots"))}
+  ${trendingCat ? cardSection("🔥 Trending", pick(trendingCat)) : ""}
   ${cardSection("🆕 New Releases", pick("new-releases"))}
   <section><h2>⭐ Originals</h2><div class="note">${esc(originalsNote)}</div>
-    ${prev && newOriginals.length ? `<div class="ggrid">${pick("stake-originals").map(gameCard).join("\n")}</div>` : ""}
+    ${prev && newOriginals.length && originalsCat ? `<div class="ggrid">${pick(originalsCat).map(gameCard).join("\n")}</div>` : ""}
   </section>
 </div></body></html>`;
 
-  const outDir = path.join(REPORTS_DIR, stamp);
+  const outDir = path.join(REPORTS_DIR, `${casino}_${stamp}`);
   await mkdir(outDir, { recursive: true });
   const htmlPath = path.join(outDir, "report.html");
   await writeFile(htmlPath, html);
@@ -328,11 +415,12 @@ export async function runAnalysis(): Promise<string> {
     path.join(outDir, "report.json"),
     JSON.stringify(
       {
+        casino: casinoLabel,
         stamp,
         generatedAt: new Date().toISOString(),
         capturedAt,
-        model: MODEL,
-        web: WEB,
+        model: aiModel(),
+        web: aiWeb(),
         counts: {
           newReleases: newReleases.length,
           slots: slots.length,

@@ -1,133 +1,120 @@
 import type { Casino, Game } from "../src/types.js";
 
-const CATEGORIES = [
-  {
-    key: "new-releases",
-    tab: "new-releases-category-button",
-    grid: "grid-casino-home-new-releases",
-  },
-  {
-    key: "slots",
-    tab: "slots-category-button",
-    grid: "grid-casino-home-slots",
-  },
-  {
-    key: "stake-originals",
-    tab: "stake-originals-category-button",
-    grid: "grid-casino-home-stake-originals",
-  },
+// Stake is a SPA backed by a public GraphQL API. We hit that directly instead
+// of driving a browser: no Playwright, no Cloudflare "are you human" challenge,
+// no profile/IP escalation. The /_api/graphql endpoint passes Cloudflare with a
+// plain request (only the HTML SPA shell is hard-gated).
+const ENDPOINT = "https://stake.com/_api/graphql";
+
+// Each homepage rail is a "kurator group" addressed by slug. limit = how many
+// games to pull from the top of each (the rail's own ordering: new-releases is
+// newest-first, slots is trending/popular-first). Tweak counts here.
+const GROUPS = [
+  { key: "new-releases", slug: "new-releases", limit: 50 },
+  { key: "slots", slug: "slots", limit: 50 },
+  { key: "stake-originals", slug: "stake-originals", limit: 50 }, // all (~31); 50 = API max per request
 ];
+
+// We request every useful field the GameKuratorGame type exposes so the raw
+// dump (raw-api.json) is complete. Notables: `edge` = house edge (1 - RTP),
+// `playerCount` = players in the game right now (live popularity signal),
+// `theme`/`type` = genre + provider key.
+const QUERY = `
+query GrogGroup($slug: String!, $limit: Int!) {
+  slugKuratorGroup(slug: $slug) {
+    name
+    translation
+    gameCount
+    groupGamesList(limit: $limit, offset: 0) {
+      game {
+        id
+        name
+        slug
+        active
+        edge
+        theme
+        type
+        playerCount
+        thumbnailUrl
+        provider { name }
+      }
+    }
+  }
+}`;
+
+interface KuratorGame {
+  id: string;
+  name: string;
+  slug: string;
+  active: boolean;
+  edge: number | null;
+  theme: string | null;
+  type: string | null;
+  playerCount: number | null;
+  thumbnailUrl: string | null;
+  provider: { name: string } | null;
+}
+
+interface GroupResponse {
+  name: string;
+  translation: string | null;
+  gameCount: number;
+  groupGamesList: { game: KuratorGame }[];
+}
+
+async function fetchGroup(slug: string, limit: number): Promise<GroupResponse> {
+  const res = await fetch(ENDPOINT, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      // A normal browser UA; the endpoint is content-gated, not UA-gated, but
+      // a real UA keeps us off any heuristic radar.
+      "user-agent":
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 " +
+        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    },
+    body: JSON.stringify({
+      operationName: "GrogGroup",
+      query: QUERY,
+      variables: { slug, limit },
+    }),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} for group "${slug}"`);
+  const json = (await res.json()) as {
+    data?: { slugKuratorGroup?: GroupResponse | null };
+    errors?: { message: string }[];
+  };
+  if (json.errors?.length)
+    throw new Error(`GraphQL: ${json.errors.map((e) => e.message).join("; ")}`);
+  const grp = json.data?.slugKuratorGroup;
+  if (!grp) throw new Error(`group "${slug}" not found`);
+  return grp;
+}
 
 const casino: Casino = {
   name: "Stake",
-  startUrl: "https://stake.com/casino/home/new-releases",
-  headless: false,
+  startUrl: "https://stake.com/casino/home",
   channel: "chrome",
 
-  async flow({ page, collect, snapshot, log }) {
-    const NAV = "[data-analytics='slots-category-button']";
-    const ERRORS = [
-      "something's gone wrong",
-      "something went wrong",
-      "try refreshing",
-      "our team has been notified",
-    ];
-    const isBroken = async () => {
-      const t = ((await page.textContent("body").catch(() => "")) || "")
-        .toLowerCase()
-        .replace(/’/g, "'");
-      return ERRORS.some((p) => t.includes(p));
-    };
-
-    log("opening Stake casino home…");
-    log(
-      "if a Cloudflare 'are you human' check appears, solve it once (~45s per try)…",
-    );
-
-    let navReady = false;
-    for (let attempt = 1; attempt <= 4 && !navReady; attempt++) {
-      try {
-        if (attempt === 1) {
-          await page.goto(casino.startUrl, {
-            waitUntil: "domcontentloaded",
-            timeout: 45000,
-          });
-        } else {
-          log(`   reload & retry (${attempt}/4)…`);
-          await page.reload({ waitUntil: "domcontentloaded", timeout: 45000 });
-        }
-      } catch {
-        log(`   initial load timed out (${attempt}/4) — reloading…`);
-        continue;
-      }
-      const navUp = await page
-        .waitForSelector(NAV, { state: "visible", timeout: 45000 })
-        .then(() => true)
-        .catch(() => false);
-      if (await isBroken()) {
-        log(`   Stake error page ("something's gone wrong") — refreshing…`);
-        continue;
-      }
-      navReady = navUp;
-    }
-    if (!navReady)
-      log(
-        "nav bar still not found — Cloudflare/Stake error; wait a few minutes and rerun",
-      );
-
+  async fetch(log) {
     const all: Game[] = [];
-
-    for (const cat of CATEGORIES) {
-      const TILE = `[data-analytics^='${cat.grid}'] a.link`;
-      let tilesUp = false;
-      for (let attempt = 1; attempt <= 3 && !tilesUp; attempt++) {
-        log(
-          attempt === 1
-            ? `→ ${cat.key}: clicking tab…`
-            : `   ${cat.key}: recovering, retry ${attempt}/3…`,
-        );
-        await page
-          .click(`[data-analytics='${cat.tab}']`, { timeout: 10000 })
-          .catch(() => log(`   couldn't click ${cat.key} tab`));
-        tilesUp = await page
-          .waitForSelector(TILE, { state: "visible", timeout: 30000 })
-          .then(() => true)
-          .catch(() => false);
-        if (tilesUp) break;
-        if (await isBroken()) {
-          log(`   ${cat.key}: Stake error page — refreshing & recovering…`);
-          await page
-            .reload({ waitUntil: "domcontentloaded", timeout: 45000 })
-            .catch(() => {});
-          await page
-            .waitForSelector(NAV, { state: "visible", timeout: 45000 })
-            .catch(() => {});
-        } else {
-          log(`   no tiles appeared for ${cat.key}`);
-          break;
-        }
+    const raw: Record<string, GroupResponse> = {};
+    for (const grp of GROUPS) {
+      const data = await fetchGroup(grp.slug, grp.limit);
+      raw[grp.key] = data;
+      for (const { game } of data.groupGamesList) {
+        all.push({
+          name: game.name,
+          url: `https://stake.com/casino/games/${game.slug}`,
+          thumb: game.thumbnailUrl || undefined,
+          id: game.slug,
+          category: grp.key,
+        });
       }
-      await page
-        .waitForLoadState("networkidle", { timeout: 3000 })
-        .catch(() => {});
-
-      const games = await collect({
-        tile: TILE,
-        id: "img@id",
-        name: "img@alt",
-        url: "@href",
-        thumb: "img@src",
-      });
-      for (const g of games) {
-        g.name = g.name.replace(/\b\w/g, (c) => c.toUpperCase());
-        g.category = cat.key;
-      }
-      log(`   ${cat.key}: collected ${games.length} links`);
-      all.push(...games);
+      log(`${grp.key}: ${data.groupGamesList.length} games`);
     }
-
-    log(`total: ${all.length} links across ${CATEGORIES.length} categories`);
-    await snapshot(all, { category: "stake", capture: false });
+    log(`total: ${all.length} links across ${GROUPS.length} categories`);
+    return { games: all, raw: { fetchedAt: new Date().toISOString(), groups: raw } };
   },
 };
 export default casino;

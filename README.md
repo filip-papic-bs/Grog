@@ -47,7 +47,7 @@ game-art cards (using the captured thumbnails) to a **versioned** report.
   accumulate and can be compared over time. The web UI's **Reports** tab lists every version.
 - Needs `OPENROUTER_API_KEY` in `.env`.
 - Model: defaults to `google/gemini-2.5-flash-lite` (cheap + good slot knowledge; a run costs
-  well under a cent). Override with `GROG_AI_MODEL=...` (e.g. `meta-llama/llama-3.1-8b-instruct`
+  well under a cent). Override with `MODEL=...` (e.g. `meta-llama/llama-3.1-8b-instruct`
   is ~5× cheaper but weaker). `GROG_AI_WEB=1` appends `:online` so the model web-searches each
   game (more accurate, small extra cost).
 - **Originals** are only reported as *new since the previous snapshot* (a diff). The first run

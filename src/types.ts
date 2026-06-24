@@ -63,5 +63,12 @@ export interface Casino {
   startUrl: string;
   headless?: boolean;
   channel?: string;
-  flow(ctx: Ctx): Promise<Game[] | void>;
+  // Browser path: drive a real page. Used unless `fetch` is defined.
+  flow?(ctx: Ctx): Promise<Game[] | void>;
+  // Browserless path: hit the casino's API directly (no Playwright, no
+  // Cloudflare browser challenge). If present, the runner uses this and
+  // never launches a browser. Returns the games to snapshot, plus an optional
+  // `raw` payload (the untouched API response) dumped to raw-api.json so you
+  // can see everything the API returned, not just the mapped fields.
+  fetch?(log: (msg: string) => void): Promise<{ games: Game[]; raw?: unknown }>;
 }

@@ -46,7 +46,9 @@ async function listReports(): Promise<ReportMeta[]> {
       url: `/data/reports/${d.name}/report.html`,
     });
   }
-  return out.sort((a, b) => (a.stamp < b.stamp ? 1 : -1));
+  // Newest first by actual generation time — NOT by dir name, since names now
+  // carry prefixes ("trend_", legacy "stake_", bare stamps) that would interleave.
+  return out.sort((a, b) => (a.when < b.when ? 1 : -1));
 }
 
 const UI_DIR = path.join(ROOT, "ui");
