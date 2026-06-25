@@ -60,8 +60,9 @@ async function main() {
       }
     }
 
+    const runAll = positional.length === 0 || positional[0] === "all";
     let names = positional;
-    if (names.length === 0 || names[0] === "all") names = await listCasinos();
+    if (runAll) names = await listCasinos();
     for (const n of names) {
       try {
         await runCasino(n, { headless, profileDir, channel, proxyServer });
@@ -69,15 +70,19 @@ async function main() {
         console.log(`✖ ${n}: ${err instanceof Error ? err.message : err}`);
       }
     }
-    const p = await buildReport();
+    // Scope the report + AI trend to the casino(s) you actually ran; `run all`
+    // (or no name) keeps the full cross-casino view. Without this, running one
+    // casino still pooled every casino's latest snapshot (incl. stale ones).
+    const scope = runAll ? undefined : names;
+    const p = await buildReport(scope);
     console.log(`\n✔ Report: file://${p}`);
 
-    // Pipeline: once every casino is harvested, pool all their slots and
-    // generate ONE casino-agnostic AI trend report (skip with --no-ai).
+    // Pipeline: pool the run's slots and generate ONE AI trend report over the
+    // same scope (skip with --no-ai).
     if (flags["no-ai"] !== true) {
       try {
         const { runTrend } = await import("./trend.js");
-        const tp = await runTrend();
+        const tp = await runTrend(scope);
         console.log(`✔ Trend report: file://${tp}`);
       } catch (err) {
         console.log(`✖ analyze: ${err instanceof Error ? err.message : err}`);

@@ -32,13 +32,17 @@ function normName(name: string): string {
     .trim();
 }
 
-async function latestSnapshots(): Promise<Snapshot[]> {
+// `only` (casino keys, e.g. ["shuffle"]) scopes the trend pool to just those
+// casinos; omit/undefined = every casino's latest snapshot.
+async function latestSnapshots(only?: string[]): Promise<Snapshot[]> {
+  const want = only && only.length ? new Set(only) : null;
   const casinos = await readdir(SNAPSHOTS_DIR, { withFileTypes: true }).catch(
     () => [],
   );
   const out: Snapshot[] = [];
   for (const c of casinos) {
     if (!c.isDirectory()) continue;
+    if (want && !want.has(c.name)) continue;
     const dir = path.join(SNAPSHOTS_DIR, c.name);
     const runs = (await readdir(dir, { withFileTypes: true }).catch(() => []))
       .filter((d) => d.isDirectory())
@@ -790,9 +794,9 @@ function renderHtml(
 </div></body></html>`;
 }
 
-export async function runTrend(): Promise<string> {
+export async function runTrend(only?: string[]): Promise<string> {
   loadEnv();
-  const snaps = await latestSnapshots();
+  const snaps = await latestSnapshots(only);
   if (!snaps.length)
     throw new Error("no snapshots yet — run `grog run all` first");
   const slots = poolSlots(snaps);

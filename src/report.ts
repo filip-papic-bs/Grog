@@ -9,13 +9,17 @@ const esc = (s: string) =>
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!,
   );
 
-async function latestSnapshots(): Promise<Snapshot[]> {
+// `only` (casino keys, e.g. ["shuffle"]) scopes the report to just those
+// casinos; omit/undefined = every casino's latest snapshot.
+async function latestSnapshots(only?: string[]): Promise<Snapshot[]> {
+  const want = only && only.length ? new Set(only) : null;
   const casinos = await readdir(SNAPSHOTS_DIR, { withFileTypes: true }).catch(
     () => [],
   );
   const out: Snapshot[] = [];
   for (const c of casinos) {
     if (!c.isDirectory()) continue;
+    if (want && !want.has(c.name)) continue;
     const dir = path.join(SNAPSHOTS_DIR, c.name);
     const runs = (await readdir(dir, { withFileTypes: true }).catch(() => []))
       .filter((d) => d.isDirectory())
@@ -35,8 +39,8 @@ async function latestSnapshots(): Promise<Snapshot[]> {
   return out.sort((a, b) => a.casino.localeCompare(b.casino));
 }
 
-export async function buildReport(): Promise<string> {
-  const snaps = await latestSnapshots();
+export async function buildReport(only?: string[]): Promise<string> {
+  const snaps = await latestSnapshots(only);
   const totalGames = snaps.reduce((n, s) => n + s.games.length, 0);
   const totalShots = snaps.reduce(
     (n, s) => n + s.games.filter((g) => g.screenshot).length,
