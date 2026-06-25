@@ -1,6 +1,21 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import { esc } from "./analyze.js";
 import type { DashboardData } from "./dashboard.js";
 import { VOLATILITY_VOCAB } from "./trend.js";
+import { ROOT } from "./paths.js";
+
+// Brand assets from ui/ embedded as base64 data URIs so the page stays
+// self-contained (works opened as a file and when served). Read once at load.
+function dataUri(file: string): string | null {
+  try {
+    return "data:image/png;base64," + readFileSync(path.join(ROOT, "ui", file)).toString("base64");
+  } catch {
+    return null;
+  }
+}
+const LOGO_URI = dataUri("logo.png");
+const FAVICON_URI = dataUri("favicon.png");
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Pure renderer: DashboardData → one self-contained HTML page. All charts are
@@ -311,18 +326,18 @@ export function renderDashboardHtml(d: DashboardData): string {
 
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GROG — Slot Intelligence Dashboard</title>
+<title>GROG</title>
+${FAVICON_URI ? `<link rel="icon" type="image/png" href="${FAVICON_URI}"/>` : ""}
 <style>${CSS}</style></head>
 <body>
 <header class="top">
-  <div class="brand"><span class="logo">🎰</span><div><h1>GROG <span>Slot Intelligence</span></h1>
-  <div class="meta">${d.kpis.casinos} casinos · ${d.kpis.runs} snapshots · ${esc(d.kpis.dateFrom)} → ${esc(d.kpis.dateTo)} · generated ${esc(d.generatedAt.replace("T", " ").slice(0, 16))}</div></div></div>
+  <div class="brand">${LOGO_URI ? `<img class="logo" src="${LOGO_URI}" alt="GROG"/>` : `<span class="logo">🎰</span>`}<div>
+  <div class="meta">Snapshot ${esc(d.generatedAt.replace("T", " ").slice(0, 16))}</div></div></div>
   <button id="run-now" class="run-now" title="Scrape all casinos, run the AI review, and refresh — now"><span class="rn-ico">▶</span><span class="rn-txt">Run now</span></button>
 </header>
 ${kpis}
 <nav class="tabs">${TABS.map(([id, label], i) => `<button class="tab${i === 0 ? " active" : ""}" data-tab="${id}">${esc(label)}</button>`).join("")}</nav>
 <main>${TABS.map(([id, , html], i) => `<div class="panel${i === 0 ? " active" : ""}" id="panel-${id}">${html}</div>`).join("")}</main>
-<footer>Read-only daily view · built from <code>data/snapshots</code> + the report step's classifications · no AI runs here.</footer>
 <div id="modal" class="modal"><div class="modal-inner"><button class="modal-x" id="modal-x" title="Close (Esc)">✕</button><div id="modal-card" class="modal-card"></div></div></div>
 <script type="application/json" id="grog-data">${JSON.stringify(d).replace(/</g, "\\u003c")}</script>
 <script>${JS}</script>
@@ -337,6 +352,7 @@ a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
 code{background:#0e1422;padding:1px 5px;border-radius:4px;color:#9fb0c9;font-size:12px}
 .top{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;border-bottom:1px solid var(--bd)}
 .brand{display:flex;gap:14px;align-items:center}.logo{font-size:34px}
+img.logo{height:42px;width:auto;display:block}
 h1{margin:0;font-size:20px;font-weight:700;letter-spacing:.3px}h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}
 .meta{color:var(--mut);font-size:12px;margin-top:3px}
 .run-now{flex:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font:inherit;font-weight:700;font-size:13px;color:#06231f;background:linear-gradient(90deg,var(--ac),var(--ac2));border:none;border-radius:10px;padding:10px 16px;box-shadow:0 4px 16px rgba(94,234,212,.18);transition:transform .12s,box-shadow .12s,opacity .12s}
