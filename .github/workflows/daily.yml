@@ -5,9 +5,9 @@ name: daily snapshot
 # the runner, the data history (git), and the hosted dashboard (Pages).
 on:
   schedule:
-    # 05:17 UTC daily. Off-the-hour on purpose — GitHub's top-of-hour cron
+    # 08:00 UTC daily. Off-the-hour on purpose — GitHub's top-of-hour cron
     # slots are congested and get delayed/dropped. Exact timing doesn't matter.
-    - cron: "17 5 * * *"
+    - cron: "00 8 * * *"
   workflow_dispatch: {}
 
 # Single writer. Don't let a manual run overlap the scheduled one (both push).

@@ -333,7 +333,6 @@ ${FAVICON_URI ? `<link rel="icon" type="image/png" href="${FAVICON_URI}"/>` : ""
 <header class="top">
   <div class="brand">${LOGO_URI ? `<img class="logo" src="${LOGO_URI}" alt="GROG"/>` : `<span class="logo">🎰</span>`}<div>
   <div class="meta">Snapshot ${esc(d.generatedAt.replace("T", " ").slice(0, 16))}</div></div></div>
-  <button id="run-now" class="run-now" title="Scrape all casinos, run the AI review, and refresh — now"><span class="rn-ico">▶</span><span class="rn-txt">Run now</span></button>
 </header>
 ${kpis}
 <nav class="tabs">${TABS.map(([id, label], i) => `<button class="tab${i === 0 ? " active" : ""}" data-tab="${id}">${esc(label)}</button>`).join("")}</nav>
@@ -350,17 +349,11 @@ const CSS = `
 body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#16223a 0,transparent 60%),var(--bg);color:var(--tx);font:14px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
 a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
 code{background:#0e1422;padding:1px 5px;border-radius:4px;color:#9fb0c9;font-size:12px}
-.top{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;border-bottom:1px solid var(--bd)}
+.top{display:flex;align-items:center;justify-content:flex-start;padding:20px 28px;border-bottom:1px solid var(--bd)}
 .brand{display:flex;gap:14px;align-items:center}.logo{font-size:34px}
 img.logo{height:42px;width:auto;display:block}
 h1{margin:0;font-size:20px;font-weight:700;letter-spacing:.3px}h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}
 .meta{color:var(--mut);font-size:12px;margin-top:3px}
-.run-now{flex:none;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font:inherit;font-weight:700;font-size:13px;color:#06231f;background:linear-gradient(90deg,var(--ac),var(--ac2));border:none;border-radius:10px;padding:10px 16px;box-shadow:0 4px 16px rgba(94,234,212,.18);transition:transform .12s,box-shadow .12s,opacity .12s}
-.run-now:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(94,234,212,.28)}
-.run-now:active{transform:translateY(0)}
-.run-now[disabled]{cursor:default;color:var(--tx);background:#16203a;border:1px solid var(--bd);box-shadow:none}
-.run-now.busy .rn-ico{animation:spin 1s linear infinite;display:inline-block}
-@keyframes spin{to{transform:rotate(360deg)}}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding:20px 28px}
 .kpi{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--bd);border-radius:14px;padding:16px 18px}
 .kpi-n{font-size:30px;font-weight:800;background:linear-gradient(90deg,#fff,#b9c6df);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
@@ -460,30 +453,4 @@ document.querySelectorAll(".card > header").forEach(function(h){
 document.getElementById("modal-x").addEventListener("click",closeModal);
 modal.addEventListener("click",function(e){ if(e.target===modal) closeModal(); });
 document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeModal(); });
-
-// "Run now" — manually trigger the scrape + AI review, then reload when done.
-var runBtn=document.getElementById("run-now");
-var rnIco=runBtn?runBtn.querySelector(".rn-ico"):null;
-var rnTxt=runBtn?runBtn.querySelector(".rn-txt"):null;
-function rnSet(busy,ico,txt){ if(!runBtn)return; runBtn.disabled=busy; runBtn.classList.toggle("busy",busy); if(rnIco)rnIco.textContent=ico; if(rnTxt)rnTxt.textContent=txt; }
-function rnPoll(){
-  fetch("/run/status").then(function(r){return r.json();}).then(function(s){
-    if(s.running){ var secs=Math.round((s.elapsedMs||0)/1000); rnSet(true,"⟳","Running… "+secs+"s"); setTimeout(rnPoll,2000); }
-    else if(s.exitCode && s.exitCode!==0){ rnSet(false,"▶","Failed — retry"); }
-    else { rnSet(true,"✓","Done — reloading"); setTimeout(function(){location.reload();},700); }
-  }).catch(function(){ setTimeout(rnPoll,2500); });
-}
-if(runBtn){
-  runBtn.addEventListener("click",function(){
-    rnSet(true,"⟳","Starting…");
-    fetch("/run",{method:"POST"}).then(function(r){
-      if(r.status===409){ rnPoll(); return; }
-      if(!r.ok) throw new Error("HTTP "+r.status);
-      rnPoll();
-    }).catch(function(){
-      rnSet(false,"▶","Run now");
-      alert("Couldn't start a run. The Run button only works on the served dashboard — start it with: npm run serve");
-    });
-  });
-}
 `;
