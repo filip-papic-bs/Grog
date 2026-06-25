@@ -1,0 +1,83 @@
+name: daily snapshot
+
+# Daily competitor-casino scrape → commit snapshots back to the repo →
+# publish the rebuilt dashboard to GitHub Pages. Everything lives in GitHub:
+# the runner, the data history (git), and the hosted dashboard (Pages).
+on:
+  schedule:
+    # 05:17 UTC daily. Off-the-hour on purpose — GitHub's top-of-hour cron
+    # slots are congested and get delayed/dropped. Exact timing doesn't matter.
+    - cron: "17 5 * * *"
+  workflow_dispatch: {}
+
+# Single writer. Don't let a manual run overlap the scheduled one (both push).
+concurrency:
+  group: grog-daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # push committed snapshots
+  pages: write      # publish dashboard
+  id-token: write   # required by deploy-pages
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install deps (skip Playwright browser — all casinos are API/curl)
+        run: npm ci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+
+      - name: Log runner egress IP / region
+        # The one real risk: Cloudflare/geo-blocking of GitHub's datacenter IPs.
+        # The curl helper bypasses TLS fingerprinting, NOT IP reputation, and
+        # Rainbet is geo-aware. Watch this + the per-casino counts below to see
+        # if anything comes back blocked or wrong-region.
+        run: curl -s https://ipinfo.io/json || echo "(ipinfo unreachable)"
+
+      - name: Scrape all casinos + rebuild dashboard
+        # `run all` also runs the AI trend/classification step (needs the key);
+        # if the key is unset that step fails gracefully and the dashboard still
+        # builds from the classification cache.
+        run: npm run grog -- run all --no-open
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+      - name: Commit new snapshot to history
+        run: |
+          git config user.name  "grog-bot"
+          git config user.email "grog-bot@users.noreply.github.com"
+          git add data/snapshots data/classifications.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "data: daily snapshot $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Stage dashboard as the Pages site
+        run: |
+          mkdir -p site
+          cp data/dashboard.html site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: scrape
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

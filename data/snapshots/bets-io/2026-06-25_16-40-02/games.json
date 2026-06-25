@@ -1,0 +1,247 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-06-25T16:40:02.413Z",
+  "games": [
+    {
+      "name": "Fury of Anubis",
+      "url": "https://bets.io/casino/games/fury-of-anubis",
+      "id": "fury-of-anubis",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dusty Duel",
+      "url": "https://bets.io/casino/games/dusty-duel",
+      "id": "dusty-duel",
+      "category": "new-releases"
+    },
+    {
+      "name": "Aztec Tower",
+      "url": "https://bets.io/casino/games/aztec-tower-platipus",
+      "id": "aztec-tower-platipus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Book of Khonsu",
+      "url": "https://bets.io/casino/games/book-of-khonsu",
+      "id": "book-of-khonsu",
+      "category": "new-releases"
+    },
+    {
+      "name": "Slime Bonanza",
+      "url": "https://bets.io/casino/games/slime-bonanza",
+      "id": "slime-bonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Nitro Wilds",
+      "url": "https://bets.io/casino/games/nitro-wilds",
+      "id": "nitro-wilds",
+      "category": "new-releases"
+    },
+    {
+      "name": "Druid's Fortune",
+      "url": "https://bets.io/casino/games/druids-fortune",
+      "id": "druids-fortune",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zeus: Titan Fury",
+      "url": "https://bets.io/casino/games/zeus-titan-fury",
+      "id": "zeus-titan-fury",
+      "category": "new-releases"
+    },
+    {
+      "name": "Burning Coins 100",
+      "url": "https://bets.io/casino/games/burning-coins-100",
+      "id": "burning-coins-100",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hyper Coin: Hold to Win",
+      "url": "https://bets.io/casino/games/hyper-coin-hold-to-win",
+      "id": "hyper-coin-hold-to-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Better Barn House Bonanza",
+      "url": "https://bets.io/casino/games/better-barn-house-bonanza",
+      "id": "better-barn-house-bonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gemhalla Xtreme",
+      "url": "https://bets.io/casino/games/gemhalla-xtreme",
+      "id": "gemhalla-xtreme",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lobby",
+      "url": "https://bets.io/casino/games/lobby-onefivefive",
+      "id": "lobby-onefivefive",
+      "category": "new-releases"
+    },
+    {
+      "name": "Golden Lion: Wild Savanna",
+      "url": "https://bets.io/casino/games/golden-lion-wild-savanna",
+      "id": "golden-lion-wild-savanna",
+      "category": "new-releases"
+    },
+    {
+      "name": "Football 2026",
+      "url": "https://bets.io/casino/games/football-2026",
+      "id": "football-2026",
+      "category": "new-releases"
+    },
+    {
+      "name": "In and Out",
+      "url": "https://bets.io/casino/games/in-and-out",
+      "id": "in-and-out",
+      "category": "new-releases"
+    },
+    {
+      "name": "Nitro Nights",
+      "url": "https://bets.io/casino/games/nitro-nights",
+      "id": "nitro-nights",
+      "category": "new-releases"
+    },
+    {
+      "name": "Frenzy Clusters",
+      "url": "https://bets.io/casino/games/frenzy-clusters",
+      "id": "frenzy-clusters",
+      "category": "new-releases"
+    },
+    {
+      "name": "Multi Rush",
+      "url": "https://bets.io/casino/games/multi-rush",
+      "id": "multi-rush",
+      "category": "new-releases"
+    },
+    {
+      "name": "Raidmark",
+      "url": "https://bets.io/casino/games/raidmark",
+      "id": "raidmark",
+      "category": "new-releases"
+    },
+    {
+      "name": "Drunken Sailors",
+      "url": "https://bets.io/casino/games/drunken-sailors",
+      "id": "drunken-sailors",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus 1000",
+      "url": "https://bets.io/casino/games/gates-of-olympus-1000",
+      "id": "gates-of-olympus-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Coins of Zeus - Hold & Win",
+      "url": "https://bets.io/casino/games/coins-of-zeus-hold-win",
+      "id": "coins-of-zeus-hold-win",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Fruit Shop Megaways",
+      "url": "https://bets.io/casino/games/fruit-shop-megaways",
+      "id": "fruit-shop-megaways",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bucks Saloon",
+      "url": "https://bets.io/casino/games/big-bucks-saloon",
+      "id": "big-bucks-saloon",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Money Train 3",
+      "url": "https://bets.io/casino/games/money-train-3",
+      "id": "money-train-3",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zeus vs Hades – Gods of War 250",
+      "url": "https://bets.io/casino/games/zeus-vs-hades-gods-of-war-250",
+      "id": "zeus-vs-hades-gods-of-war-250",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Koi Princess",
+      "url": "https://bets.io/casino/games/koi-princess",
+      "id": "koi-princess",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Whaleverse Wilds",
+      "url": "https://bets.io/casino/games/whaleverse-wilds",
+      "id": "whaleverse-wilds",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush Super Scatter",
+      "url": "https://bets.io/casino/games/sugar-rush-super-scatter",
+      "id": "sugar-rush-super-scatter",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Treasures of Aztec",
+      "url": "https://bets.io/casino/games/treasures-of-aztec",
+      "id": "treasures-of-aztec",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Big Dog House",
+      "url": "https://bets.io/casino/games/the-big-dog-house",
+      "id": "the-big-dog-house",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Runemakers DoubleMax",
+      "url": "https://bets.io/casino/games/the-runemakers-doublemax",
+      "id": "the-runemakers-doublemax",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wanted Dead or a Wild",
+      "url": "https://bets.io/casino/games/wanted-dead-or-a-wild",
+      "id": "wanted-dead-or-a-wild",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lucky Little Devil",
+      "url": "https://bets.io/casino/games/lucky-little-devil-redtiger",
+      "id": "lucky-little-devil-redtiger",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Super Gummy Strike",
+      "url": "https://bets.io/casino/games/super-gummy-strike",
+      "id": "super-gummy-strike",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus Roulette",
+      "url": "https://bets.io/casino/games/gates-of-olympus-roulette",
+      "id": "gates-of-olympus-roulette",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Cash x9990",
+      "url": "https://bets.io/casino/games/wild-cash-x9990",
+      "id": "wild-cash-x9990",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Micropirates & the Kraken of the Caribbean",
+      "url": "https://bets.io/casino/games/micropirates-the-kraken-of-the-caribbean",
+      "id": "micropirates-the-kraken-of-the-caribbean",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wins of Fortune",
+      "url": "https://bets.io/casino/games/wins-of-fortune",
+      "id": "wins-of-fortune",
+      "category": "trending-slots"
+    }
+  ]
+}

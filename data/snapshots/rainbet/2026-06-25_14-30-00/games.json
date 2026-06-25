@@ -1,0 +1,371 @@
+{
+  "casino": "Rainbet",
+  "category": "rainbet",
+  "capturedAt": "2026-06-25T14:30:00.898Z",
+  "games": [
+    {
+      "name": "Slime Bonanza",
+      "url": "https://rainbet.com/casino/slots/belatra-slime-bonanza",
+      "thumb": "https://thumbs.alea.com/326e42b3_belatra_slime-bonanza_400x400.webp",
+      "id": "belatra-slime-bonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Death Becomes You",
+      "url": "https://rainbet.com/casino/slots/hacksaw-death-becomes-you",
+      "thumb": "https://cdn.a8r.games/i/s3/hacksaw/DeathBecomesYou94.png",
+      "id": "hacksaw-death-becomes-you",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fury of Anubis",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-fury-of-anubis",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20wraanu/vs20wraanu_200x200_NB.png",
+      "id": "pragmatic-play-fury-of-anubis",
+      "category": "new-releases"
+    },
+    {
+      "name": "Smash Factory",
+      "url": "https://rainbet.com/casino/slots/playnetic-smash-factory",
+      "thumb": "https://cdn.a8r.games/i/s3/playnetic/SmashFactory.png",
+      "id": "playnetic-smash-factory",
+      "category": "new-releases"
+    },
+    {
+      "name": "1 Reel - Wrath Of Hephaestus",
+      "url": "https://rainbet.com/casino/slots/spinomenal-1-reel-wrath-of-hephaestus",
+      "thumb": "https://cdn.a8r.games/i/s3/spnmnl/1ReelWrathOfHephaestus.png",
+      "id": "spinomenal-1-reel-wrath-of-hephaestus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Clusterf**k",
+      "url": "https://rainbet.com/casino/slots/truelab-clusterfk",
+      "thumb": "https://cdn.a8r.games/i/s3/truelab/Clusteruck89.png",
+      "id": "truelab-clusterfk",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Crime File",
+      "url": "https://rainbet.com/casino/slots/nownow-the-crime-file",
+      "thumb": "https://cdn.a8r.games/i/s3/hacksaw/TheCrimeFile.png",
+      "id": "nownow-the-crime-file",
+      "category": "new-releases"
+    },
+    {
+      "name": "Nitro Nights",
+      "url": "https://rainbet.com/casino/slots/hacksaw-nitro-nights",
+      "thumb": "https://cdn.a8r.games/i/s3/hacksaw/NitroNights.png",
+      "id": "hacksaw-nitro-nights",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dyna Mule",
+      "url": "https://rainbet.com/casino/slots/avatarux-dyna-mule",
+      "thumb": "https://cdn.a8r.games/i/s3/avatarux/DynaMule.png",
+      "id": "avatarux-dyna-mule",
+      "category": "new-releases"
+    },
+    {
+      "name": "Nitro Storm",
+      "url": "https://rainbet.com/casino/slots/amigo-gaming-nitro-storm",
+      "thumb": "https://thumbs.alea.com/3c47650e_amigo-gaming_nitro-storm_400x400.webp",
+      "id": "amigo-gaming-nitro-storm",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Majestic Drums",
+      "url": "https://rainbet.com/casino/slots/spinomenal-3-majestic-drums",
+      "thumb": "https://cdn.a8r.games/i/s3/spnmnl/3MajesticDrums.png",
+      "id": "spinomenal-3-majestic-drums",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zombie Blasters",
+      "url": "https://rainbet.com/casino/slots/pgsoft-zombie-blasters",
+      "thumb": "https://cdn.a8r.games/i/s3/pgsoft/ZombieBlasters.png",
+      "id": "pgsoft-zombie-blasters",
+      "category": "new-releases"
+    },
+    {
+      "name": "Better Barn House Bonanza",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-better-barn-house-bonanza",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vswaysbibebarn/vswaysbibebarn_200x200_NB.png",
+      "id": "pragmatic-play-better-barn-house-bonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Beak's Gold",
+      "url": "https://rainbet.com/casino/slots/penguin-king-beaks-gold",
+      "thumb": "https://cdn.a8r.games/i/s3/penguinking/BeaksGold.png",
+      "id": "penguin-king-beaks-gold",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zeus: Titan Fury",
+      "url": "https://rainbet.com/casino/slots/mascot-gaming-zeus-titan-fury",
+      "thumb": "https://cdn.a8r.games/i/s3/mascot/zeus_titan_fury.png",
+      "id": "mascot-gaming-zeus-titan-fury",
+      "category": "new-releases"
+    },
+    {
+      "name": "Farmageddon",
+      "url": "https://rainbet.com/casino/slots/playnetic-farmageddon",
+      "thumb": "https://cdn.a8r.games/i/s3/playnetic/Farmageddon.png",
+      "id": "playnetic-farmageddon",
+      "category": "new-releases"
+    },
+    {
+      "name": "Catrix",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-catrix",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20catrix50k/vs20catrix50k_200x200_NB.png",
+      "id": "pragmatic-play-catrix",
+      "category": "new-releases"
+    },
+    {
+      "name": "Druid's Fortune",
+      "url": "https://rainbet.com/casino/slots/endorphina-druids-fortune",
+      "thumb": "https://cdn.a8r.games/i/s3/endorphina/endorphina2_DruidsFortune.png",
+      "id": "endorphina-druids-fortune",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dandy Diamonds",
+      "url": "https://rainbet.com/casino/slots/hacksaw-dandy-diamonds",
+      "thumb": "https://cdn.a8r.games/i/s3/hacksaw/DandyDiamonds.png",
+      "id": "hacksaw-dandy-diamonds",
+      "category": "new-releases"
+    },
+    {
+      "name": "Queen Of The Tribes",
+      "url": "https://rainbet.com/casino/slots/spinomenal-queen-of-the-tribes",
+      "thumb": "https://cdn.a8r.games/i/s3/spnmnl/QueenOfTheTribes.png",
+      "id": "spinomenal-queen-of-the-tribes",
+      "category": "new-releases"
+    },
+    {
+      "name": "Rainbet Aviamasters",
+      "url": "https://rainbet.com/casino/slots/bgaming-rainbet-aviamasters",
+      "thumb": "https://usercontent.cc/i/s3/softswiss/RainbetAviamasters.png",
+      "id": "bgaming-rainbet-aviamasters",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza 1000",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-sweet-bonanza-1000",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20fruitswx/vs20fruitswx_200x200_NB.png",
+      "id": "pragmatic-play-sweet-bonanza-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus Super Scatter",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-gates-of-olympus-super-scatter",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20olympgold/vs20olympgold_200x200_NB.png",
+      "id": "pragmatic-play-gates-of-olympus-super-scatter",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Bandit",
+      "url": "https://rainbet.com/casino/slots/hacksaw-le-bandit",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/LeBandit.png",
+      "id": "hacksaw-le-bandit",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wanted Dead or a Wild",
+      "url": "https://rainbet.com/casino/slots/hacksaw-wanted-dead-or-a-wild",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/WantedDeadoraWild.png",
+      "id": "hacksaw-wanted-dead-or-a-wild",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush 1000",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-sugar-rush-1000",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20sugarrushx/vs20sugarrushx_200x200_NB.png",
+      "id": "pragmatic-play-sugar-rush-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Rainbet Rush 1000",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-rainbet-rush-1000",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20rbetrushx/vs20rbetrushx_200x200_NB.png",
+      "id": "pragmatic-play-rainbet-rush-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus 1000",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-gates-of-olympus-1000",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20olympx/vs20olympx_200x200_NB.png",
+      "id": "pragmatic-play-gates-of-olympus-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Pharaoh",
+      "url": "https://rainbet.com/casino/slots/hacksaw-le-pharaoh",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/LePharaoh96.png",
+      "id": "hacksaw-le-pharaoh",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Duel at Dawn",
+      "url": "https://rainbet.com/casino/slots/hacksaw-duel-at-dawn",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/DuelatDawn.png",
+      "id": "hacksaw-duel-at-dawn",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Rush Bonanza",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-sweet-rush-bonanza",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20swrbon/vs20swrbon_200x200_NB.png",
+      "id": "pragmatic-play-sweet-rush-bonanza",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Fisherman",
+      "url": "https://rainbet.com/casino/slots/hacksaw-le-fisherman",
+      "thumb": "https://cdn.a8r.games/i/s3/hacksaw/LeFisherman.png",
+      "id": "hacksaw-le-fisherman",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le King",
+      "url": "https://rainbet.com/casino/slots/hacksaw-le-king",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/LeKing.png",
+      "id": "hacksaw-le-king",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Rainbet Spinman",
+      "url": "https://rainbet.com/casino/slots/hacksaw-rainbet-spinman",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/RainbetSpinman.png",
+      "id": "hacksaw-rainbet-spinman",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza Super Scatter",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-sweet-bonanza-super-scatter",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20swbonsup/vs20swbonsup_200x200_NB.png",
+      "id": "pragmatic-play-sweet-bonanza-super-scatter",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Cowboy",
+      "url": "https://rainbet.com/casino/slots/hacksaw-le-cowboy",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/LeCowboy.png",
+      "id": "hacksaw-le-cowboy",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Fist of Destruction",
+      "url": "https://rainbet.com/casino/slots/hacksaw-fist-of-destruction",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/FistofDestruction96.png",
+      "id": "hacksaw-fist-of-destruction",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bass Bonanza 1000",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-big-bass-bonanza-1000",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs10bbbnz1000/vs10bbbnz1000_200x200_NB.png",
+      "id": "pragmatic-play-big-bass-bonanza-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "SixSixSix",
+      "url": "https://rainbet.com/casino/slots/hacksaw-sixsixsix",
+      "thumb": "https://usercontent.cc/i/s3/hacksaw/SixSixSix96.png",
+      "id": "hacksaw-sixsixsix",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush Super Scatter",
+      "url": "https://rainbet.com/casino/slots/pragmatic-play-sugar-rush-super-scatter",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20sugrushss/vs20sugrushss_200x200_NB.png",
+      "id": "pragmatic-play-sugar-rush-super-scatter",
+      "category": "trending-slots"
+    },
+    {
+      "name": "War",
+      "url": "https://rainbet.com/casino/originals/war",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/war.png",
+      "id": "war",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://rainbet.com/casino/originals/hilo",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/hilo.png",
+      "id": "hilo",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Chicken Cross",
+      "url": "https://rainbet.com/casino/originals/chicken-cross",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/chicken-cross.png",
+      "id": "chicken-cross",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Tower",
+      "url": "https://rainbet.com/casino/originals/tower",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/tower.png",
+      "id": "tower",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Rock Paper Scissors",
+      "url": "https://rainbet.com/casino/originals/rock-paper-scissors",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/rock-paper-scissors.png",
+      "id": "rock-paper-scissors",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://rainbet.com/casino/originals/wheel",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/wheel.png",
+      "id": "wheel",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://rainbet.com/casino/originals/limbo",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/limbo.png",
+      "id": "limbo",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://rainbet.com/casino/originals/blackjack",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/blackjack.png",
+      "id": "blackjack",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://rainbet.com/casino/originals/keno",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/keno.png",
+      "id": "keno",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://rainbet.com/casino/originals/mines-game",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/mines.png",
+      "id": "mines-game",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://rainbet.com/casino/originals/plinko",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/plinko.png",
+      "id": "plinko",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://rainbet.com/casino/originals/dice",
+      "thumb": "https://assets.rbgcdn.com/223k2P3/gb-lg/originals/dice.png",
+      "id": "dice",
+      "category": "rainbet-originals"
+    }
+  ]
+}

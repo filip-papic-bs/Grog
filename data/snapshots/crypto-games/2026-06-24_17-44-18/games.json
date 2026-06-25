@@ -1,0 +1,37 @@
+{
+  "casino": "Crypto-Games",
+  "category": "crypto-games",
+  "capturedAt": "2026-06-24T17:44:18.692Z",
+  "games": [
+    {
+      "name": "Speed Crash",
+      "url": "https://crypto-games.io/en/game/speed-crash",
+      "id": "speed-crash",
+      "category": "originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://crypto-games.io/en/game/dice",
+      "id": "dice",
+      "category": "originals"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://crypto-games.io/en/game/baccarat-1",
+      "id": "baccarat-1",
+      "category": "originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://crypto-games.io/en/game/hi-lo",
+      "id": "hi-lo",
+      "category": "originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://crypto-games.io/en/game/plinko",
+      "id": "plinko",
+      "category": "originals"
+    }
+  ]
+}

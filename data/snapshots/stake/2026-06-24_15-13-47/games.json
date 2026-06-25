@@ -1,0 +1,504 @@
+{
+  "casino": "Stake",
+  "category": "stake",
+  "capturedAt": "2026-06-24T15:13:47.140Z",
+  "games": [
+    {
+      "name": "Sugar Twist 1000 Enhanced RTP",
+      "url": "https://stake.com/casino/games/pragmatic-play-sugar-twist-1000",
+      "thumb": "https://mediumrare.imgix.net/2782fa43a134b33c6c44f35edaa6850ef5cf9899a8a2efa9a2450ba5d30f5610",
+      "id": "pragmatic-play-sugar-twist-1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Secret Order",
+      "url": "https://stake.com/casino/games/hacksaw-secret-order",
+      "thumb": "https://mediumrare.imgix.net/b781ad8980c446253956283240e36f93daad0397a3c61ba58c0845711582cf24",
+      "id": "hacksaw-secret-order",
+      "category": "new-releases"
+    },
+    {
+      "name": "Soul Catcher",
+      "url": "https://stake.com/casino/games/knucklehead-soul-catcher",
+      "thumb": "https://mediumrare.imgix.net/e156887cee30a9f030c079292a1162bd78bf760597466957d327bd076baddc95",
+      "id": "knucklehead-soul-catcher",
+      "category": "new-releases"
+    },
+    {
+      "name": "Soul Rush",
+      "url": "https://stake.com/casino/games/paperclip-soul-rush",
+      "thumb": "https://mediumrare.imgix.net/ed5b9c7151eb9c8f263184b2e3c241b5458f91fae3bed0ed72c2876ac2019b8d",
+      "id": "paperclip-soul-rush",
+      "category": "new-releases"
+    },
+    {
+      "name": "Canyon Gold Bonanza",
+      "url": "https://stake.com/casino/games/titan-gaming-canyon-gold-bonanza",
+      "thumb": "https://mediumrare.imgix.net/437f3ca731fee792b78142c62fa4d1a6b826e4bf0f80bd60680e0c2363b1f9ae",
+      "id": "titan-gaming-canyon-gold-bonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Battle Sharks",
+      "url": "https://stake.com/casino/games/pocket-battle-sharks",
+      "thumb": "https://mediumrare.imgix.net/83deaa13ee5f050f92cdc6be587f15e18a48a4d3e110b3a0d08672cb556c1fd5",
+      "id": "pocket-battle-sharks",
+      "category": "new-releases"
+    },
+    {
+      "name": "Relic Doubles",
+      "url": "https://stake.com/casino/games/uppercut-relic-doubles",
+      "thumb": "https://mediumrare.imgix.net/3842eae9480d037fe764b0989c1168c53ee0322f95f5ce6d25312f575d861c9d",
+      "id": "uppercut-relic-doubles",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bounty Stacks",
+      "url": "https://stake.com/casino/games/phantom-bounty-stacks",
+      "thumb": "https://mediumrare.imgix.net/22431305258b4acbc70f9b11f8058e0098f4f6c1b39ce55d882a58ce20b9cd6b",
+      "id": "phantom-bounty-stacks",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sushi Train",
+      "url": "https://stake.com/casino/games/mountolympus-sushi-train",
+      "thumb": "https://mediumrare.imgix.net/d9307edd411fbc493ef1505d80dd6bf4bd6b79a5b000c1a360b5fba6274acf2b",
+      "id": "mountolympus-sushi-train",
+      "category": "new-releases"
+    },
+    {
+      "name": "Waylanders Cup",
+      "url": "https://stake.com/casino/games/valkyrie-waylanders-cup",
+      "thumb": "https://mediumrare.imgix.net/c4c9a99a9d7fede23456442cae13cf40218a74766f8e91499e1d4f1a6dc7f707",
+      "id": "valkyrie-waylanders-cup",
+      "category": "new-releases"
+    },
+    {
+      "name": "Penguin Slide",
+      "url": "https://stake.com/casino/games/easygames-penguin-slide",
+      "thumb": "https://mediumrare.imgix.net/9aec15014f3c0da0e903f38b37b4bf3022bcdd5271d6f9e3b7b6e149da557420",
+      "id": "easygames-penguin-slide",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mahjong Wins Triple Pot",
+      "url": "https://stake.com/casino/games/pragmatic-play-mahjong-wins-triple-pot",
+      "thumb": "https://mediumrare.imgix.net/8500df915b278b4e1745aafc6cbe71d892a78a2d632be224225684b01bef371a",
+      "id": "pragmatic-play-mahjong-wins-triple-pot",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dandy Diamonds",
+      "url": "https://stake.com/casino/games/hacksaw-dandy-diamonds",
+      "thumb": "https://mediumrare.imgix.net/a060bae1611412ddd56be7318465687af901a5558959aa55f069d018e4f45bb7",
+      "id": "hacksaw-dandy-diamonds",
+      "category": "new-releases"
+    },
+    {
+      "name": "Trap Tower",
+      "url": "https://stake.com/casino/games/shadylady-trap-tower",
+      "thumb": "https://mediumrare.imgix.net/01dbbd45f6816ce7fce25eb084cf48cd58df7b64ec8d44403d7e02aa0723e600",
+      "id": "shadylady-trap-tower",
+      "category": "new-releases"
+    },
+    {
+      "name": "Red Strike",
+      "url": "https://stake.com/casino/games/valkyrie-red-strike",
+      "thumb": "https://mediumrare.imgix.net/11e9b11bad082f97dd6f3dec439bb595a18a63266a27fa7566ebf4045e2fee7c",
+      "id": "valkyrie-red-strike",
+      "category": "new-releases"
+    },
+    {
+      "name": "Golazo",
+      "url": "https://stake.com/casino/games/madlabgaming-golazo",
+      "thumb": "https://mediumrare.imgix.net/9268b5f805ebe7dc6d1f35c11d08c8c9890fd67d1c3a618485fbfc58df653879",
+      "id": "madlabgaming-golazo",
+      "category": "new-releases"
+    },
+    {
+      "name": "Rage Quit",
+      "url": "https://stake.com/casino/games/metagaming-rage-quit",
+      "thumb": "https://mediumrare.imgix.net/abe13751a807d22025a64e7af7eff072c2c3b4ab9419de438f5bf5ee486470c3",
+      "id": "metagaming-rage-quit",
+      "category": "new-releases"
+    },
+    {
+      "name": "Graffiti Ways",
+      "url": "https://stake.com/casino/games/colorfulplay-graffiti-ways",
+      "thumb": "https://mediumrare.imgix.net/2f68f10cf96998c141fdcd58db5e180419d0b11d7ea266b18d182ba2517026e8",
+      "id": "colorfulplay-graffiti-ways",
+      "category": "new-releases"
+    },
+    {
+      "name": "Crack Pack",
+      "url": "https://stake.com/casino/games/taplab-crack-pack",
+      "thumb": "https://mediumrare.imgix.net/2b2c1fdd387637f1060b38d680100483ad7b2044b95d6b819c78fbccaea955eb",
+      "id": "taplab-crack-pack",
+      "category": "new-releases"
+    },
+    {
+      "name": "Spartan Stacks",
+      "url": "https://stake.com/casino/games/creativecity-spartan-stacks",
+      "thumb": "https://mediumrare.imgix.net/d5a912c6f1396c44fa27f65bbd84d42314e0a2d4db6a927110a221c4aa2f0c14",
+      "id": "creativecity-spartan-stacks",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gates of Olympus 1000",
+      "url": "https://stake.com/casino/games/pragmatic-play-gates-of-olympus-1000",
+      "thumb": "https://mediumrare.imgix.net/fdf333e96a5e21555bbb4e9e04a3ee4e1986c9cca9aa75141597041cc8334d23",
+      "id": "pragmatic-play-gates-of-olympus-1000",
+      "category": "slots"
+    },
+    {
+      "name": "Le Catcher",
+      "url": "https://stake.com/casino/games/hacksaw-le-catcher",
+      "thumb": "https://mediumrare.imgix.net/604e3c43ad800b29409cdab7a9914f81aa84bdb2e05e04c3cf8f797d8dce2cc9",
+      "id": "hacksaw-le-catcher",
+      "category": "slots"
+    },
+    {
+      "name": "Sweet Bonanza 1000",
+      "url": "https://stake.com/casino/games/pragmatic-play-sweet-bonanza-1000",
+      "thumb": "https://mediumrare.imgix.net/73754d4bf421b78fbd3895bbc7890d379797588cb699d6cbe47f3656aa93613b",
+      "id": "pragmatic-play-sweet-bonanza-1000",
+      "category": "slots"
+    },
+    {
+      "name": "Wanted Dead or a Wild",
+      "url": "https://stake.com/casino/games/hacksaw-wanted-dead-or-a-wild",
+      "thumb": "https://mediumrare.imgix.net/9ff267150fab30e5f0cff7f09456fa2e5e966015c7fe65969104f4c4c442a746",
+      "id": "hacksaw-wanted-dead-or-a-wild",
+      "category": "slots"
+    },
+    {
+      "name": "Dragonspire Frostfall",
+      "url": "https://stake.com/casino/games/paperclip-dragonspire-frostfall",
+      "thumb": "https://mediumrare.imgix.net/729642d5f4d120811b3ad9c8d0d62709c67085b0427e6b18160afd5eb6c7dcf0",
+      "id": "paperclip-dragonspire-frostfall",
+      "category": "slots"
+    },
+    {
+      "name": "Fish",
+      "url": "https://stake.com/casino/games/twist-gaming-fish",
+      "thumb": "https://mediumrare.imgix.net/1d6c20456551f27d3960781fad95eff9a7ece846f9308b584d9eda6020e467d0",
+      "id": "twist-gaming-fish",
+      "category": "slots"
+    },
+    {
+      "name": "Duck Hunters",
+      "url": "https://stake.com/casino/games/nolimit-duck-hunters",
+      "thumb": "https://mediumrare.imgix.net/34ee5a63f09ad96cd4d92ba752de18ca210df5439723203c26f385bed7ee97f1",
+      "id": "nolimit-duck-hunters",
+      "category": "slots"
+    },
+    {
+      "name": "Sugar Rush 1000",
+      "url": "https://stake.com/casino/games/pragmatic-play-sugar-rush-1000",
+      "thumb": "https://mediumrare.imgix.net/14d5410c6cf4c303d291262a10e949dc14b0ac2eca2a7a730b0401919c01358e",
+      "id": "pragmatic-play-sugar-rush-1000",
+      "category": "slots"
+    },
+    {
+      "name": "Gates of Olympus Super Scatter",
+      "url": "https://stake.com/casino/games/pragmatic-play-gates-of-olympus-super-scatter",
+      "thumb": "https://mediumrare.imgix.net/73318f9e220e1637c4b11338d10f377cd997d0232636f5f5a1940167ad0451cd",
+      "id": "pragmatic-play-gates-of-olympus-super-scatter",
+      "category": "slots"
+    },
+    {
+      "name": "Boom",
+      "url": "https://stake.com/casino/games/twist-gaming-boom",
+      "thumb": "https://mediumrare.imgix.net/91bca293f6eeb6d467bb3e7e8fad92e0faa04e43c2e062584303d01980ab8cce",
+      "id": "twist-gaming-boom",
+      "category": "slots"
+    },
+    {
+      "name": "Le Rapper",
+      "url": "https://stake.com/casino/games/hacksaw-le-rapper",
+      "thumb": "https://mediumrare.imgix.net/de5fa4623b55122f86f474cf82d7fa4c8d05229ffd7c1b6c4d32ba3a18cf629c",
+      "id": "hacksaw-le-rapper",
+      "category": "slots"
+    },
+    {
+      "name": "Waylanders Forge",
+      "url": "https://stake.com/casino/games/valkyrie-waylanders-forge",
+      "thumb": "https://mediumrare.imgix.net/7bee41634019f0eb07ba2b55388e79e3a0e0861047450b34d7075602f70520bf",
+      "id": "valkyrie-waylanders-forge",
+      "category": "slots"
+    },
+    {
+      "name": "Buffaloads",
+      "url": "https://stake.com/casino/games/massive-buffaloads",
+      "thumb": "https://mediumrare.imgix.net/56e0a44ecfca61e6e45a1d7de8086eeddc94b5f5d5b676e5fef2742e18216e48",
+      "id": "massive-buffaloads",
+      "category": "slots"
+    },
+    {
+      "name": "Bank Basher",
+      "url": "https://stake.com/casino/games/twist-gaming-bank-basher",
+      "thumb": "https://mediumrare.imgix.net/18d087f0b3258481f70b05c1fd2f38df84139009f124b7d3ffffa5e1013e3e28",
+      "id": "twist-gaming-bank-basher",
+      "category": "slots"
+    },
+    {
+      "name": "Duel at Dawn",
+      "url": "https://stake.com/casino/games/hacksaw-duel-at-dawn",
+      "thumb": "https://mediumrare.imgix.net/bdff3ebf4d04f586ecab90203923fa65b39626ef03359106209089e0c8b1d0d3",
+      "id": "hacksaw-duel-at-dawn",
+      "category": "slots"
+    },
+    {
+      "name": "Gold Portals Enhanced RTP",
+      "url": "https://stake.com/casino/games/pragmatic-play-gold-portals",
+      "thumb": "https://mediumrare.imgix.net/e31aa1f3b9b1b600fe1642ae70a61578146842d6bde4ee5b9fa0998ee1e32985",
+      "id": "pragmatic-play-gold-portals",
+      "category": "slots"
+    },
+    {
+      "name": "Fist of Destruction",
+      "url": "https://stake.com/casino/games/hacksaw-fist-of-destruction",
+      "thumb": "https://mediumrare.imgix.net/c123ef1cf5a97e2c94cdbd6db80c47c35afa5af9837f1416eb25ac10dd6c8f50",
+      "id": "hacksaw-fist-of-destruction",
+      "category": "slots"
+    },
+    {
+      "name": "Elemental Ways",
+      "url": "https://stake.com/casino/games/twist-gaming-elemental-ways",
+      "thumb": "https://mediumrare.imgix.net/c0e8e1d35af97ad46d89f60d13b663763e67aecbb27baa5dd4bf0cc82cf60263",
+      "id": "twist-gaming-elemental-ways",
+      "category": "slots"
+    },
+    {
+      "name": "Big Bass Rock and Roll Enhanced RTP",
+      "url": "https://stake.com/casino/games/pragmatic-play-big-bass-rock-and-roll",
+      "thumb": "https://mediumrare.imgix.net/49950a8148c358e88455c78d8dd1abfbeb8d2dd31a7b7971f5515ae4091b6429",
+      "id": "pragmatic-play-big-bass-rock-and-roll",
+      "category": "slots"
+    },
+    {
+      "name": "Candy Dash",
+      "url": "https://stake.com/casino/games/paperclip-candy-rush",
+      "thumb": "https://mediumrare.imgix.net/d7321fd09a31d3b2bfad22b30d48924f1312401aeb96ebd462266a96f2243ca5",
+      "id": "paperclip-candy-rush",
+      "category": "slots"
+    },
+    {
+      "name": "dice",
+      "url": "https://stake.com/casino/games/dice",
+      "thumb": "https://mediumrare.imgix.net/edfa399c2e46da7e0593a0e543ba66b129e306bdc6c77a8632c320fec8a04bed",
+      "id": "dice",
+      "category": "stake-originals"
+    },
+    {
+      "name": "mines",
+      "url": "https://stake.com/casino/games/mines",
+      "thumb": "https://mediumrare.imgix.net/15a51a2ae2895872ae2b600fa6fe8d7f8d32c9814766b66ddea2b288d04ba89c",
+      "id": "mines",
+      "category": "stake-originals"
+    },
+    {
+      "name": "plinko",
+      "url": "https://stake.com/casino/games/plinko",
+      "thumb": "https://mediumrare.imgix.net/8c1768b783a43931a4ebc8784ce64085e39139d262e6bb50da242b9f3fda70da",
+      "id": "plinko",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Chicken",
+      "url": "https://stake.com/casino/games/chicken",
+      "thumb": "https://mediumrare.imgix.net/a91aa468f459264d55fb9e2706c3684782cc5ecf716892c187122c611acf2773",
+      "id": "chicken",
+      "category": "stake-originals"
+    },
+    {
+      "name": "crash",
+      "url": "https://stake.com/casino/games/crash",
+      "thumb": "https://mediumrare.imgix.net/fbf4038ed2862c3503a5d39263d1321e8d9361d730eacfbb2403fd1e5894525c",
+      "id": "crash",
+      "category": "stake-originals"
+    },
+    {
+      "name": "keno",
+      "url": "https://stake.com/casino/games/keno",
+      "thumb": "https://mediumrare.imgix.net/102cf3d7c840018b939cd787bf013e080b996d80e604f3008f21dddf1f1aa201",
+      "id": "keno",
+      "category": "stake-originals"
+    },
+    {
+      "name": "limbo",
+      "url": "https://stake.com/casino/games/limbo",
+      "thumb": "https://mediumrare.imgix.net/11caec5df20098884ae9071848e1951b8b34e5ec84a7241f2e7c5afd4b323dfd",
+      "id": "limbo",
+      "category": "stake-originals"
+    },
+    {
+      "name": "hilo",
+      "url": "https://stake.com/casino/games/hilo",
+      "thumb": "https://mediumrare.imgix.net/fced988e1628e3f05479dc6c9ee92bea34e003f6ad7eebb25b8e2fc7f46b3042",
+      "id": "hilo",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Moles",
+      "url": "https://stake.com/casino/games/moles",
+      "thumb": "https://mediumrare.imgix.net/5e6f7bb02df67a02a9182aab05d0976a9abbac7f45997975eed765332a8b7d73",
+      "id": "moles",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Packs",
+      "url": "https://stake.com/casino/games/packs",
+      "thumb": "https://mediumrare.imgix.net/f403357fdc65f2f81f6da97ed79b39a16804e5f583cd36c536c1ff37c6a7fb39",
+      "id": "packs",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Pump",
+      "url": "https://stake.com/casino/games/pump",
+      "thumb": "https://mediumrare.imgix.net/1b45a8e293264dab4677f8187e8d71feeb56adabc02510a59d6b4e780c1e5b4c",
+      "id": "pump",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Darts",
+      "url": "https://stake.com/casino/games/darts",
+      "thumb": "https://mediumrare.imgix.net/9cd0814e4ef63607a99044eab83cc981e1df7398032041d8c8505f33796d50d1",
+      "id": "darts",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Drill",
+      "url": "https://stake.com/casino/games/drill",
+      "thumb": "https://mediumrare.imgix.net/c49f492d7f3dc9dbcf2e3f59b88952e8d988ded3ed41a6fd010f16b3dc78712a",
+      "id": "drill",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Snakes",
+      "url": "https://stake.com/casino/games/snakes",
+      "thumb": "https://mediumrare.imgix.net/7c53d6414e9be4cf73ce95ecf193b2ae129a525cbc0231577b74150b24ca434f",
+      "id": "snakes",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Flip",
+      "url": "https://stake.com/casino/games/flip",
+      "thumb": "https://mediumrare.imgix.net/1c0de2ee0ce713086ff7735697ad2b5385bc974f206b857c724a5ec84467a73b",
+      "id": "flip",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Cases",
+      "url": "https://stake.com/casino/games/cases",
+      "thumb": "https://mediumrare.imgix.net/5da127925ac99a19da0cd888e5436049bc42f8ee4002df80cdc817f0501ab8a7",
+      "id": "cases",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Dragon Tower",
+      "url": "https://stake.com/casino/games/dragon-tower",
+      "thumb": "https://mediumrare.imgix.net/2c3e16f0a3b8cd8d979265e48dd6a169937a4a4d0acb05ad532ca8345a1e6f21",
+      "id": "dragon-tower",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Bars",
+      "url": "https://stake.com/casino/games/bars",
+      "thumb": "https://mediumrare.imgix.net/88cf822054a51e5e79e73db80269740ef9023569f1552e7f65a471897808c397",
+      "id": "bars",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Rock Paper Scissors",
+      "url": "https://stake.com/casino/games/rock-paper-scissors",
+      "thumb": "https://mediumrare.imgix.net/4031cec525edc307c71df6dddc71506ab06150fd5c14194a5dc9ca6fb54893a1",
+      "id": "rock-paper-scissors",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Tarot",
+      "url": "https://stake.com/casino/games/tarot",
+      "thumb": "https://mediumrare.imgix.net/4db9bee5db762c288bc49e4cd96f492180966be040e3dc4dc27f825a37fd687f",
+      "id": "tarot",
+      "category": "stake-originals"
+    },
+    {
+      "name": "wheel",
+      "url": "https://stake.com/casino/games/wheel",
+      "thumb": "https://mediumrare.imgix.net/e0a4131a16c28a1c1516958c93ec90c6f0f1bb00f41de87f72f6800c535b9c6f",
+      "id": "wheel",
+      "category": "stake-originals"
+    },
+    {
+      "name": "diamonds",
+      "url": "https://stake.com/casino/games/diamonds",
+      "thumb": "https://mediumrare.imgix.net/59d1df22a2931a965fc241a436a398f460e71ea9d0214f66780a52b56655d392",
+      "id": "diamonds",
+      "category": "stake-originals"
+    },
+    {
+      "name": "blackjack",
+      "url": "https://stake.com/casino/games/blackjack",
+      "thumb": "https://mediumrare.imgix.net/3a536fa64023f92764ddccad1b80102d1b32b23a2e3dac4dff52394a612fc005",
+      "id": "blackjack",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Tome of Life",
+      "url": "https://stake.com/casino/games/tome-of-life",
+      "thumb": "https://mediumrare.imgix.net/931cf1fd7147d0d0deda93f16fb8ef556d6d42df3586214f6539a9cfcfcf57b9",
+      "id": "tome-of-life",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Scarab Spin",
+      "url": "https://stake.com/casino/games/slots",
+      "thumb": "https://mediumrare.imgix.net/7a2cc695cad10b097220f0c5c81858075c3ec4ee4235d8211cbbdbbd389c6d6c",
+      "id": "slots",
+      "category": "stake-originals"
+    },
+    {
+      "name": "roulette",
+      "url": "https://stake.com/casino/games/roulette",
+      "thumb": "https://mediumrare.imgix.net/86cd89b12ec34439c0d1a6e32b06c971efc86091e09ba466182abe173c3d3f7d",
+      "id": "roulette",
+      "category": "stake-originals"
+    },
+    {
+      "name": "slide",
+      "url": "https://stake.com/casino/games/slide",
+      "thumb": "https://mediumrare.imgix.net/08512fbdc9c4163e9fae5917c47ade43a7bfe8253de88d8d16296540eab0f0a1",
+      "id": "slide",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Video Poker",
+      "url": "https://stake.com/casino/games/video-poker",
+      "thumb": "https://mediumrare.imgix.net/c69f991b1dc5ad6c2bc16b251290b37ca00e6d29decce6edd3895db056d9d036",
+      "id": "video-poker",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Blue Samurai",
+      "url": "https://stake.com/casino/games/slots-samurai",
+      "thumb": "https://mediumrare.imgix.net/3a6fa5d49d31f11ce131acb64d8cbbe6cc5d8f916bd0afacaeb1fc5976aa4fdf",
+      "id": "slots-samurai",
+      "category": "stake-originals"
+    },
+    {
+      "name": "baccarat",
+      "url": "https://stake.com/casino/games/baccarat",
+      "thumb": "https://mediumrare.imgix.net/7fd680ef6c9acc3573b92f3df4ea5bbe4b4705cf34694cf04e08a8f88cbd77ca",
+      "id": "baccarat",
+      "category": "stake-originals"
+    },
+    {
+      "name": "Primedice",
+      "url": "https://stake.com/casino/games/primedice",
+      "thumb": "https://mediumrare.imgix.net/9f6a27637abbd0807df5d01c2366d92ec77715114b237cc2848dc21083c55423",
+      "id": "primedice",
+      "category": "stake-originals"
+    }
+  ]
+}

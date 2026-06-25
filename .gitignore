@@ -5,5 +5,14 @@ dist/
 # browser profiles (persisted Cloudflare sessions)
 .profile/
 
-# runtime output (catalog DB, screenshots, report) — recreated on each run
-data/
+# Generated presentation artifacts — rebuilt from snapshots on every run
+data/report.html
+data/dashboard.html
+data/dashboard-data.json
+data/reports/
+
+# Snapshot artifacts we don't version — only games.json is kept in git.
+# (raw-api.json is ~6.5MB across history; links.txt + shots/ are regenerable.)
+data/snapshots/**/raw-api.json
+data/snapshots/**/links.txt
+data/snapshots/**/shots/
