@@ -6,10 +6,12 @@ import { loadEnv, chat, parseJsonLoose, esc, mdToHtml, aiModel, aiWeb } from "./
 
 
 // Slots trend signal = new + trending rails. Originals are handled separately.
-const TRENDING_CATS = new Set(["slots", "popular"]);
+// Rail keys vary per casino (Stake "slots", Roobet/Duelbits "popular", Shuffle
+// "trending-slots") so we also fall back to a substring test in `railOf`.
+const TRENDING_CATS = new Set(["slots", "popular", "trending-slots"]);
 const NEW_CATS = new Set(["new-releases"]);
 
-interface PooledGame {
+export interface PooledGame {
   name: string;
   url: string;
   casinos: string[];
@@ -24,7 +26,7 @@ interface PooledOriginal {
 
 /** Normalize a title for cross-casino matching: lowercase, strip punctuation.
  * Conservative (numbers kept) so "Sweet Bonanza" ≠ "Sweet Bonanza 1000". */
-function normName(name: string): string {
+export function normName(name: string): string {
   return name
     .toLowerCase()
     .replace(/&amp;/g, "&")
@@ -153,7 +155,7 @@ async function previousNames(): Promise<Set<string> | null> {
 // provider-led), demands concrete actionable focus backed by real game evidence.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const THEME_VOCAB = [
+export const THEME_VOCAB = [
   "Ancient Egypt",
   "Greek Mythology",
   "Norse Mythology",
@@ -179,8 +181,8 @@ const THEME_VOCAB = [
   "Party / Music",
   "Crime / Heist",
 ];
-const VOLATILITY_VOCAB = ["very low", "low", "medium", "high", "very high"];
-const RTP_BANDS = [
+export const VOLATILITY_VOCAB = ["very low", "low", "medium", "high", "very high"];
+export const RTP_BANDS = [
   "< 94%",
   "94.0–95.0%",
   "95.0–96.0%",
@@ -189,7 +191,7 @@ const RTP_BANDS = [
   "97.0–98.0%",
   "≥ 98%",
 ];
-const MECHANIC_VOCAB = [
+export const MECHANIC_VOCAB = [
   "tumble/cascade",
   "Megaways",
   "cluster pays",
@@ -428,7 +430,7 @@ async function classifyWave(
  * several rounds — each round only re-issues the games still missing, with a
  * SMALLER batch size — so a title that keeps failing in a big batch eventually
  * gets isolated into its own call. Coverage converges to 100%. */
-async function classifyAll(slots: PooledGame[]): Promise<ClassifiedGame[]> {
+export async function classifyAll(slots: PooledGame[]): Promise<ClassifiedGame[]> {
   const items: ClassifyItem[] = slots.map((g, i) => ({
     i,
     name: g.name,
@@ -559,7 +561,7 @@ interface AiGame {
 }
 // A classified game = the AI per-game fields plus the pool-authoritative facts
 // (which casinos it appears on, which rail) that we know from the snapshots.
-interface ClassifiedGame extends AiGame {
+export interface ClassifiedGame extends AiGame {
   i?: number;
   colors?: string[];
   rtp?: number | string;

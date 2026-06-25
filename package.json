@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "grog": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx src/cli.ts",
-    "serve": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx src/server.ts",
+    "serve": "NODE_OPTIONS=--disable-warning=ExperimentalWarning tsx src/cli.ts serve",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

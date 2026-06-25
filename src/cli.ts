@@ -3,6 +3,19 @@ import { runCasino, listCasinos } from "./runner.js";
 import { buildReport } from "./report.js";
 import { REPORT_PATH } from "./paths.js";
 
+// Pop open a file path or URL in the user's default browser (best-effort).
+async function openInBrowser(target: string): Promise<void> {
+  const { spawn } = await import("node:child_process");
+  const cmd =
+    process.platform === "darwin" ? "open" : process.platform === "win32" ? "start" : "xdg-open";
+  const arg = /^(https?|file):\/\//.test(target) ? target : `file://${target}`;
+  try {
+    spawn(cmd, [arg], { detached: true, stdio: "ignore" }).unref();
+  } catch {
+    /* headless / no DE — the printed link still works */
+  }
+}
+
 function parseFlags(args: string[]) {
   const flags: Record<string, string | boolean> = {};
   const positional: string[] = [];
@@ -43,6 +56,26 @@ async function main() {
     const { runTrend } = await import("./trend.js");
     const p = await runTrend();
     console.log(`✔ Trend report: file://${p}`);
+    return;
+  }
+
+  if (cmd === "serve") {
+    // Read-only localhost web app: open the URL and watch the daily dashboard.
+    const { serve } = await import("./serve.js");
+    const port = typeof flags.port === "string" ? Number(flags.port) : undefined;
+    const resolved = port ?? (Number(process.env.GROG_PORT) || 8088);
+    if (flags["no-open"] !== true) await openInBrowser(`http://127.0.0.1:${resolved}/`);
+    await serve({ port });
+    return;
+  }
+
+  if (cmd === "dashboard") {
+    // Pure presentation — NO AI. Rebuilds the dashboard from all snapshots +
+    // the classifications the report step already produced, then opens it.
+    const { buildDashboard } = await import("./dashboard.js");
+    const p = await buildDashboard({ log: (m) => console.log("  " + m) });
+    console.log(`✔ Dashboard: file://${p}`);
+    if (flags["no-open"] !== true) await openInBrowser(p);
     return;
   }
 
@@ -88,6 +121,19 @@ async function main() {
         console.log(`✖ analyze: ${err instanceof Error ? err.message : err}`);
       }
     }
+
+    // Refresh the dashboard — pure presentation, NO AI (the AI already ran in
+    // the report/analyze step above; the dashboard just reads its output). It
+    // reads ALL casinos' history, not just this run's scope, since the
+    // time-series is the whole point.
+    try {
+      const { buildDashboard } = await import("./dashboard.js");
+      const dp = await buildDashboard({ log: (m) => console.log("  " + m) });
+      console.log(`\n✔ Dashboard (open this): file://${dp}`);
+      if (flags["no-open"] !== true) await openInBrowser(dp);
+    } catch (err) {
+      console.log(`✖ dashboard: ${err instanceof Error ? err.message : err}`);
+    }
     return;
   }
 
@@ -107,6 +153,16 @@ Usage:
                                      (OpenRouter; set OPENROUTER_API_KEY in .env;
                                      MODEL to pick the model, GROG_AI_WEB=1
                                      to let it web-search each game)
+  npm run grog dashboard             rebuild + OPEN the dashboard
+                                     (data/dashboard.html) from ALL snapshot
+                                     history + the classifications the report
+                                     step produced. PURE UI, NO AI — graphs of
+                                     trends over time, what's popular & why, per
+                                     casino. (--no-open to skip launching it)
+  npm run grog serve                 host the dashboard as a read-only localhost
+                                     web app (http://127.0.0.1:8088) and open it;
+                                     re-renders from disk on every load (no AI).
+                                     --port <n> to change the port
 
 Flags:
   --headless          force headless (overrides a casino's own setting)
