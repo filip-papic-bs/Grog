@@ -3,12 +3,27 @@ name: weekly snapshot
 # Weekly competitor-casino scrape → commit snapshots back to the repo →
 # publish the rebuilt dashboard to GitHub Pages. Everything lives in GitHub:
 # the runner, the data history (git), and the hosted dashboard (Pages).
+#
+# Two ways in:
+#   • schedule / manual dispatch → full scrape, commit new data, then deploy.
+#   • push to master (code/UI changes) → NO scrape; just rebuild the dashboard
+#     from the already-committed snapshots and redeploy. This is what makes a
+#     dashboard tweak show up live without waiting for the weekly run.
 on:
   schedule:
     # 08:00 UTC every Sunday (once every 7 days). Off-the-hour on purpose —
     # GitHub's top-of-hour cron slots are congested and get delayed/dropped.
     # Exact timing doesn't matter; the originals diff compares week-over-week.
     - cron: "00 8 * * 0"
+  push:
+    branches: [master]
+    # IMPORTANT: ignore the bot's own data commits, or its `git push` below
+    # would re-trigger this workflow on every run → infinite loop. The scrape
+    # job only ever writes these paths, so ignoring them means human code/UI
+    # pushes deploy while bot data pushes do not.
+    paths-ignore:
+      - "data/snapshots/**"
+      - "data/classifications.json"
   workflow_dispatch: {}
 
 # Single writer. Don't let a manual run overlap the scheduled one (both push).
@@ -47,10 +62,18 @@ jobs:
       - name: Scrape all casinos + rebuild dashboard
         # `run all` also runs the AI trend/classification step (needs the key);
         # if the key is unset that step fails gracefully and the dashboard still
-        # builds from the classification cache.
+        # builds from the classification cache. Skipped on push deploys — those
+        # only re-render from committed data, never hit the live casinos.
+        if: github.event_name != 'push'
         run: npm run grog -- run all --no-open
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+
+      - name: Rebuild dashboard from committed snapshots (push deploy — no scrape)
+        # Pure-function rebuild: reads the committed snapshots + classification
+        # cache and regenerates data/dashboard.html. No AI, no network.
+        if: github.event_name == 'push'
+        run: npm run grog -- dashboard --no-open
 
       - name: Commit new snapshot to history
         run: |
