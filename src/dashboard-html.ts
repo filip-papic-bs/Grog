@@ -240,7 +240,7 @@ export function renderDashboardHtml(d: DashboardData): string {
       </div>`)
     .join("");
 
-  const overview = `<div class="grid">
+  const overview = `${kpis}<div class="grid">
     ${card("New-release velocity", multiDate ? lineChart(dates, d.casinos.map((c) => ({ name: c.name, color: casinoColors.get(c.name)!, values: d.timeline.map((t) => t.byCasinoNew[c.name] ?? 0) })), (v) => String(Math.round(v))) + legend(d.casinos.map((c) => ({ label: c.name, color: casinoColors.get(c.name)! }))) : `<div class="muted">Needs ≥2 days of snapshots — currently ${dates.length}. Velocity appears once history builds.</div>`, "newly-appeared games per casino, per day")}
     ${card("Theme mix (now)", themeDonut, "share of trending + new pool")}
     ${card("Cross-casino hotspots", crossHot.length ? crossBars : `<div class="muted">No game is trending on more than one casino yet.</div>`, "games trending on multiple casinos")}
@@ -388,7 +388,6 @@ ${FAVICON_URI ? `<link rel="icon" type="image/png" href="${FAVICON_URI}"/>` : ""
   <div class="brand">${LOGO_URI ? `<img class="logo" src="${LOGO_URI}" alt="GROG"/>` : `<span class="logo">🎰</span>`}<div>
   <div class="meta">Snapshot ${esc(d.generatedAt.replace("T", " ").slice(0, 16))}</div></div></div>
 </header>
-${kpis}
 <nav class="tabs">${TABS.map(([id, label], i) => `<button class="tab${i === 0 ? " active" : ""}" data-tab="${id}">${esc(label)}</button>`).join("")}</nav>
 <main>${TABS.map(([id, , html], i) => `<div class="panel${i === 0 ? " active" : ""}" id="panel-${id}">${html}</div>`).join("")}</main>
 <div id="modal" class="modal"><div class="modal-inner"><button class="modal-x" id="modal-x" title="Close (Esc)">✕</button><div id="modal-card" class="modal-card"></div></div></div>
@@ -408,7 +407,7 @@ code{background:#0e1422;padding:1px 5px;border-radius:4px;color:#9fb0c9;font-siz
 img.logo{height:42px;width:auto;display:block}
 h1{margin:0;font-size:20px;font-weight:700;letter-spacing:.3px}h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:700}
 .meta{color:var(--mut);font-size:12px;margin-top:3px}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding:20px 28px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
 .kpi{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--bd);border-radius:14px;padding:16px 18px}
 .kpi-n{font-size:30px;font-weight:800;background:linear-gradient(90deg,#fff,#b9c6df);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .kpi-l{color:var(--tx);font-size:13px;margin-top:2px;font-weight:600}.kpi-sub{color:var(--mut);font-size:11px;margin-top:2px}
