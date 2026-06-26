@@ -264,6 +264,21 @@ export interface DashboardData {
       originals: { name: string; url: string }[];
     }[];
   };
+  originals: {
+    newAcross: { name: string; casino: string; url: string; provider?: string }[];
+    totalNow: number;
+    casinos: number;
+    byCasino: {
+      casino: string;
+      key: string;
+      total: number;
+      prevTotal: number | null;
+      prevDate: string | null;
+      added: { name: string; url: string; provider?: string }[];
+      removed: { name: string; url: string; provider?: string }[];
+      all: { name: string; url: string; provider?: string }[];
+    }[];
+  };
 }
 
 export async function buildDashboardData(
@@ -376,6 +391,39 @@ export async function buildDashboardData(
   }
   movers.sort((a, b) => (b.delta ?? 999) - (a.delta ?? 999)).splice(12);
 
+  const origAttr = (g: RunGame) => {
+    const a = cache[normName(g.name)];
+    return { name: g.name, url: g.url, provider: a?.provider };
+  };
+  const originalsByCasino: DashboardData["originals"]["byCasino"] = [];
+  const newOriginalsAcross: DashboardData["originals"]["newAcross"] = [];
+  let originalsTotalNow = 0;
+  for (const [casino, list] of runsByCasino) {
+    const cur = list[list.length - 1];
+    const prev = list[list.length - 2];
+    const curOrig = cur.games.filter((g) => g.rail === "originals").sort((a, b) => a.rank - b.rank);
+    const prevOrig = prev ? prev.games.filter((g) => g.rail === "originals") : null;
+    if (!curOrig.length && !(prevOrig && prevOrig.length)) continue; // skip casinos with no originals at all
+    const prevIds = new Set(prevOrig ? prevOrig.map(gid) : []);
+    const curIds = new Set(curOrig.map(gid));
+    const added = prevOrig ? curOrig.filter((g) => !prevIds.has(gid(g))) : [];
+    const removed = prevOrig ? prevOrig.filter((g) => !curIds.has(gid(g))) : [];
+    originalsTotalNow += curOrig.length;
+    originalsByCasino.push({
+      casino,
+      key: cur.key,
+      total: curOrig.length,
+      prevTotal: prevOrig ? prevOrig.length : null,
+      prevDate: prev ? prev.date : null,
+      added: added.map(origAttr),
+      removed: removed.map(origAttr),
+      all: curOrig.map(origAttr),
+    });
+    for (const g of added) newOriginalsAcross.push({ name: g.name, casino, url: g.url, provider: cache[normName(g.name)]?.provider });
+  }
+  originalsByCasino.sort((a, b) => a.casino.localeCompare(b.casino));
+  newOriginalsAcross.sort((a, b) => a.casino.localeCompare(b.casino) || a.name.localeCompare(b.name));
+
   // ── timeline (per calendar date) ──
   const byDate = latestPerCasinoPerDate(runs);
   const dates = [...byDate.keys()].sort();
@@ -448,6 +496,12 @@ export async function buildDashboardData(
       newThisRun: newThisRun.slice(0, 40),
       movers,
       byCasino,
+    },
+    originals: {
+      newAcross: newOriginalsAcross,
+      totalNow: originalsTotalNow,
+      casinos: originalsByCasino.length,
+      byCasino: originalsByCasino,
     },
   };
 }

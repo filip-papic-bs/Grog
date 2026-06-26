@@ -1,18 +1,19 @@
-name: daily snapshot
+name: weekly snapshot
 
-# Daily competitor-casino scrape → commit snapshots back to the repo →
+# Weekly competitor-casino scrape → commit snapshots back to the repo →
 # publish the rebuilt dashboard to GitHub Pages. Everything lives in GitHub:
 # the runner, the data history (git), and the hosted dashboard (Pages).
 on:
   schedule:
-    # 08:00 UTC daily. Off-the-hour on purpose — GitHub's top-of-hour cron
-    # slots are congested and get delayed/dropped. Exact timing doesn't matter.
-    - cron: "00 8 * * *"
+    # 08:00 UTC every Sunday (once every 7 days). Off-the-hour on purpose —
+    # GitHub's top-of-hour cron slots are congested and get delayed/dropped.
+    # Exact timing doesn't matter; the originals diff compares week-over-week.
+    - cron: "00 8 * * 0"
   workflow_dispatch: {}
 
 # Single writer. Don't let a manual run overlap the scheduled one (both push).
 concurrency:
-  group: grog-daily
+  group: grog-weekly
   cancel-in-progress: false
 
 permissions:
@@ -59,7 +60,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No snapshot changes to commit."
           else
-            git commit -m "data: daily snapshot $(date -u +%Y-%m-%d)"
+            git commit -m "data: weekly snapshot $(date -u +%Y-%m-%d)"
             git push
           fi
 

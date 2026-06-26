@@ -275,8 +275,9 @@ export function renderDashboardHtml(d: DashboardData): string {
   const rankCard = (title: string, rows: { label: string; count: number; pct: number }[], colorOf: (l: string) => string) =>
     card(title, barsH(rows.slice(0, 12).map((r) => ({ ...r, color: colorOf(r.label) }))));
 
-  const popular = `${card("Most popular games — cross-casino", popTable, `ranked by how many of ${d.kpis.casinos} casinos run it · ${esc(d.current.dateFrom)} → ${esc(d.current.dateTo)}`)}
-    <div class="grid">
+  const popular = card("Most popular games — cross-casino", popTable, `ranked by how many of ${d.kpis.casinos} casinos run it · ${esc(d.current.dateFrom)} → ${esc(d.current.dateTo)}`);
+
+  const breakdowns = `<div class="grid">
       ${rankCard("Themes", d.current.rankings.themes, (l) => themeColors.get(l) || OTHER_COLOR)}
       ${rankCard("Volatility", d.current.rankings.volatility, volColor)}
       ${rankCard("RTP bands", d.current.rankings.rtp, () => "#60a5fa")}
@@ -316,11 +317,64 @@ export function renderDashboardHtml(d: DashboardData): string {
   }).join("");
   const casinosTab = `<div class="grid">${casinoCards}</div>`;
 
+  const o = d.originals;
+  const newOrigTop = o.newAcross.length
+    ? card(
+        `New originals — ${o.newAcross.length}`,
+        `<div class="hots">${o.newAcross
+          .map(
+            (g) => `<div class="hot"><div class="hot-body">
+              <div class="hot-top">${glink(g.name, g.url)}<span class="badge">${esc(g.casino)}</span></div>
+              ${g.provider ? `<div class="hot-prov">${esc(g.provider)}</div>` : ""}
+            </div></div>`,
+          )
+          .join("")}</div>`,
+        "in-house / original games added since the previous report",
+      )
+    : `<div class="empty">🎲 No new originals since the last report.<br/>Added games appear here once a casino ships a new in-house title between snapshots.</div>`;
+
+  const origDelta = (d2: number) =>
+    d2 === 0
+      ? `<span class="pill" style="background:#1c2536;color:var(--mut)">±0</span>`
+      : d2 > 0
+        ? `<span class="pill up">▲ ${d2}</span>`
+        : `<span class="pill" style="background:#331f1f;color:#f87171">▼ ${Math.abs(d2)}</span>`;
+
+  const origCards = o.byCasino
+    .map((c) => {
+      const delta = c.prevTotal === null ? null : c.total - c.prevTotal;
+      const head = `<div class="counts">
+        <span><b>${c.total}</b> originals</span>
+        ${c.prevTotal !== null ? `<span class="muted">was ${c.prevTotal}</span>${origDelta(delta!)}` : `<span class="muted">no prior report</span>`}
+      </div>`;
+      const addedBlock = c.added.length
+        ? `<h4>＋ Added (${c.added.length})</h4><ul class="list">${c.added
+            .map((g) => `<li>${glink(g.name, g.url)}${g.provider ? ` <span class="chip sm">${esc(g.provider)}</span>` : ""}</li>`)
+            .join("")}</ul>`
+        : "";
+      const removedBlock = c.removed.length
+        ? `<h4>－ Removed (${c.removed.length})</h4><ul class="list muted">${c.removed
+            .map((g) => `<li>${glink(g.name, g.url)}</li>`)
+            .join("")}</ul>`
+        : "";
+      const noChange =
+        c.prevTotal !== null && !c.added.length && !c.removed.length
+          ? `<div class="muted" style="margin-top:8px">No change since last report.</div>`
+          : "";
+      const allBlock = `<h4>All originals (${c.all.length})</h4><div class="hot-chips">${chips(c.all.map((g) => g.name)) || '<span class="muted">—</span>'}</div>`;
+      return card(c.casino, `${head}${addedBlock}${removedBlock}${noChange}${allBlock}`, c.prevDate ? `now vs ${esc(c.prevDate)}` : "latest only");
+    })
+    .join("");
+
+  const originalsTab = `${newOrigTop}<div class="grid">${origCards || `<div class="muted">No casino exposes an originals rail yet.</div>`}</div>`;
+
   const TABS = [
     ["overview", "Overview", overview],
     ["trends", "Trends over time", trends],
-    ["popular", "What's popular", popular],
+    ["popular", "Most popular", popular],
+    ["breakdowns", "Breakdowns", breakdowns],
     ["newmovers", "New & movers", newmovers],
+    ["originals", "Originals", originalsTab],
     ["casinos", "Casinos", casinosTab],
   ] as const;
 
