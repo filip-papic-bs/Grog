@@ -254,8 +254,8 @@ export interface DashboardData {
       rails: Rail[];
       why: string;
     }[];
-    newThisRun: { name: string; casino: string; url: string; theme?: string; volatility?: string; provider?: string }[];
-    movers: { name: string; casino: string; from: number | null; to: number; delta: number | null }[];
+    newThisRun: { name: string; casino: string; url: string; theme?: string; volatility?: string; provider?: string; prevDate?: string | null; curDate?: string }[];
+    movers: { name: string; casino: string; from: number | null; to: number; delta: number | null; prevDate?: string | null; curDate?: string }[];
     byCasino: {
       casino: string;
       key: string;
@@ -373,10 +373,12 @@ export async function buildDashboardData(
     const prev = list[list.length - 2];
     const prevIds = new Set(prev ? prev.games.map(gid) : []);
     if (prev) {
+      const prevDate = prev.date;
+      const curDate = cur.date;
       for (const g of cur.games) {
         if ((g.rail === "new" || g.rail === "trending") && !prevIds.has(gid(g))) {
           const a = cache[normName(g.name)];
-          newThisRun.push({ name: g.name, casino, url: g.url, theme: a?.theme, volatility: a?.volatility, provider: a?.provider });
+          newThisRun.push({ name: g.name, casino, url: g.url, theme: a?.theme, volatility: a?.volatility, provider: a?.provider, prevDate, curDate });
         }
       }
       // trending rank movers
@@ -385,7 +387,7 @@ export async function buildDashboardData(
         if (g.rail !== "trending" || g.rank >= 15) continue;
         const from = prevRank.has(gid(g)) ? prevRank.get(gid(g))! : null;
         const delta = from === null ? null : from - g.rank;
-        if (from === null || (delta !== null && delta >= 2)) movers.push({ name: g.name, casino, from, to: g.rank, delta });
+        if (from === null || (delta !== null && delta >= 2)) movers.push({ name: g.name, casino, from, to: g.rank, delta, prevDate, curDate });
       }
     }
   }
