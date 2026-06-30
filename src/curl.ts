@@ -12,6 +12,9 @@ export interface CurlOpts {
   headers?: Record<string, string>;
   body?: string;
   timeoutMs?: number;
+  // Force IPv4. Some Cloudflare edges (e.g. games-state.thrill.com) answer fine
+  // over IPv4 but black-hole the IPv6 path, hanging the request until timeout.
+  ipv4?: boolean;
 }
 
 /**
@@ -26,6 +29,7 @@ export async function curlText(
 ): Promise<{ status: number; body: string }> {
   const timeoutMs = opts.timeoutMs ?? 20_000;
   const args = ["-s", "-m", String(Math.ceil(timeoutMs / 1000)), "-w", "\n%{http_code}"];
+  if (opts.ipv4) args.push("-4");
   if (opts.method) args.push("-X", opts.method);
   const headers = { "user-agent": DEFAULT_UA, ...(opts.headers ?? {}) };
   for (const [k, v] of Object.entries(headers)) args.push("-H", `${k}: ${v}`);

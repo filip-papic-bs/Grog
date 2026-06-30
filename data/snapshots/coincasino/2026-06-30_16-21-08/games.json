@@ -1,0 +1,392 @@
+{
+  "casino": "CoinCasino",
+  "category": "coincasino",
+  "capturedAt": "2026-06-30T16:21:08.504Z",
+  "games": [
+    {
+      "name": "Frenzy Clusters",
+      "url": "https://www.coincasino.com/casino/bgaming/frenzy-clusters",
+      "thumb": "https://www.coincasino.com/cdn/27b54702-bf57-49f2-8723-d76d7c94a1b9.jpg",
+      "id": "699dc47c-0222-4eaf-83be-839a8c9b3b06",
+      "category": "new-releases"
+    },
+    {
+      "name": "Death Becomes You",
+      "url": "https://www.coincasino.com/casino/hacksaw-gaming/death-becomes-you",
+      "thumb": "https://www.coincasino.com/cdn/4a558cd9-8faa-48a3-a30a-7b08290966a1.jpg",
+      "id": "997b91fe-92bb-4544-b46d-622bc8a6945b",
+      "category": "new-releases"
+    },
+    {
+      "name": "Book of Flames Extra Hold & Win",
+      "url": "https://www.coincasino.com/casino/novomatic/book-of-flames-extra-hold-win",
+      "thumb": "https://www.coincasino.com/cdn/233cec7b-630c-46a2-9365-7d7439a10104.webp",
+      "id": "2abf8899-f579-43dc-adad-c9f99bd56e06",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Hero Piggies",
+      "url": "https://www.coincasino.com/casino/spinomenal/3-hero-piggies",
+      "thumb": "https://www.coincasino.com/cdn/631c1329-f705-456c-9c1f-77959b82ff85.webp",
+      "id": "f8691b13-d5d8-4793-b7f1-d7150007631a",
+      "category": "new-releases"
+    },
+    {
+      "name": "Glory of Olympus (Coin Strike)",
+      "url": "https://www.coincasino.com/casino/gametimetec/glory-of-olympus-coin-strike",
+      "thumb": "https://www.coincasino.com/cdn/797d1c81-9584-4309-8127-a33b59d8a596.jpg",
+      "id": "2a8cd904-b5d6-49e0-bbb3-2d0041a4819b",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dr. Rock and the Riff Reactor 2",
+      "url": "https://www.coincasino.com/casino/true-labs/dr-rock-and-the-riff-reactor-2",
+      "thumb": "https://www.coincasino.com/cdn/b8cde7f0-1ae5-45e9-bef3-785a3c504a57.jpg",
+      "id": "b2e6a407-f27a-4a40-b49d-b4ce1f08da6f",
+      "category": "new-releases"
+    },
+    {
+      "name": "Primal Rampage",
+      "url": "https://www.coincasino.com/casino/play-n-go/primal-rampage",
+      "thumb": "https://www.coincasino.com/cdn/fde8037f-bb91-43ca-90f2-bf8254965d4c.jpg",
+      "id": "99defb8d-8651-44d9-ac6f-00779294fa48",
+      "category": "new-releases"
+    },
+    {
+      "name": "Liberty Fireworks",
+      "url": "https://www.coincasino.com/casino/evoplay-entertainment/liberty-fireworks",
+      "thumb": "https://www.coincasino.com/cdn/a2590556-b6b3-4e0c-b342-53d48c13d523.webp",
+      "id": "7ae2fad9-dd02-4cb6-a858-deeccc8a5be4",
+      "category": "new-releases"
+    },
+    {
+      "name": "Beaks Gold",
+      "url": "https://www.coincasino.com/casino/penguin-king/beaks-gold",
+      "thumb": "https://www.coincasino.com/cdn/633a5743-446a-4348-ac95-7dbe30eecc9e.webp",
+      "id": "29cf0a00-c646-4194-97f8-e612597ffd0e",
+      "category": "new-releases"
+    },
+    {
+      "name": "Enjoy the Lightning",
+      "url": "https://www.coincasino.com/casino/barbarabang/enjoy-the-lightning",
+      "thumb": "https://www.coincasino.com/cdn/07207139-c58e-46c0-bcdd-725c0de82d1c.jpg",
+      "id": "b637047b-a2c5-4124-88dc-1befb109fece",
+      "category": "new-releases"
+    },
+    {
+      "name": "3x3 Grand Crown: Hold the Spin",
+      "url": "https://www.coincasino.com/casino/gamzix/3x3-grand-crown-hold-the-spin",
+      "thumb": "https://www.coincasino.com/cdn/3475255f-2a6b-4ebc-afba-53c4e74378f2.webp",
+      "id": "ec55ddd3-9cdb-4eb2-8059-4718aa1923c2",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Million BC",
+      "url": "https://www.coincasino.com/casino/betsoft/3-million-bc",
+      "thumb": "https://www.coincasino.com/cdn/2bfbdeba-7b06-4c80-97d7-db26496d00d9.webp",
+      "id": "d8f5fd77-fc4e-410f-a9f1-1931c5479fbf",
+      "category": "new-releases"
+    },
+    {
+      "name": "Burning Coins 100",
+      "url": "https://www.coincasino.com/casino/endorphina/burning-coins-100",
+      "thumb": "https://www.coincasino.com/cdn/827c40d6-1496-4de1-8b8c-b571801507ab.webp",
+      "id": "a780e424-3682-4f2a-b998-88efb1b552a1",
+      "category": "new-releases"
+    },
+    {
+      "name": "Joker Glitz x1000",
+      "url": "https://www.coincasino.com/casino/3-oaks-gaming/joker-glitz-x1000",
+      "thumb": "https://www.coincasino.com/cdn/d24fcccf-c22a-4944-8871-c8ca2738866e.jpg",
+      "id": "ac12ba2c-d16f-462a-bec4-91ecea34ff4c",
+      "category": "new-releases"
+    },
+    {
+      "name": "Chillies Trio - Hold and Win",
+      "url": "https://www.coincasino.com/casino/netgaming/chillies-trio-hold-and-win",
+      "thumb": "https://www.coincasino.com/cdn/e10f0c37-1286-4ab3-87b0-32564186d5a7.jpg",
+      "id": "967428ad-898b-497f-a5bc-9ddda7f76744",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zeus: Titan Fury",
+      "url": "https://www.coincasino.com/casino/mascot-gaming/zeus-titan-fury",
+      "thumb": "https://www.coincasino.com/cdn/7cd06af2-a485-47db-af29-d703ee5cb6ac.webp",
+      "id": "eb625398-afa8-4fbe-ab0f-e1dff0c361cf",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Power Bears",
+      "url": "https://www.coincasino.com/casino/avatarux/3-power-bears",
+      "thumb": "https://www.coincasino.com/cdn/5794f268-bd90-46e5-82bc-62510ab50066.jpg",
+      "id": "ba750c8c-9511-4c2c-83dc-1d7d6e7edd52",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ginger Wins: Wild Jungle",
+      "url": "https://www.coincasino.com/casino/peter-sons/ginger-wins-wild-jungle",
+      "thumb": "https://www.coincasino.com/cdn/fa1ea927-991c-497f-a0fd-3b8f900a1af0.jpg",
+      "id": "18c9bf10-115d-4de4-be48-afb85e7d5ad6",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hyper Coin: Hold To Win",
+      "url": "https://www.coincasino.com/casino/formula-spin/hyper-coin-hold-to-win",
+      "thumb": "https://www.coincasino.com/cdn/5bc12dfc-1808-400d-80e8-cc7254283960.webp",
+      "id": "43442c1c-ea1e-47b5-9e15-22c58dc8e761",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mighty Hot: Amazonia",
+      "url": "https://www.coincasino.com/casino/voltent-1/mighty-hot-amazonia",
+      "thumb": "https://www.coincasino.com/cdn/82a9e803-2b6f-40df-bd62-5abef637d717.jpg",
+      "id": "aa3bacd1-8125-4efc-81e8-11d9e0b11be1",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Cowboy",
+      "url": "https://www.coincasino.com/casino/hacksaw-gaming/le-cowboy",
+      "thumb": "https://www.coincasino.com/cdn/2f1402a0-8eb9-4f12-b5f8-378275a42b32.jpg",
+      "id": "4e0aea41-d079-4421-a330-00917d60702c",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Book of Dead",
+      "url": "https://www.coincasino.com/casino/play-n-go/book-of-dead",
+      "thumb": "https://www.coincasino.com/cdn/62c52fc4-13c6-47a4-8465-d1c9bf2982f3.jpg",
+      "id": "d353c03b-3f25-4a05-905a-3ae103f25b87",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Book of Flames Hold & Win",
+      "url": "https://www.coincasino.com/casino/novomatic/book-of-flames-hold-win",
+      "thumb": "https://www.coincasino.com/cdn/imported_games_images/N2/Novomatic/101023/0477259a-5c50-4735-9da3-5e34a58eb86f.jpg",
+      "id": "cf6714c5-7065-4717-8c92-2b12e1d0ef0e",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Coin Joker",
+      "url": "https://www.coincasino.com/casino/spinomenal/coin-joker",
+      "thumb": "https://www.coincasino.com/cdn/2bab7a2a-55cc-4143-9bc9-f08a86049a05.webp",
+      "id": "3f4af71e-653c-4811-be66-f0932d368184",
+      "category": "trending-slots"
+    },
+    {
+      "name": "3 Rail Express: Hold & Win",
+      "url": "https://www.coincasino.com/casino/penguin-king/3-rail-express-hold-win",
+      "thumb": "https://www.coincasino.com/cdn/5b4bf841-101b-4d45-bd30-e949e759034b.jpg",
+      "id": "a641fb46-778d-42dc-bb4c-82d02420e2e0",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Black Clover Bell Link",
+      "url": "https://www.coincasino.com/casino/egt-digital/black-clover-bell-link",
+      "thumb": "https://www.coincasino.com/cdn/715d56ba-543f-4325-8e77-5dcb0afb8921.jpg",
+      "id": "7f48bdb0-028f-4483-b262-79a32768a0c0",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le King ",
+      "url": "https://www.coincasino.com/casino/hacksaw-gaming/le-king",
+      "thumb": "https://www.coincasino.com/cdn/2a2e5559-2ebb-4b36-b94a-89d563693ea8.jpg",
+      "id": "1065bda3-10cd-47ed-9e31-b8ff4499e393",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonsai Gold 2: Age of Prosperity",
+      "url": "https://www.coincasino.com/casino/novomatic/bonsai-gold-2-age-of-prosperity",
+      "thumb": "https://www.coincasino.com/cdn/0f794495-65ba-44f0-bbb8-7ec3dbec83df.webp",
+      "id": "e77f95a3-cada-4263-8f2e-f594f671a14e",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Swoll",
+      "url": "https://www.coincasino.com/casino/shady-lady/swoll",
+      "thumb": "https://www.coincasino.com/cdn/7bfd2f9e-ba4a-4f01-9a2d-75757e9e33c5.jpg",
+      "id": "485f2816-8cd4-4ad5-984f-638cd39411c9",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://www.coincasino.com/casino/platipus/blackjack",
+      "thumb": "https://www.coincasino.com/cdn/2fa170be-7eee-480f-ae8e-9256fccca587.jpg",
+      "id": "b74b066d-bcf3-4191-bef9-1e76b92b29c0",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Love and Luck Joker",
+      "url": "https://www.coincasino.com/casino/evoplay-entertainment/love-and-luck-joker",
+      "thumb": "https://www.coincasino.com/cdn/9a536479-eb4e-4b9c-991e-45482d036955.jpg",
+      "id": "7b98af1e-2b0e-46aa-be91-f603eca84201",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Pho Sho",
+      "url": "https://www.coincasino.com/casino/betsoft/pho-sho",
+      "thumb": "https://www.coincasino.com/cdn/imported_games_images/HUB88/Betsoft/bst_phosho/cea9ca3f-eefa-4a48-b255-a80d0a41abe0.jpg",
+      "id": "b582c9d1-75e2-493a-bf81-26daaf6ed9b7",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Thunder Coins: Hold and Win",
+      "url": "https://www.coincasino.com/casino/playson/thunder-coins-hold-and-win",
+      "thumb": "https://www.coincasino.com/cdn/bf3896fe-ed38-4b73-9af3-388d3a9e869d.jpg",
+      "id": "b926076b-c450-46be-9b90-65adb64a0ef4",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Only Coins Express",
+      "url": "https://www.coincasino.com/casino/gamzix/only-coins-express",
+      "thumb": "https://www.coincasino.com/cdn/86789691-7028-4348-9b9f-4ec264cdc937.jpg",
+      "id": "f28ea11f-0554-457a-9149-8c38c19fec1c",
+      "category": "trending-slots"
+    },
+    {
+      "name": "3 Super Hot Chillies",
+      "url": "https://www.coincasino.com/casino/3-oaks-gaming/3-super-hot-chillies",
+      "thumb": "https://www.coincasino.com/cdn/1291a0ab-942c-4ddc-ab4d-8442067ea9b4.jpg",
+      "id": "eaedd989-f042-4ea0-bf69-a58a4ed87e6d",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Magical Genie - Hold & Hit 3x3",
+      "url": "https://www.coincasino.com/casino/spinomenal/magical-genie-hold-hit-3x3",
+      "thumb": "https://www.coincasino.com/cdn/e56a3b65-08aa-4c9f-817c-ca47f48c2126.jpg",
+      "id": "11194e36-2d82-4009-9370-4284aa1762e3",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Hot Clock",
+      "url": "https://www.coincasino.com/casino/fazi/hot-clock",
+      "thumb": "https://www.coincasino.com/cdn/a4ce53ac-5582-48d1-bc25-d2e253abc8c2.jpg",
+      "id": "629ae9f7-0bcd-41f7-a4d7-fe55ad5595cc",
+      "category": "trending-slots"
+    },
+    {
+      "name": "CherryPOP",
+      "url": "https://www.coincasino.com/casino/avatarux/cherrypop",
+      "thumb": "https://www.coincasino.com/cdn/imported_games_images/RA_AVATAR_UX/RA_AVATAR_UX/cherry-pop/37b9abbd-76c9-4c95-9d64-32975acdb9f5.jpg",
+      "id": "2d7fbe78-d3e0-4815-8c84-1ae15fb4e9e3",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonanza Trillion",
+      "url": "https://www.coincasino.com/casino/bgaming/bonanza-trillion",
+      "thumb": "https://www.coincasino.com/cdn/2c19dd16-76cf-40ad-9ee4-9b9dea82b4a7.jpg",
+      "id": "125162f5-2fc1-4014-9985-5a40d28b1c6b",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Barbarossa Dragon Empire",
+      "url": "https://www.coincasino.com/casino/peter-sons/barbarossa-dragon-empire",
+      "thumb": "https://www.coincasino.com/cdn/1f15f6d7-4df3-40eb-a0ee-c5f28e6d345f.jpg",
+      "id": "620e101a-b4b5-437f-be74-a8c379cd660d",
+      "category": "trending-slots"
+    },
+    {
+      "name": "BlackJack",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/blackjack",
+      "thumb": "https://www.coincasino.com/cdn/6ae23452-e301-486c-968a-6e335252db55.webp",
+      "id": "6f8f71b6-7c14-4c63-a9f3-1cf1286c9bbf",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Gates of Tartaros",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/gates-of-tartaros",
+      "thumb": "https://www.coincasino.com/cdn/d50d95f7-2d8d-413f-83a4-cfca00e16a6f.webp",
+      "id": "eab700c7-bff0-4799-9789-6658e4610caf",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "War Hogs",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/war-hogs",
+      "thumb": "https://www.coincasino.com/cdn/dfb9fbd3-19a8-4b39-bdfd-844c5c42bcff.webp",
+      "id": "8e37d332-d2fa-44ac-bea6-f98ed7972143",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Plinko Deluxe",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/plinko-deluxe",
+      "thumb": "https://www.coincasino.com/cdn/ed4e1679-0666-4b6c-925f-0a018dd8fa23.webp",
+      "id": "ba47e361-a5f1-4f1c-85d0-a9e0072d05e3",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Ghost Fortune",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/ghost-fortune",
+      "thumb": "https://www.coincasino.com/cdn/e029fa8f-4344-49ce-a620-84c4b49c7df0.webp",
+      "id": "1234993a-0fd4-4db7-ba70-ac4a15418d8b",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "3 Bunny Bonus",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/3-bunny-bonus",
+      "thumb": "https://www.coincasino.com/cdn/9264de2d-ba1e-4cc2-9bdb-3c6cf1c64853.webp",
+      "id": "536b9494-0a9f-4aa7-a0a5-3607191547bc",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Bonus Texas Hold'em",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/bonus-texas-hold-em",
+      "thumb": "https://www.coincasino.com/cdn/9c929672-cf3f-48da-9885-2881e0a19122.webp",
+      "id": "5cbe9124-ad2c-4b17-b54e-c44e7130f2f4",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Louisiana Voodoo Queen",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/louisiana-voodoo-queen",
+      "thumb": "https://www.coincasino.com/cdn/3bb8d2e5-0589-4612-b01a-cb89a1b8b963.webp",
+      "id": "e905eec7-4bf5-4160-b9a1-8989ddce736e",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Eagle Gold 2",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/eagle-gold-2",
+      "thumb": "https://www.coincasino.com/cdn/aa9f0f66-f244-4f60-a378-95873990680b.webp",
+      "id": "4f7aa70b-320c-4d4d-afbf-359327bcf9c3",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Eagle Gold",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/eagle-gold",
+      "thumb": "https://www.coincasino.com/cdn/3aa2e50e-6924-44ab-be0d-caf4e787308f.webp",
+      "id": "3d4b3575-2c33-41d6-9af3-b72803228866",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Golden Hippo",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/golden-hippo",
+      "thumb": "https://www.coincasino.com/cdn/018ee97f-7044-46bb-a5d3-abadad455669.webp",
+      "id": "aee1cb84-2beb-485c-933b-ce6468260bcc",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Platinum Chip Roulette",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/platinum-chip-roulette",
+      "thumb": "https://www.coincasino.com/cdn/67e98ba4-1a3e-4944-9735-66e3e5b46264.webp",
+      "id": "6317180b-50da-4706-8faf-5325fcfa2a9f",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Solitaire",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/solitaire",
+      "thumb": "https://www.coincasino.com/cdn/ff50649d-9e7b-4a17-b756-49d1153e2428.webp",
+      "id": "ac98c0dd-3802-46ce-afe4-c297de09bcf8",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Keno x 15",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/keno-x-15",
+      "thumb": "https://www.coincasino.com/cdn/944cd367-5cb3-4b1c-89bd-95eacf50f2e8.webp",
+      "id": "bf566c8b-6bc6-43cd-8f88-5b1d1eb34864",
+      "category": "coincasino-originals"
+    },
+    {
+      "name": "Lightning Jack",
+      "url": "https://www.coincasino.com/casino/coincasino-originals/lightning-jack",
+      "thumb": "https://www.coincasino.com/cdn/5ef969f1-0849-41d4-ae71-e335ad111ed3.webp",
+      "id": "1203706a-7672-4e5f-8c9d-2d2b0d91c52f",
+      "category": "coincasino-originals"
+    }
+  ]
+}
