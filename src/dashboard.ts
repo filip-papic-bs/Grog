@@ -255,7 +255,7 @@ export interface DashboardData {
       why: string;
     }[];
     newThisRun: { name: string; casino: string; url: string; theme?: string; volatility?: string; provider?: string; prevDate?: string | null; curDate?: string }[];
-    movers: { name: string; casino: string; from: number | null; to: number; delta: number | null; prevDate?: string | null; curDate?: string }[];
+    movers: { name: string; casino: string; url: string; from: number | null; to: number; delta: number | null; prevDate?: string | null; curDate?: string }[];
     byCasino: {
       casino: string;
       key: string;
@@ -387,7 +387,7 @@ export async function buildDashboardData(
         if (g.rail !== "trending" || g.rank >= 15) continue;
         const from = prevRank.has(gid(g)) ? prevRank.get(gid(g))! : null;
         const delta = from === null ? null : from - g.rank;
-        if (from === null || (delta !== null && delta >= 2)) movers.push({ name: g.name, casino, from, to: g.rank, delta, prevDate, curDate });
+        if (from === null || (delta !== null && delta >= 2)) movers.push({ name: g.name, casino, url: g.url, from, to: g.rank, delta, prevDate, curDate });
       }
     }
   }

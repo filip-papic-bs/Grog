@@ -258,13 +258,28 @@ function chips(arr: string[] = [], cls = "chip"): string {
   return arr.map((m) => `<span class="${cls}">${esc(m)}</span>`).join("");
 }
 
-/** Game link, but degrade to plain text when the snapshot stored no usable URL
- * (e.g. Roobet's slug-less originals → ".../game/undefined"). */
+/** A snapshot URL is usable unless it's a slug-less placeholder
+ * (e.g. Roobet's originals → ".../game/undefined") or a bare path. */
+function usableUrl(url?: string): url is string {
+  return !!url && !url.includes("/undefined") && !/\/$/.test(url);
+}
+
+/** Game link, but degrade to plain text when there's no usable URL. */
 function glink(name: string, url?: string): string {
-  const ok = url && !url.includes("/undefined") && !/\/$/.test(url);
-  return ok
-    ? `<a href="${esc(url!)}" target="_blank" rel="noopener">${esc(name)}</a>`
+  return usableUrl(url)
+    ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)}</a>`
     : `<span class="gtxt">${esc(name)}</span>`;
+}
+
+/** Like chips(), but each game is a clickable chip when it has a usable URL. */
+function gameChips(items: { name: string; url?: string }[] = []): string {
+  return items
+    .map((g) =>
+      usableUrl(g.url)
+        ? `<a class="chip chip-link" href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.name)}</a>`
+        : `<span class="chip">${esc(g.name)}</span>`,
+    )
+    .join("");
 }
 
 // Lucide-style inline stroke icons (self-contained, currentColor).
@@ -428,7 +443,7 @@ export function renderDashboardHtml(d: DashboardData): string {
         <thead><tr><th>Move</th><th>Game</th><th>Casino</th><th>Now</th><th>Was</th></tr></thead>
         <tbody>${d.current.movers.map((m) => `<tr>
           <td class="mv-move">${m.from === null ? `<span class="pill new">NEW</span>` : `<span class="pill up">▲ ${m.delta}</span>`}</td>
-          <td class="g">${esc(m.name)}</td>
+          <td class="g">${glink(m.name, m.url)}</td>
           <td>${cName(m.casino)}</td>
           <td class="rk">#${m.to + 1}</td>
           <td class="mv-was">${m.from === null ? `<span class="muted">—</span>` : `#${m.from + 1}`}</td>
@@ -486,7 +501,7 @@ export function renderDashboardHtml(d: DashboardData): string {
         c.prevTotal !== null && !c.added.length && !c.removed.length
           ? `<div class="muted mt">No change since last report.</div>`
           : "";
-      const allBlock = `<h4>All originals (${c.all.length})</h4><div class="hot-chips">${chips(c.all.map((g) => g.name)) || '<span class="muted">—</span>'}</div>`;
+      const allBlock = `<h4>All originals (${c.all.length})</h4><div class="hot-chips">${gameChips(c.all) || '<span class="muted">—</span>'}</div>`;
       return card(c.casino, `${head}${addedBlock}${removedBlock}${noChange}${allBlock}`, { logo: logoUriFor(c.casino), sub: c.prevDate ? `now vs ${esc(fmtDate(c.prevDate))}` : "latest only" });
     })
     .join("");
@@ -504,7 +519,7 @@ export function renderDashboardHtml(d: DashboardData): string {
       </div>
       <h4>Top trending</h4>
       <ol class="list ol">${c.trending.slice(0, 10).map((g) => `<li>${glink(g.name, g.url)}${g.theme ? ` <span class="chip sm">${esc(g.theme)}</span>` : ""}</li>`).join("") || '<li class="muted">—</li>'}</ol>
-      ${c.originals.length ? `<h4>Originals</h4><div class="hot-chips">${chips(c.originals.map((oo) => oo.name))}</div>` : ""}
+      ${c.originals.length ? `<h4>Originals</h4><div class="hot-chips">${gameChips(c.originals)}</div>` : ""}
     `, { logo: logoUriFor(c.casino), sub: `latest ${esc(cc.latest.slice(0, 10))}` });
   }).join("");
   const casinosTab = `<div class="masonry">${casinoCards}</div>`;
@@ -737,6 +752,8 @@ main{padding:26px 30px 48px;max-width:1640px;width:100%}
 /* ── chips / badges / pills ── */
 .cc{background:linear-gradient(90deg,var(--gold-deep),var(--gold));color:#241c08;font-weight:800;border-radius:20px;padding:2px 9px;font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap;flex:none}
 .chip{display:inline-block;border:1px solid var(--bd-2);border-radius:20px;padding:2px 9px;font-size:11px;color:var(--tx-2);white-space:nowrap}
+a.chip{cursor:pointer;transition:border-color .15s,color .15s}
+a.chip:hover{border-color:var(--gold);color:var(--gold-2);text-decoration:none}
 .chip.sm{font-size:10px;padding:1px 7px}
 .chip.vol{border-color:color-mix(in srgb,var(--vc) 55%,transparent);color:var(--vc)}
 .badge{display:inline-block;background:transparent;border:1px solid var(--bd);border-radius:6px;padding:1px 7px;font-size:10.5px;color:var(--mut);margin-left:3px}
