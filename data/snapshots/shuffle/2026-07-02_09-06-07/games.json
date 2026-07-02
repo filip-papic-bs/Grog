@@ -1,0 +1,392 @@
+{
+  "casino": "Shuffle",
+  "category": "shuffle",
+  "capturedAt": "2026-07-02T09:06:07.605Z",
+  "games": [
+    {
+      "name": "The Soapranos",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-thesoapranos",
+      "thumb": "https://shuffle-com.imgix.net/e9c40f36-28ed-426f-a4f0-e8c60621d1bd",
+      "id": "peter-sons-pets-thesoapranos",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mayan Apocalypto",
+      "url": "https://shuffle.com/casino/games/7-rings-mayan-apocalypto",
+      "thumb": "https://shuffle-com.imgix.net/076170dd-68e4-458d-8afd-7a0c12d1108b",
+      "id": "7-rings-mayan-apocalypto",
+      "category": "new-releases"
+    },
+    {
+      "name": "CCTV Game - Snow Run",
+      "url": "https://shuffle.com/casino/games/155-io-zcl-3-u-cctvgame-snowrun",
+      "thumb": "https://shuffle-com.imgix.net/d5cdb691-9a2f-48f0-80f1-e1bf9bcd6c1c",
+      "id": "155-io-zcl-3-u-cctvgame-snowrun",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fishing Time",
+      "url": "https://shuffle.com/casino/games/softswiss-fishing-time",
+      "thumb": "https://shuffle-com.imgix.net/02b1b962-698c-4815-bf73-50e275f979fa",
+      "id": "softswiss-fishing-time",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Pack: 2026 Cup",
+      "url": "https://shuffle.com/casino/games/softswiss-lucky-pack-2026-cup",
+      "thumb": "https://shuffle-com.imgix.net/313b9a50-b497-42af-bbed-0a43555e0c77",
+      "id": "softswiss-lucky-pack-2026-cup",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ronaldinho's Streetball Bonanza",
+      "url": "https://shuffle.com/casino/games/booming-ronaldinhos-streetball-bonanza",
+      "thumb": "https://shuffle-com.imgix.net/a946505e-a2f9-4e0c-b8b8-d73f89711b09",
+      "id": "booming-ronaldinhos-streetball-bonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bar of Fate",
+      "url": "https://shuffle.com/casino/games/7-rings-barof-fate",
+      "thumb": "https://shuffle-com.imgix.net/70982688-be40-4093-a51b-25b5ee57c6d5",
+      "id": "7-rings-barof-fate",
+      "category": "new-releases"
+    },
+    {
+      "name": "Radiate",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-radiate",
+      "thumb": "https://shuffle-com.imgix.net/b1bd89fe-d100-4d59-a09a-b61b38a712f8",
+      "id": "clutch-gaming-clg-radiate",
+      "category": "new-releases"
+    },
+    {
+      "name": "Operation Oink",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-operationoink",
+      "thumb": "https://shuffle-com.imgix.net/70322c0f-9b55-463e-a396-4c7d38d24d1b",
+      "id": "clutch-gaming-clg-operationoink",
+      "category": "new-releases"
+    },
+    {
+      "name": "Eye of the Flame",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-eyeoftheflame",
+      "thumb": "https://shuffle-com.imgix.net/9b05c644-25ce-4f6f-86a3-c99cea6ea727",
+      "id": "clutch-gaming-clg-eyeoftheflame",
+      "category": "new-releases"
+    },
+    {
+      "name": "Luna X",
+      "url": "https://shuffle.com/casino/games/exco-luna-x",
+      "thumb": "https://shuffle-com.imgix.net/190db8e9-a1bd-4592-ac57-97be13fbd495",
+      "id": "exco-luna-x",
+      "category": "new-releases"
+    },
+    {
+      "name": "Flames of Hades",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-flamesofhades",
+      "thumb": "https://shuffle-com.imgix.net/a078656a-99a6-4dae-842e-23763980fa07",
+      "id": "clutch-gaming-clg-flamesofhades",
+      "category": "new-releases"
+    },
+    {
+      "name": "Slide",
+      "url": "https://shuffle.com/casino/games/originals/slide",
+      "thumb": "https://shuffle-com.imgix.net/8d56b7cb-1c57-4171-bb88-17eb92445a0d",
+      "id": "originals/slide",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fast Lane",
+      "url": "https://shuffle.com/casino/games/155-io-zcl-3-u-fastlane",
+      "thumb": "https://shuffle-com.imgix.net/16ef0679-52cc-429d-bad2-a9015e0199e2",
+      "id": "155-io-zcl-3-u-fastlane",
+      "category": "new-releases"
+    },
+    {
+      "name": "Blitz",
+      "url": "https://shuffle.com/casino/games/originals/blitz",
+      "thumb": "https://shuffle-com.imgix.net/85486902-e7e3-47eb-a4fd-3f5d03486abb",
+      "id": "originals/blitz",
+      "category": "new-releases"
+    },
+    {
+      "name": "Roadquake",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-roadquake",
+      "thumb": "https://shuffle-com.imgix.net/e7be8d07-4a2a-4e98-8930-2b473e9c022d",
+      "id": "peter-sons-pets-roadquake",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mr. Oinkster's Power Hit",
+      "url": "https://shuffle.com/casino/games/booming-mr-oinksters-power-hit",
+      "thumb": "https://shuffle-com.imgix.net/d1ba7163-a81c-46d7-9efe-49a57f01154f",
+      "id": "booming-mr-oinksters-power-hit",
+      "category": "new-releases"
+    },
+    {
+      "name": "Flames and Greed",
+      "url": "https://shuffle.com/casino/games/7-rings-flamesand-greed",
+      "thumb": "https://shuffle-com.imgix.net/0e760d73-e020-4473-8f2a-b895911036cb",
+      "id": "7-rings-flamesand-greed",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Gem Master",
+      "url": "https://shuffle.com/casino/games/bsg-the-gem-master",
+      "thumb": "https://shuffle-com.imgix.net/b58dbf51-6598-40f5-b17d-dedaaa7b816a",
+      "id": "bsg-the-gem-master",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky And Brave Fortune",
+      "url": "https://shuffle.com/casino/games/1-spin-4-win-lucky-and-brave-fortune",
+      "thumb": "https://shuffle-com.imgix.net/b0929e28-1e87-4666-b0a5-0c0eaa3e3cb6",
+      "id": "1-spin-4-win-lucky-and-brave-fortune",
+      "category": "new-releases"
+    },
+    {
+      "name": "Yokai",
+      "url": "https://shuffle.com/casino/games/softswiss-yokai",
+      "thumb": "https://shuffle-com.imgix.net/111750a6-7233-49ab-852b-98f5e17a93de",
+      "id": "softswiss-yokai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Flames of Hades",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-flamesofhades",
+      "thumb": "https://shuffle-com.imgix.net/a078656a-99a6-4dae-842e-23763980fa07",
+      "id": "clutch-gaming-clg-flamesofhades",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Eye of the Flame",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-eyeoftheflame",
+      "thumb": "https://shuffle-com.imgix.net/9b05c644-25ce-4f6f-86a3-c99cea6ea727",
+      "id": "clutch-gaming-clg-eyeoftheflame",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Frog's Spell",
+      "url": "https://shuffle.com/casino/games/softswiss-frogs-spell",
+      "thumb": "https://shuffle-com.imgix.net/f98c14c9-84f3-4cae-825f-8d62d0948406",
+      "id": "softswiss-frogs-spell",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Burning Age",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-theburningage",
+      "thumb": "https://shuffle-com.imgix.net/4873c1cb-56ae-4e50-8195-3f79b9229880",
+      "id": "clutch-gaming-clg-theburningage",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Mouse Ananza",
+      "url": "https://shuffle.com/casino/games/7-rings-mouse-ananza",
+      "thumb": "https://shuffle-com.imgix.net/0f3efb39-21d4-43ff-a6c6-e2a040846e48",
+      "id": "7-rings-mouse-ananza",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Samurai",
+      "url": "https://shuffle.com/casino/games/softswiss-sweet-samurai",
+      "thumb": "https://shuffle-com.imgix.net/0029637f-435e-4eb1-ad46-33e2cdd0fb8c",
+      "id": "softswiss-sweet-samurai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Multi Rush",
+      "url": "https://shuffle.com/casino/games/softswiss-multi-rush",
+      "thumb": "https://shuffle-com.imgix.net/fda90c28-921c-4480-92a8-94be18280173",
+      "id": "softswiss-multi-rush",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Ginger Wins: Wild Jungle",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-gingerwinswildjungle",
+      "thumb": "https://shuffle-com.imgix.net/181355f0-6768-4cdd-8c7d-6e6fe3776a0e",
+      "id": "peter-sons-pets-gingerwinswildjungle",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Piranha Bite Club",
+      "url": "https://shuffle.com/casino/games/exco-piranha-bite-club",
+      "thumb": "https://shuffle-com.imgix.net/45d8ceae-fe87-4542-a469-74bbe8aa4eb9",
+      "id": "exco-piranha-bite-club",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Merge Up 2",
+      "url": "https://shuffle.com/casino/games/softswiss-merge-up-2",
+      "thumb": "https://shuffle-com.imgix.net/90f58548-4ca7-4992-8def-a365aa4ccdb1",
+      "id": "softswiss-merge-up-2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aztec Clusters",
+      "url": "https://shuffle.com/casino/games/softswiss-aztec-clusters",
+      "thumb": "https://shuffle-com.imgix.net/330f2c86-c82c-402e-9fb7-e8d94cfb9d38",
+      "id": "softswiss-aztec-clusters",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Radiate",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-radiate",
+      "thumb": "https://shuffle-com.imgix.net/b1bd89fe-d100-4d59-a09a-b61b38a712f8",
+      "id": "clutch-gaming-clg-radiate",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aviamasters 2",
+      "url": "https://shuffle.com/casino/games/softswiss-aviamasters-2",
+      "thumb": "https://shuffle-com.imgix.net/64269cc2-94f8-4df3-affb-614bd0e86d7e",
+      "id": "softswiss-aviamasters-2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lucky Pack: 2026 Cup",
+      "url": "https://shuffle.com/casino/games/softswiss-lucky-pack-2026-cup",
+      "thumb": "https://shuffle-com.imgix.net/313b9a50-b497-42af-bbed-0a43555e0c77",
+      "id": "softswiss-lucky-pack-2026-cup",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Soapranos",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-thesoapranos",
+      "thumb": "https://shuffle-com.imgix.net/e9c40f36-28ed-426f-a4f0-e8c60621d1bd",
+      "id": "peter-sons-pets-thesoapranos",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Ronaldinho's Streetball Bonanza",
+      "url": "https://shuffle.com/casino/games/booming-ronaldinhos-streetball-bonanza",
+      "thumb": "https://shuffle-com.imgix.net/a946505e-a2f9-4e0c-b8b8-d73f89711b09",
+      "id": "booming-ronaldinhos-streetball-bonanza",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Frenzy Clusters",
+      "url": "https://shuffle.com/casino/games/softswiss-frenzy-clusters",
+      "thumb": "https://shuffle-com.imgix.net/a1cb730f-51d5-4d57-a0dc-224cc5f4878e",
+      "id": "softswiss-frenzy-clusters",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Operation Oink",
+      "url": "https://shuffle.com/casino/games/clutch-gaming-clg-operationoink",
+      "thumb": "https://shuffle-com.imgix.net/70322c0f-9b55-463e-a396-4c7d38d24d1b",
+      "id": "clutch-gaming-clg-operationoink",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Greedy for Gold: Hold and Win",
+      "url": "https://shuffle.com/casino/games/booming-greedyfor-gold-holdand-win",
+      "thumb": "https://shuffle-com.imgix.net/1157b8d8-6909-4021-866a-ebb70392c912",
+      "id": "booming-greedyfor-gold-holdand-win",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dice",
+      "url": "https://shuffle.com/casino/games/originals/dice",
+      "thumb": "https://shuffle-com.imgix.net/437b7bc5-ded9-4555-ae0d-5e21cd272291",
+      "id": "originals/dice",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://shuffle.com/casino/games/originals/mines",
+      "thumb": "https://shuffle-com.imgix.net/b69b5fd1-a433-4ff0-96f5-6ef2a351fb6e",
+      "id": "originals/mines",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://shuffle.com/casino/games/originals/keno",
+      "thumb": "https://shuffle-com.imgix.net/711f52fd-bf4b-412e-8e48-399aab1f3abb",
+      "id": "originals/keno",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://shuffle.com/casino/games/originals/limbo",
+      "thumb": "https://shuffle-com.imgix.net/bbd65099-e147-4518-abde-3c9c9f67d50a",
+      "id": "originals/limbo",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://shuffle.com/casino/games/originals/plinko",
+      "thumb": "https://shuffle-com.imgix.net/5355bb8c-4be3-479d-b967-20112873fcf5",
+      "id": "originals/plinko",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://shuffle.com/casino/games/originals/blackjack",
+      "thumb": "https://shuffle-com.imgix.net/6ff68630-512a-4e51-906d-e460beb0cf50",
+      "id": "originals/blackjack",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Slide",
+      "url": "https://shuffle.com/casino/games/originals/slide",
+      "thumb": "https://shuffle-com.imgix.net/8d56b7cb-1c57-4171-bb88-17eb92445a0d",
+      "id": "originals/slide",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Blitz",
+      "url": "https://shuffle.com/casino/games/originals/blitz",
+      "thumb": "https://shuffle-com.imgix.net/85486902-e7e3-47eb-a4fd-3f5d03486abb",
+      "id": "originals/blitz",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://shuffle.com/casino/games/originals/hilo",
+      "thumb": "https://shuffle-com.imgix.net/fbe2ffcc-fa44-45d7-b3f5-5a6a49c7e2fb",
+      "id": "originals/hilo",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Waifu Tower",
+      "url": "https://shuffle.com/casino/games/originals/tower",
+      "thumb": "https://shuffle-com.imgix.net/87b41ffb-ae88-4f2e-a649-242d4c35e27c",
+      "id": "originals/tower",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://shuffle.com/casino/games/originals/crash",
+      "thumb": "https://shuffle-com.imgix.net/7e6aeb42-0332-4697-9fe5-1fc82cc2b1c0",
+      "id": "originals/crash",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Chicken",
+      "url": "https://shuffle.com/casino/games/originals/chicken",
+      "thumb": "https://shuffle-com.imgix.net/5ebcfe9d-1f82-4c9b-b33a-cb44898fd4e1",
+      "id": "originals/chicken",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://shuffle.com/casino/games/originals/baccarat",
+      "thumb": "https://shuffle-com.imgix.net/d2ebc1e2-435f-4ff8-905a-e3c67599a949",
+      "id": "originals/baccarat",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://shuffle.com/casino/games/originals/roulette",
+      "thumb": "https://shuffle-com.imgix.net/2437577c-af10-436e-bfa1-757749399ce1",
+      "id": "originals/roulette",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://shuffle.com/casino/games/originals/wheel",
+      "thumb": "https://shuffle-com.imgix.net/d0bac6f5-4052-4fc0-b3ef-bdb5c3049e88",
+      "id": "originals/wheel",
+      "category": "shuffle-originals"
+    }
+  ]
+}
