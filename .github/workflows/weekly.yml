@@ -2,7 +2,7 @@ name: weekly snapshot
 
 on:
   schedule:
-    - cron: "00 8 * * 1,4"
+    - cron: "00 8 * * 2"
   push:
     branches: [master]
     paths-ignore:
