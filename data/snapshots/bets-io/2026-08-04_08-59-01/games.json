@@ -1,0 +1,247 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-08-04T08:59:01.311Z",
+  "games": [
+    {
+      "name": "Death Dominion",
+      "url": "https://www.bets.io/casino/games/death-dominion",
+      "id": "death-dominion",
+      "category": "new-releases"
+    },
+    {
+      "name": "Chicken Rush 2",
+      "url": "https://www.bets.io/casino/games/chicken-rush-2",
+      "id": "chicken-rush-2",
+      "category": "new-releases"
+    },
+    {
+      "name": "Supreme Zeus",
+      "url": "https://www.bets.io/casino/games/supreme-zeus",
+      "id": "supreme-zeus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gift of Midas",
+      "url": "https://www.bets.io/casino/games/gift-of-midas",
+      "id": "gift-of-midas",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gold Digger Clusterbuster",
+      "url": "https://www.bets.io/casino/games/gold-digger-clusterbuster",
+      "id": "gold-digger-clusterbuster",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zalatar",
+      "url": "https://www.bets.io/casino/games/zalatar",
+      "id": "zalatar",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Crown coins",
+      "url": "https://www.bets.io/casino/games/3-crown-coins",
+      "id": "3-crown-coins",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Penny Power Scatter",
+      "url": "https://www.bets.io/casino/games/lucky-penny-power-scatter-booongo",
+      "id": "lucky-penny-power-scatter-booongo",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Age of Cleopatra",
+      "url": "https://www.bets.io/casino/games/the-age-of-cleopatra",
+      "id": "the-age-of-cleopatra",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sunnydaze Asylum",
+      "url": "https://www.bets.io/casino/games/sunnydaze-asylum",
+      "id": "sunnydaze-asylum",
+      "category": "new-releases"
+    },
+    {
+      "name": "Marlin Masters OG",
+      "url": "https://www.bets.io/casino/games/marlin-masters-og",
+      "id": "marlin-masters-og",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fruit Million Respin",
+      "url": "https://www.bets.io/casino/games/fruit-million-respin",
+      "id": "fruit-million-respin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Crown of the Undying",
+      "url": "https://www.bets.io/casino/games/crown-of-the-undying",
+      "id": "crown-of-the-undying",
+      "category": "new-releases"
+    },
+    {
+      "name": "Chicken Cashway",
+      "url": "https://www.bets.io/casino/games/chicken-cashway",
+      "id": "chicken-cashway",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Dog House Megaways 1000",
+      "url": "https://www.bets.io/casino/games/the-dog-house-megaways-1000",
+      "id": "the-dog-house-megaways-1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Reel of Ra",
+      "url": "https://www.bets.io/casino/games/reel-of-ra",
+      "id": "reel-of-ra",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Prechaun",
+      "url": "https://www.bets.io/casino/games/le-prechaun",
+      "id": "le-prechaun",
+      "category": "new-releases"
+    },
+    {
+      "name": "Drill the Thrill",
+      "url": "https://www.bets.io/casino/games/drill-the-thrill",
+      "id": "drill-the-thrill",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sleeping Dragon Ultra Dark",
+      "url": "https://www.bets.io/casino/games/sleeping-dragon-ultra-dark",
+      "id": "sleeping-dragon-ultra-dark",
+      "category": "new-releases"
+    },
+    {
+      "name": "4 Scarab Coins: Hold and Win",
+      "url": "https://www.bets.io/casino/games/4-scarab-coins-hold-and-win",
+      "id": "4-scarab-coins-hold-and-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Thor Power: Whack & Win",
+      "url": "https://www.bets.io/casino/games/thor-power-whack-win",
+      "id": "thor-power-whack-win",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zeus: Titan Fury",
+      "url": "https://www.bets.io/casino/games/zeus-titan-fury",
+      "id": "zeus-titan-fury",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonanza Billion Xtreme",
+      "url": "https://www.bets.io/casino/games/bonanza-billion-xtreme",
+      "id": "bonanza-billion-xtreme",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Bandit",
+      "url": "https://www.bets.io/casino/games/le-bandit",
+      "id": "le-bandit",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wanted Dead or a Wild",
+      "url": "https://www.bets.io/casino/games/wanted-dead-or-a-wild",
+      "id": "wanted-dead-or-a-wild",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Elvis Frog in Vegas",
+      "url": "https://www.bets.io/casino/games/elvis-frog-in-vegas",
+      "id": "elvis-frog-in-vegas",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lucha Maniacs",
+      "url": "https://www.bets.io/casino/games/lucha-maniacs",
+      "id": "lucha-maniacs",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Buffalo King Megaways",
+      "url": "https://www.bets.io/casino/games/buffalo-king-megaways",
+      "id": "buffalo-king-megaways",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Only Coins Express",
+      "url": "https://www.bets.io/casino/games/only-coins-express",
+      "id": "only-coins-express",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Train Heist Johnny Cash",
+      "url": "https://www.bets.io/casino/games/train-heist-johnny-cash",
+      "id": "train-heist-johnny-cash",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bass - Hold & Spinner",
+      "url": "https://www.bets.io/casino/games/big-bass-hold-spinner",
+      "id": "big-bass-hold-spinner",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Egypt Fire",
+      "url": "https://www.bets.io/casino/games/egypt-fire-3oaks",
+      "id": "egypt-fire-3oaks",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Greedy Piggy",
+      "url": "https://www.bets.io/casino/games/greedy-piggy",
+      "id": "greedy-piggy",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dig Dig Digger",
+      "url": "https://www.bets.io/casino/games/dig-dig-digger",
+      "id": "dig-dig-digger",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zeus vs Hades – Gods of War 250",
+      "url": "https://www.bets.io/casino/games/zeus-vs-hades-gods-of-war-250",
+      "id": "zeus-vs-hades-gods-of-war-250",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Starlight Princess 1000",
+      "url": "https://www.bets.io/casino/games/starlight-princess-1000",
+      "id": "starlight-princess-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Coins of Alkemor: Extreme Magic - Hold & Win",
+      "url": "https://www.bets.io/casino/games/coins-of-alkemor-extreme-magic-hold-win",
+      "id": "coins-of-alkemor-extreme-magic-hold-win",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush Super Scatter",
+      "url": "https://www.bets.io/casino/games/sugar-rush-super-scatter",
+      "id": "sugar-rush-super-scatter",
+      "category": "trending-slots"
+    },
+    {
+      "name": "3 Hot Chillies",
+      "url": "https://www.bets.io/casino/games/3-hot-chillies-3oaks",
+      "id": "3-hot-chillies-3oaks",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Football 2026",
+      "url": "https://www.bets.io/casino/games/football-2026",
+      "id": "football-2026",
+      "category": "trending-slots"
+    }
+  ]
+}
