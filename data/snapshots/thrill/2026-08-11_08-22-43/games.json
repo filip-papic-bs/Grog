@@ -1,0 +1,439 @@
+{
+  "casino": "Thrill",
+  "category": "thrill",
+  "capturedAt": "2026-08-11T08:22:43.863Z",
+  "games": [
+    {
+      "name": "3 Power Dragons",
+      "url": "https://thrill.com/casino/play/avx_3powerdragons",
+      "id": "avx_3powerdragons",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bling Blitz Diamond Drop",
+      "url": "https://thrill.com/casino/play/bgmblingblitzdiamonddrop",
+      "id": "bgmblingblitzdiamonddrop",
+      "category": "new-releases"
+    },
+    {
+      "name": "Elements of Power",
+      "url": "https://thrill.com/casino/play/bgmelementsofpower",
+      "id": "bgmelementsofpower",
+      "category": "new-releases"
+    },
+    {
+      "name": "Golden Avalon Hold and Win",
+      "url": "https://thrill.com/casino/play/bgmgoldenavalonholdandwin",
+      "id": "bgmgoldenavalonholdandwin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Grand Buffalo Hold and Win",
+      "url": "https://thrill.com/casino/play/bgmgrandbuffaloholandwin",
+      "id": "bgmgrandbuffaloholandwin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Money Maker",
+      "url": "https://thrill.com/casino/play/bgmmoneymaker",
+      "id": "bgmmoneymaker",
+      "category": "new-releases"
+    },
+    {
+      "name": "Arena of Iron",
+      "url": "https://thrill.com/casino/play/blsarenaofiron",
+      "id": "blsarenaofiron",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bubble Works",
+      "url": "https://thrill.com/casino/play/bmgbubbleworks",
+      "id": "bmgbubbleworks",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mr. Oinkster's Power Hit",
+      "url": "https://thrill.com/casino/play/bmgmroinksterspowerhit",
+      "id": "bmgmroinksterspowerhit",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ronaldinho's Street Ball Bonanza",
+      "url": "https://thrill.com/casino/play/bmgronaldinhosstreetballbonanza",
+      "id": "bmgronaldinhosstreetballbonanza",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dragon Dragon",
+      "url": "https://thrill.com/casino/play/evodragondragon",
+      "id": "evodragondragon",
+      "category": "new-releases"
+    },
+    {
+      "name": "Book Of Arcane",
+      "url": "https://thrill.com/casino/play/js_bookofarcane",
+      "id": "js_bookofarcane",
+      "category": "new-releases"
+    },
+    {
+      "name": "Cyber Egypt",
+      "url": "https://thrill.com/casino/play/js_cyberegypt",
+      "id": "js_cyberegypt",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dynamo's Show",
+      "url": "https://thrill.com/casino/play/js_dynamosshow",
+      "id": "js_dynamosshow",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fish Mafia",
+      "url": "https://thrill.com/casino/play/js_fishmafia",
+      "id": "js_fishmafia",
+      "category": "new-releases"
+    },
+    {
+      "name": "Rain and Ruin",
+      "url": "https://thrill.com/casino/play/js_rainandruin",
+      "id": "js_rainandruin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Shadow Pirates",
+      "url": "https://thrill.com/casino/play/js_shadowpirates",
+      "id": "js_shadowpirates",
+      "category": "new-releases"
+    },
+    {
+      "name": "Shogun Skylord",
+      "url": "https://thrill.com/casino/play/js_shogunskylord",
+      "id": "js_shogunskylord",
+      "category": "new-releases"
+    },
+    {
+      "name": "Shogun Skylord: Jade Empress",
+      "url": "https://thrill.com/casino/play/js_shogunskylordjadeempress",
+      "id": "js_shogunskylordjadeempress",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sugar Heaven",
+      "url": "https://thrill.com/casino/play/js_sugarheaven",
+      "id": "js_sugarheaven",
+      "category": "new-releases"
+    },
+    {
+      "name": "Unholy Mystery",
+      "url": "https://thrill.com/casino/play/js_unholymystery",
+      "id": "js_unholymystery",
+      "category": "new-releases"
+    },
+    {
+      "name": "Vegan Nightmare",
+      "url": "https://thrill.com/casino/play/js_vegannightmare",
+      "id": "js_vegannightmare",
+      "category": "new-releases"
+    },
+    {
+      "name": "San Quentin Manhunt",
+      "url": "https://thrill.com/casino/play/nlcsanquentinmanhunt",
+      "id": "nlcsanquentinmanhunt",
+      "category": "new-releases"
+    },
+    {
+      "name": "Peek & Pounce",
+      "url": "https://thrill.com/casino/play/nowpeekpounce",
+      "id": "nowpeekpounce",
+      "category": "new-releases"
+    },
+    {
+      "name": "4 Wolf Drums",
+      "url": "https://thrill.com/casino/play/oak_4wolfdrums",
+      "id": "oak_4wolfdrums",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mole In The Hole",
+      "url": "https://thrill.com/casino/play/octmoleinthehole",
+      "id": "octmoleinthehole",
+      "category": "new-releases"
+    },
+    {
+      "name": "Roadquake",
+      "url": "https://thrill.com/casino/play/pasroadquake",
+      "id": "pasroadquake",
+      "category": "new-releases"
+    },
+    {
+      "name": "Tango of Chaos",
+      "url": "https://thrill.com/casino/play/pastangoofchaos",
+      "id": "pastangoofchaos",
+      "category": "new-releases"
+    },
+    {
+      "name": "Queen of Bounty",
+      "url": "https://thrill.com/casino/play/pgsqueenofbounty",
+      "id": "pgsqueenofbounty",
+      "category": "new-releases"
+    },
+    {
+      "name": "Super Wildrix",
+      "url": "https://thrill.com/casino/play/pgssuperwildrix",
+      "id": "pgssuperwildrix",
+      "category": "new-releases"
+    },
+    {
+      "name": "Max Win Machine",
+      "url": "https://thrill.com/casino/play/hcwmaxwinmachine",
+      "id": "hcwmaxwinmachine",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Cooked",
+      "url": "https://thrill.com/casino/play/hyhcooked",
+      "id": "hyhcooked",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Cash Crooks",
+      "url": "https://thrill.com/casino/play/hcwcashcrooks",
+      "id": "hcwcashcrooks",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Crypto Genesys",
+      "url": "https://thrill.com/casino/play/pgpcryptogenesys",
+      "id": "pgpcryptogenesys",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Supreme Zeus",
+      "url": "https://thrill.com/casino/play/hcwsupremezeus",
+      "id": "hcwsupremezeus",
+      "category": "trending-slots"
+    },
+    {
+      "name": "AFK Airport Security",
+      "url": "https://thrill.com/casino/play/nlcafkairportsecurity",
+      "id": "nlcafkairportsecurity",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Dog House Megaways 1000",
+      "url": "https://thrill.com/casino/play/pgpthedoghouse1000",
+      "id": "pgpthedoghouse1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Prechaun",
+      "url": "https://thrill.com/casino/play/hcwleprechaun",
+      "id": "hcwleprechaun",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Death Dominion",
+      "url": "https://thrill.com/casino/play/pgpdeathdominion",
+      "id": "pgpdeathdominion",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Luxe",
+      "url": "https://thrill.com/casino/play/hcwtheluxe",
+      "id": "hcwtheluxe",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Trap Tower",
+      "url": "https://thrill.com/casino/play/boxtraptower",
+      "id": "boxtraptower",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sheeple",
+      "url": "https://thrill.com/casino/play/boxsheeple",
+      "id": "boxsheeple",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Enriched",
+      "url": "https://thrill.com/casino/play/wckenriched",
+      "id": "wckenriched",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zalatar",
+      "url": "https://thrill.com/casino/play/endzalatar",
+      "id": "endzalatar",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bass Blast",
+      "url": "https://thrill.com/casino/play/pgpbigbassblast",
+      "id": "pgpbigbassblast",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza 2500",
+      "url": "https://thrill.com/casino/play/pgpsweetbonanza2500",
+      "id": "pgpsweetbonanza2500",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Spice",
+      "url": "https://thrill.com/casino/play/ntnspice",
+      "id": "ntnspice",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Cosmic Clusters!",
+      "url": "https://thrill.com/casino/play/pgpcosmiccluster",
+      "id": "pgpcosmiccluster",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Hell Butcher",
+      "url": "https://thrill.com/casino/play/pgphellbutcher",
+      "id": "pgphellbutcher",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Grug Make Fire",
+      "url": "https://thrill.com/casino/play/hcwgrugmakefire",
+      "id": "hcwgrugmakefire",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Nitro Nights",
+      "url": "https://thrill.com/casino/play/hcwnitronights",
+      "id": "hcwnitronights",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Soaked By Seamen",
+      "url": "https://thrill.com/casino/play/nlcsoakedbyseamen",
+      "id": "nlcsoakedbyseamen",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Death Becomes You",
+      "url": "https://thrill.com/casino/play/hcwdeathbecomesyou",
+      "id": "hcwdeathbecomesyou",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lemur Levels",
+      "url": "https://thrill.com/casino/play/blslemurlevels",
+      "id": "blslemurlevels",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gearlab Genius",
+      "url": "https://thrill.com/casino/play/blsgearlabgenius",
+      "id": "blsgearlabgenius",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zeus vs Hades: Gods of War 250",
+      "url": "https://thrill.com/casino/play/pgpzeusvshadesgodsofwar250",
+      "id": "pgpzeusvshadesgodsofwar250",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Preach",
+      "url": "https://thrill.com/casino/play/boxpreach",
+      "id": "boxpreach",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus",
+      "url": "https://thrill.com/casino/play/pgpgatesofolympus",
+      "id": "pgpgatesofolympus",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush Super Scatter",
+      "url": "https://thrill.com/casino/play/pgpsugarrushsuperscatter",
+      "id": "pgpsugarrushsuperscatter",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Power of Ten",
+      "url": "https://thrill.com/casino/play/hcwpoweroften",
+      "id": "hcwpoweroften",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Keno",
+      "url": "https://thrill.com/casino/play/thrill-keno",
+      "id": "thrill-keno",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://thrill.com/casino/play/thrill-limbo",
+      "id": "thrill-limbo",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://thrill.com/casino/play/thrill-roulette",
+      "id": "thrill-roulette",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://thrill.com/casino/play/thrill-baccarat",
+      "id": "thrill-baccarat",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "CoinFlip",
+      "url": "https://thrill.com/casino/play/thrill-coinflip",
+      "id": "thrill-coinflip",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://thrill.com/casino/play/thrill-dice",
+      "id": "thrill-dice",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://thrill.com/casino/play/thrill-mines",
+      "id": "thrill-mines",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://thrill.com/casino/play/thrill-blackjack",
+      "id": "thrill-blackjack",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://thrill.com/casino/play/thrill-crash",
+      "id": "thrill-crash",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://thrill.com/casino/play/thrill-plinko",
+      "id": "thrill-plinko",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "HiLo",
+      "url": "https://thrill.com/casino/play/thrill-hilo",
+      "id": "thrill-hilo",
+      "category": "thrill-originals"
+    },
+    {
+      "name": "Slide",
+      "url": "https://thrill.com/casino/play/thrill-slide",
+      "id": "thrill-slide",
+      "category": "thrill-originals"
+    }
+  ]
+}
