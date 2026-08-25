@@ -1,0 +1,426 @@
+{
+  "casino": "BetFury",
+  "category": "betfury",
+  "capturedAt": "2026-08-25T08:38:27.234Z",
+  "games": [
+    {
+      "name": "Gift of Midas",
+      "url": "https://bf1.io/casino/games/gift-of-midas-by-endorphina",
+      "id": "5efab5f2e41c2a6913b8765cb39a67b3afe865ad",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Hercules Hold And Win",
+      "url": "https://bf1.io/casino/games/lucky-hercules-hold-and-win-by-1spin4win",
+      "id": "1spin4win:LuckyHerculesHoldAndWin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dragon Hold Gold",
+      "url": "https://bf1.io/casino/games/dragon-hold-gold-by-beplay",
+      "id": "beplay:DragonHoldGold",
+      "category": "new-releases"
+    },
+    {
+      "name": "Color Game Bonanza",
+      "url": "https://bf1.io/casino/games/color-game-bonanza-by-pragmatic-play",
+      "id": "8101",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wild Ways Hunt",
+      "url": "https://bf1.io/casino/games/wild-ways-hunt-by-beplay",
+      "id": "beplay:WildWaysHunt",
+      "category": "new-releases"
+    },
+    {
+      "name": "Tiki Extra Shot",
+      "url": "https://bf1.io/casino/games/tiki-extra-shot-by-beplay",
+      "id": "beplay:TikiExtraShot",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ragnarok Gold",
+      "url": "https://bf1.io/casino/games/ragnarok-gold-by-slotmill",
+      "id": "4bd13337110e468bbd43049e86603f5e",
+      "category": "new-releases"
+    },
+    {
+      "name": "Poseidon Wild Wrath",
+      "url": "https://bf1.io/casino/games/poseidon-wild-wrath-by-beplay",
+      "id": "beplay:PoseidonWildWrath",
+      "category": "new-releases"
+    },
+    {
+      "name": "Candy Party",
+      "url": "https://bf1.io/casino/games/candy-party-by-beplay",
+      "id": "beplay:CandyParty",
+      "category": "new-releases"
+    },
+    {
+      "name": "Skull and Compass",
+      "url": "https://bf1.io/casino/games/skull-and-compass-by-beplay",
+      "id": "beplay:SkullandCompass",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wild Scarab Queen",
+      "url": "https://bf1.io/casino/games/wild-scarab-queen-by-beplay",
+      "id": "beplay:WildScarabQueen",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hexed Forest",
+      "url": "https://bf1.io/casino/games/hexed-forest-by-beplay",
+      "id": "beplay:HexedForest",
+      "category": "new-releases"
+    },
+    {
+      "name": "Yo-Ho-Ho 2048",
+      "url": "https://bf1.io/casino/games/yo-ho-ho-2048-by-belatra-games",
+      "id": "belatra:YoHoHo2048",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mine, Baby, Mine!",
+      "url": "https://bf1.io/casino/games/mine-baby-mine-by-beplay",
+      "id": "beplay:MineBabyMine",
+      "category": "new-releases"
+    },
+    {
+      "name": "Super Serge",
+      "url": "https://bf1.io/casino/games/super-serge-by-pragmatic-play",
+      "id": "vswayssparkadv",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Lion Roarrr",
+      "url": "https://bf1.io/casino/games/3-lion-roarrr-by-tada-gaming",
+      "id": "tadagaming:3LionRoarrr",
+      "category": "new-releases"
+    },
+    {
+      "name": "Harvest Moon - Grave Profits",
+      "url": "https://bf1.io/casino/games/harvest-moon-grave-profits-by-pragmatic-play",
+      "id": "vs15grprofits",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fortune Garuda 1000",
+      "url": "https://bf1.io/casino/games/fortune-garuda-1000-by-tada-gaming",
+      "id": "tadagaming:FortuneGaruda1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fruit Million Respin",
+      "url": "https://bf1.io/casino/games/fruit-million-respin-by-bgaming",
+      "id": "bgmng:FruitMillionRespin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mystic Reels",
+      "url": "https://bf1.io/casino/games/mystic-reels-by-bgaming",
+      "id": "bgmng:MysticReels",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mummy X Riches",
+      "url": "https://bf1.io/casino/games/mummy-x-riches-by-popiplay",
+      "id": "popiplay:MummyXRiches",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sunnydaze Asylum",
+      "url": "https://bf1.io/casino/games/sunnydaze-asylum-by-pragmatic-play",
+      "id": "vswayssndzaslm",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jade Legends",
+      "url": "https://bf1.io/casino/games/jade-legends-by-pragmatic-play",
+      "id": "vs20jademrich",
+      "category": "new-releases"
+    },
+    {
+      "name": "Death Dominion",
+      "url": "https://bf1.io/casino/games/death-dominion-by-pragmatic-play",
+      "id": "vs20ddominion",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sons of Monarchy",
+      "url": "https://bf1.io/casino/games/sons-of-monarchy-by-popiplay",
+      "id": "popiplay:SonsOfMonarchy",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Zombies",
+      "url": "https://bf1.io/casino/games/wild-zombies-by-popiplay",
+      "id": "popiplay:WildZombies",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lady Wolf Moon",
+      "url": "https://bf1.io/casino/games/lady-wolf-moon-by-bgaming",
+      "id": "bgmng:LuckyLadyMoon",
+      "category": "trending-slots"
+    },
+    {
+      "name": "DanLudan's Fortune Bass",
+      "url": "https://bf1.io/casino/games/danludans-fortune-bass-by-belatra-games",
+      "id": "belatra:DanLudansFortuneBass",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Alien Fruits",
+      "url": "https://bf1.io/casino/games/alien-fruits-by-bgaming",
+      "id": "bgmng:AlienFruits",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Burning Coins 100",
+      "url": "https://bf1.io/casino/games/burning-coins-100-by-endorphina",
+      "thumb": "https://gis-static.com/games/Endorphina/57a2e0febaa97c654af8ad77cc613f5477ee8b89.png",
+      "id": "57a2e0febaa97c654af8ad77cc613f5477ee8b89",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of BetFury Super Scatter",
+      "url": "https://bf1.io/casino/games/gates-of-betfury-super-scatter-by-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/game_pic/rec/325/vs20betsuper.png",
+      "id": "vs20betsuper",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Starlight Princess 1000",
+      "url": "https://bf1.io/casino/games/starlight-princess-1000-by-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/game_pic/rec/325/vs20starlightx.png",
+      "id": "vs20starlightx",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Clash of Gods: Power Duel",
+      "url": "https://bf1.io/casino/games/clash-of-gods-anubis-vs-hades-by-bgaming",
+      "id": "bgmng:ClashofGodsAnubisvsHades",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Merge Up Fury",
+      "url": "https://bf1.io/casino/games/merge-up-fury-by-bgaming",
+      "id": "bgmng:MergeUpFury",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza 2500",
+      "url": "https://bf1.io/casino/games/sweet-bonanza-2500-by-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/game_pic/rec/325/vs20swbon2500.png",
+      "id": "vs20swbon2500",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush Super Scatter",
+      "url": "https://bf1.io/casino/games/sugar-rush-super-scatter-by-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/game_pic/rec/325/vs20sugrushss.png",
+      "id": "vs20sugrushss",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le King",
+      "url": "https://bf1.io/casino/games/le-king-by-hacksaw-gaming",
+      "id": "66feb7c94ce7858e1654bac1e2720ed8a9d47b10",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Cowboy",
+      "url": "https://bf1.io/casino/games/le-cowboy-by-hacksaw-gaming",
+      "id": "7c0583c2dc33831cbc7bda1274be8222ba86bd80",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Red Rascal",
+      "url": "https://bf1.io/casino/games/red-rascal-by-hacksaw-gaming",
+      "id": "ff8a9f3adf29eded075334f11b090486f2df6997",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Epic Bullets and Bounty",
+      "url": "https://bf1.io/casino/games/epic-bullets-and-bounty-by-hacksaw-gaming",
+      "id": "48c4e4376abe25d9c0aab37b2735ac14fd3e2ba2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Big Dog House",
+      "url": "https://bf1.io/casino/games/the-big-dog-house-by-pragmatic-play",
+      "id": "vs20bgdoghouse",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza 1000",
+      "url": "https://bf1.io/casino/games/sweet-bonanza-1000-by-pragmatic-play",
+      "id": "vs20fruitswx",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zeus vs Hades - Gods of War 250",
+      "url": "https://bf1.io/casino/games/zeus-vs-hades-gods-of-war-250-by-pragmatic-play",
+      "id": "vs15zeushadseq",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus 1000",
+      "url": "https://bf1.io/casino/games/gates-of-olympus-1000-by-pragmatic-play",
+      "id": "vs20olympx",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush 1000",
+      "url": "https://bf1.io/casino/games/sugar-rush-1000-by-pragmatic-play",
+      "id": "vs20sugarrushx",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Jewel Boost Reels",
+      "url": "https://bf1.io/casino/games/jewel-boost-reels-by-mascot-gaming",
+      "id": "a2c45ae3a9ce0f7b3d3036da9120d4a95afae3e7",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Zeus the invincible",
+      "url": "https://bf1.io/casino/games/zeus-the-invincible-by-mascot-gaming",
+      "id": "a333dd20d8854c8a9ce74d0a7b7d0cd6",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Riot",
+      "url": "https://bf1.io/casino/games/riot-by-mascot-gaming",
+      "id": "62fac97ef3dff5bdb78faadc60c0312e7ca256f9",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Witches",
+      "url": "https://bf1.io/casino/games/wild-witches-by-popiplay",
+      "id": "popiplay:WildWitches",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dogmasons",
+      "url": "https://bf1.io/casino/games/dogmasons-by-popiplay",
+      "id": "popiplay:Dogmasons",
+      "category": "trending-slots"
+    },
+    {
+      "name": "3 Lucky Nuggets",
+      "url": "https://bf1.io/casino/games/3-lucky-nuggets-by-popiplay",
+      "id": "popiplay:3LuckyNuggets",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Wild Bank",
+      "url": "https://bf1.io/casino/games/wild-wild-bank-by-popiplay",
+      "id": "popiplay:WildWildBank",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aztec Magic Bonanza",
+      "url": "https://bf1.io/casino/games/aztec-magic-bonanza-by-bgaming",
+      "id": "bgmng:AztecMagicBonanza",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Fruit Million",
+      "url": "https://bf1.io/casino/games/fruit-million-by-bgaming",
+      "id": "bgmng:FruitMillion",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aztec Clusters",
+      "url": "https://bf1.io/casino/games/aztec-clusters-by-bgaming",
+      "id": "bgmng:AztecClusters",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Tiger",
+      "url": "https://bf1.io/casino/games/wild-tiger-by-bgaming",
+      "id": "bgmng:WildTiger",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lucky Streak 3",
+      "url": "https://bf1.io/casino/games/lucky-streak-3-by-endorphina",
+      "id": "84b705dfbd5a8cf21e3ac794e96cc7549a8e8e1a",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Panda Strike",
+      "url": "https://bf1.io/casino/games/panda-strike-by-endorphina",
+      "id": "7f6d08c88a458deaaf379ee6d5e60da6e9de3253",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Ultra Fresh",
+      "url": "https://bf1.io/casino/games/ultra-fresh-by-endorphina",
+      "id": "f17bc09acb1f1e2e70ddb768b11dea153a27adff",
+      "category": "trending-slots"
+    },
+    {
+      "name": "3 Witch Pots",
+      "url": "https://bf1.io/casino/games/3-witch-pots-by-endorphina",
+      "id": "3eed0db93300b1759e8dd2edfe5862ada1086eaf",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Fortune Chests",
+      "url": "https://bf1.io/casino/games/fortune-chests-by-endorphina",
+      "id": "b64735afad6c0b97285163682c4abe72aaaacf3b",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bang",
+      "url": "https://bf1.io/casino/games/big-bang-by-belatra-games",
+      "id": "belatra:BigBang",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dogmasons MegaWOOF",
+      "url": "https://bf1.io/casino/games/dogmasons-megawoof-by-popiplay",
+      "id": "popiplay:DogmasonsMegaWOOF",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Blazing Coins Hold and Win",
+      "url": "https://bf1.io/casino/games/blazing-coins-hold-and-win-by-popiplay",
+      "id": "popiplay:BlazingCoinsHoldandWin",
+      "category": "trending-slots"
+    },
+    {
+      "name": "FuryPharaoh",
+      "url": "https://bf1.io/casino/games/furypharaoh",
+      "id": 17,
+      "category": "betfury-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://bf1.io/casino/games/roulette",
+      "id": 18,
+      "category": "betfury-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://bf1.io/casino/games/blackjack",
+      "id": 19,
+      "category": "betfury-originals"
+    },
+    {
+      "name": "LiteCrash",
+      "url": "https://bf1.io/casino/games/litecrash",
+      "id": 20,
+      "category": "betfury-originals"
+    },
+    {
+      "name": "FuryHeist",
+      "url": "https://bf1.io/casino/games/furyheist",
+      "id": 21,
+      "category": "betfury-originals"
+    }
+  ]
+}

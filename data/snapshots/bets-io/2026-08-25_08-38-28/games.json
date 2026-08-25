@@ -1,0 +1,127 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-08-25T08:38:28.587Z",
+  "games": [
+    {
+      "name": "Bubble Up!",
+      "url": "https://www.bets.io/casino/games/bubble-up",
+      "id": "bubble-up",
+      "category": "new-releases"
+    },
+    {
+      "name": "Blood Rebels",
+      "url": "https://www.bets.io/casino/games/blood-rebels",
+      "id": "blood-rebels",
+      "category": "new-releases"
+    },
+    {
+      "name": "Golden Retriever",
+      "url": "https://www.bets.io/casino/games/golden-retriever",
+      "id": "golden-retriever",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hell Hot 1000",
+      "url": "https://www.bets.io/casino/games/hell-hot-1000",
+      "id": "hell-hot-1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Book of Hidden Tombs",
+      "url": "https://www.bets.io/casino/games/book-of-hidden-tombs",
+      "id": "book-of-hidden-tombs",
+      "category": "new-releases"
+    },
+    {
+      "name": "Supernova Galaxy Orbs Hold & Win",
+      "url": "https://www.bets.io/casino/games/supernova-galaxy-orbs-hold-win",
+      "id": "supernova-galaxy-orbs-hold-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Happy Cappy",
+      "url": "https://www.bets.io/casino/games/happy-cappy",
+      "id": "happy-cappy",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Super Hot Teapots",
+      "url": "https://www.bets.io/casino/games/3-super-hot-teapots",
+      "id": "3-super-hot-teapots",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Royal Bags Super",
+      "url": "https://www.bets.io/casino/games/3-royal-bags-super",
+      "id": "3-royal-bags-super",
+      "category": "new-releases"
+    },
+    {
+      "name": "Book of Magic",
+      "url": "https://www.bets.io/casino/games/book-of-magic",
+      "id": "book-of-magic",
+      "category": "new-releases"
+    },
+    {
+      "name": "Harvest Moon - Grave Profits",
+      "url": "https://www.bets.io/casino/games/harvest-moon-grave-profits",
+      "id": "harvest-moon-grave-profits",
+      "category": "new-releases"
+    },
+    {
+      "name": "Triple Nipple",
+      "url": "https://www.bets.io/casino/games/triple-nipple",
+      "id": "triple-nipple",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fortunizer",
+      "url": "https://www.bets.io/casino/games/fortunizer",
+      "id": "fortunizer",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Library Overdue",
+      "url": "https://www.bets.io/casino/games/the-library-overdue",
+      "id": "the-library-overdue",
+      "category": "new-releases"
+    },
+    {
+      "name": "3x3 Pink Piggy: Hold the Spin",
+      "url": "https://www.bets.io/casino/games/3x3-pink-piggy-hold-the-spin",
+      "id": "3x3-pink-piggy-hold-the-spin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Epic Ze Zeus",
+      "url": "https://www.bets.io/casino/games/epic-ze-zeus",
+      "id": "epic-ze-zeus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mega Mummy - Hold & Hit 3x3",
+      "url": "https://www.bets.io/casino/games/mega-mummy-hold-hit-3x3",
+      "id": "mega-mummy-hold-hit-3x3",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bullshark Brawl",
+      "url": "https://www.bets.io/casino/games/bullshark-brawl",
+      "id": "bullshark-brawl",
+      "category": "new-releases"
+    },
+    {
+      "name": "Miss Cherry Wild Frames",
+      "url": "https://www.bets.io/casino/games/miss-cherry-wild-frames",
+      "id": "miss-cherry-wild-frames",
+      "category": "new-releases"
+    },
+    {
+      "name": "Cash Crooks",
+      "url": "https://www.bets.io/casino/games/cash-crooks",
+      "id": "cash-crooks",
+      "category": "new-releases"
+    }
+  ]
+}
