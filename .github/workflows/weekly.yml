@@ -66,11 +66,33 @@ jobs:
           cp data/dashboard.html site/index.html
           touch site/.nojekyll
 
-      # Enables Pages and points its source at this workflow via the API, so the
-      # deploy works without anyone flipping Settings -> Pages by hand first.
+      # While the Pages source is still a branch, Jekyll publishes README.md and
+      # this workflow's artifact is ignored — so force the source to "workflow".
+      # configure-pages/enablement only CREATES a missing site; it will not
+      # convert one that is already enabled against a branch.
+      - name: Point Pages at this workflow
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pages_api() {
+            curl -sS -o /tmp/pages-api.json -w '%{http_code}' -X "$1" \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              -d '{"build_type":"workflow"}'
+          }
+          code=$(pages_api PUT)
+          # 404 = Pages not enabled at all yet; create the site instead.
+          if [ "$code" = "404" ]; then code=$(pages_api POST); fi
+          echo "set Pages build_type=workflow -> HTTP $code"
+          cat /tmp/pages-api.json 2>/dev/null || true
+          case "$code" in
+            2*|409) ;;
+            *) echo "::warning::Could not set the Pages source. Set Settings > Pages > Source to 'GitHub Actions' by hand." ;;
+          esac
+
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
