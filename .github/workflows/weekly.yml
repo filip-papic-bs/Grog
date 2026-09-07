@@ -64,6 +64,13 @@ jobs:
         run: |
           mkdir -p site
           cp data/dashboard.html site/index.html
+          touch site/.nojekyll
+
+      # Enables Pages and points its source at this workflow via the API, so the
+      # deploy works without anyone flipping Settings -> Pages by hand first.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
