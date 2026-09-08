@@ -1,0 +1,392 @@
+{
+  "casino": "Cloudbet",
+  "category": "cloudbet",
+  "capturedAt": "2026-09-08T12:41:46.438Z",
+  "games": [
+    {
+      "name": "Outsourced 2 - Balkan Engineering",
+      "url": "https://www.cloudbet.com/en/casino/play/nolimitcity/outsourcedtwobalkanengineering_nlc",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/97bf2da0-db85-4697-ac47-85dde8aae458.png",
+      "id": "outsourcedtwobalkanengineering_nlc",
+      "category": "new-releases"
+    },
+    {
+      "name": "Cyber Runner",
+      "url": "https://www.cloudbet.com/en/casino/play/peterandsons/cyberrunner_ps",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/e4e3f7e3-0390-42e1-8c7b-2d5c90afbfb8.png",
+      "id": "cyberrunner_ps",
+      "category": "new-releases"
+    },
+    {
+      "name": "Big Bass Blast",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/bigbassblast_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/7a01ce5a-fe7c-495a-ad45-5a6fdbc98563.png",
+      "id": "bigbassblast_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Grug Make Fire",
+      "url": "https://www.cloudbet.com/en/casino/play/hacksawgaming/grugmakefire_hsg",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/d87ce408-ab15-488f-9419-8d4d4d122d49.png",
+      "id": "grugmakefire_hsg",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Big Dog House Megaways 1000",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/thebigdoghousemegawaysonethousand_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/3df0b244-5981-4ba2-8156-eafedd7fd303.png",
+      "id": "thebigdoghousemegawaysonethousand_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Out of the Woods",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/outofthewoods_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/7878a16f-d969-41eb-9c25-38eda254760f.png",
+      "id": "outofthewoods_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Aliens Among Us",
+      "url": "https://www.cloudbet.com/en/casino/play/hacksawgaming/aliensamongus_hsg",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/f0f430ea-7de5-4984-a142-7f66beb0fa47.png",
+      "id": "aliensamongus_hsg",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mega Roulette 3000",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/megaroulettethreethousand_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/46d597c9-6d23-43fa-ac15-26cfdcdb5f22.png",
+      "id": "megaroulettethreethousand_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hot Chilli Bells",
+      "url": "https://www.cloudbet.com/en/casino/play/bgaming/hotchillibells_bg",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/5c469077-98d7-41bc-b6d4-9fa6d2f8694b.png",
+      "id": "hotchillibells_bg",
+      "category": "new-releases"
+    },
+    {
+      "name": "Luxor of Cleopatra",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/luxorofcleopatra_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/15959cc2-2d76-4c40-b7c4-205e4a03deb2.png",
+      "id": "luxorofcleopatra_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Roulette 1",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/rouletteone_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/29d8a6ee-f542-48a1-a93b-155c1c427a92.png",
+      "id": "rouletteone_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Big Bounty Bandits: 3 Pots",
+      "url": "https://www.cloudbet.com/en/casino/play/peterandsons/bigbountybanditsthreepots_ps",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/9b3901e7-e1dd-4805-a8a4-7c773683e075.png",
+      "id": "bigbountybanditsthreepots_ps",
+      "category": "new-releases"
+    },
+    {
+      "name": "American Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/americanroulette_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/82c1624d-b289-4756-862a-68db68e8f7c2.png",
+      "id": "americanroulette_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Blessings of Caishen",
+      "url": "https://www.cloudbet.com/en/casino/play/avataruxstudios/blessingsofcaishen_aux",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/d8baa467-8455-4364-a370-ad48802d1f2f.png",
+      "id": "blessingsofcaishen_aux",
+      "category": "new-releases"
+    },
+    {
+      "name": "Immersive Roulette Deluxe",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/immersiveroulettedeluxe_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/f37dfc94-fc79-4660-8ac1-38c88d47cf5c.png",
+      "id": "immersiveroulettedeluxe_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Crabby's Gold II",
+      "url": "https://www.cloudbet.com/en/casino/play/playngo/crabbysgoldtwo_png",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/9516733c-ff50-4f74-96d1-49e0825a2b66.png",
+      "id": "crabbysgoldtwo_png",
+      "category": "new-releases"
+    },
+    {
+      "name": "Crystal Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/crystalroulette_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/6a575deb-6a0b-4245-9294-74bd516e7f14.png",
+      "id": "crystalroulette_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Legion Gold and the Throne of Dead",
+      "url": "https://www.cloudbet.com/en/casino/play/playngo/legiongoldandthethroneofdead_png",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/51f6f272-933c-45e9-8a89-909aea6534a8.png",
+      "id": "legiongoldandthethroneofdead_png",
+      "category": "new-releases"
+    },
+    {
+      "name": "Football Blitz Top Card",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/footballblitztopcard_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/34e304a6-43c2-4c94-b9e3-8465b020640b.png",
+      "id": "footballblitztopcard_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Flame Fruits Hold&Win",
+      "url": "https://www.cloudbet.com/en/casino/play/elagames/flamefruitsholdandwin_ela",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/b329a6cd-9b95-48db-ab1f-fa0135fe0acc.png",
+      "id": "flamefruitsholdandwin_ela",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky 6 Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/luckysixroulette_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/b13fa7a5-c451-4430-86cb-9fb4ba5e94cc.png",
+      "id": "luckysixroulette_pp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Cloudbet Blackjack",
+      "url": "https://www.cloudbet.com/en/casino/play/evolution/cloudbetblackjack_evolution",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/6fd267b8-ebb4-4d46-9279-b438570abd10.png",
+      "id": "cloudbetblackjack_evolution",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Mines",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/cloudbetmines",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/51d2adb8-8c64-41d8-b03e-7a6a1d394c47.png",
+      "id": "cloudbetmines",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/blackjack_cb",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/788719bc-e80d-4c3f-8810-e7bb5b558120.png",
+      "id": "blackjack_cb",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus Super Scatter",
+      "url": "https://www.cloudbet.com/en/casino/play/pragmaticplay/gatesofolympussuperscatter_pp",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/6079d721-525f-42c9-a5a2-20e213d9013a.png",
+      "id": "gatesofolympussuperscatter_pp",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Speed Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/evolution/ev_speed_roulette",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/20c5c50b-19f9-4b90-8292-0a32e7baa139.png",
+      "id": "ev_speed_roulette",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/limbo_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/73db26c7-df4c-4acf-bcac-cf3e306aebc4.png",
+      "id": "limbo_joy",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wanted Dead or a Wild",
+      "url": "https://www.cloudbet.com/en/casino/play/hacksawgaming/wanteddeadorawild_hacksaw",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/de2a7206-7a86-40f6-92f7-c8d8ffb4df2d.png",
+      "id": "wanteddeadorawild_hacksaw",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Crazy Time",
+      "url": "https://www.cloudbet.com/en/casino/play/evolution/ev_crazy_time",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/b08890c6-9e9d-4f23-958c-6750edcbac96.png",
+      "id": "ev_crazy_time",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Das XBoot Zwei!",
+      "url": "https://www.cloudbet.com/en/casino/play/nolimitcity/dasxbootzwei_nlc",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/687e92c3-bc1b-4fe8-bbd1-019a70c363e8.png",
+      "id": "dasxbootzwei_nlc",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Keno",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/keno_cb",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/40880619-4f10-4537-8f6f-4a8e1027112b.png",
+      "id": "keno_cb",
+      "category": "trending-slots"
+    },
+    {
+      "name": "XXXtreme Lightning Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/evolution/ev_xxxtreme_lightning_roulette",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/6eee6363-4a96-49f1-838a-adb2338d58c3.png",
+      "id": "ev_xxxtreme_lightning_roulette",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Soaked by Seamen",
+      "url": "https://www.cloudbet.com/en/casino/play/nolimitcity/soakedbyseamen_nlc",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/bae9a9b6-756a-4cab-ab9f-21dc6369e2b4.png",
+      "id": "soakedbyseamen_nlc",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/coinflip_cloud",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/06445424-8571-441e-80b6-3277e23542a4.png",
+      "id": "coinflip_cloud",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/crash_cloud",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/d70a176c-312c-4617-b340-83cd0527a23f.png",
+      "id": "crash_cloud",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Cross The Road",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/crosstheroad_cloud",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/0577e9e7-e30c-4d6a-9d8e-6bd6db5e4792.png",
+      "id": "crosstheroad_cloud",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Dragon’s Tower",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/dragonstower_cloud",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/f99afc2d-4338-46a0-b3da-ad3aa0ea5277.png",
+      "id": "dragonstower_cloud",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Hi Lo",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/hilo_cloud",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/06fe9381-bc53-4101-8934-7f31ec31f689.png",
+      "id": "hilo_cloud",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Slider",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/slider_cloud",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/a7ae0843-1cc4-4f25-ab0c-b7272b2569da.png",
+      "id": "slider_cloud",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/cloudbetmines",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/51d2adb8-8c64-41d8-b03e-7a6a1d394c47.png",
+      "id": "cloudbetmines",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "American Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/roulette_american_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/aa8ee670-e034-4632-b496-d8f56ebad48e.png",
+      "id": "roulette_american_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "European Roulette",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/roulette_european_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/c1ca129c-65a8-4e7e-a8d8-7c92526f9b27.png",
+      "id": "roulette_european_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/dice_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/7cd9c9c0-0ce2-4510-bc00-8f58d9e99964.png",
+      "id": "dice_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/keno_cb",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/40880619-4f10-4537-8f6f-4a8e1027112b.png",
+      "id": "keno_cb",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/plinko_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/374662e4-be21-43fe-b3fe-30af9b438672.png",
+      "id": "plinko_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/limbo_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/73db26c7-df4c-4acf-bcac-cf3e306aebc4.png",
+      "id": "limbo_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Advance dice",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/advancedice_cloudbet",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/a3923e0b-88d1-43c0-b4d9-3b9a094d07a0.png",
+      "id": "advancedice_cloudbet",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Pump",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/pump_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/8a55ca38-3c60-49bc-8d8c-f1a2ce95d5ec.png",
+      "id": "pump_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/baccarat_cloudbet",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/9ac22a43-2c12-4d0b-a633-6cd08668d4c6.png",
+      "id": "baccarat_cloudbet",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Dice Golden Ticket",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/dicegoldenticket_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/f71fe43f-3787-47bc-ada0-eb40a46ab4d5.png",
+      "id": "dicegoldenticket_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/blackjack_cb",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/788719bc-e80d-4c3f-8810-e7bb5b558120.png",
+      "id": "blackjack_cb",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Diamonds",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/diamonds_cb",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/c7fc0bd8-b2fb-493f-9a97-afbd9263af3c.png",
+      "id": "diamonds_cb",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/wheel_cb",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/cdc5f461-a74b-4b0e-8064-3f76754575fb.png",
+      "id": "wheel_cb",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "World Tour Football",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/world_tour_football_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/3701eebb-7479-4876-90c4-636f8a2fec69.png",
+      "id": "world_tour_football_joy",
+      "category": "cloudbet-originals"
+    },
+    {
+      "name": "Last Football Hero",
+      "url": "https://www.cloudbet.com/en/casino/play/cloudbet/lfh_joy",
+      "thumb": "https://res.cloudinary.com/betengine/image/upload/f_auto,q_auto:good,dpr_auto,w_250/casino-hub-files/0e8b7ca3-031e-43bf-945c-9c93b53bc7b4.png",
+      "id": "lfh_joy",
+      "category": "cloudbet-originals"
+    }
+  ]
+}

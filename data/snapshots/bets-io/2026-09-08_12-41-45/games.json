@@ -1,0 +1,127 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-09-08T12:41:45.564Z",
+  "games": [
+    {
+      "name": "Lucky Drums 88",
+      "url": "https://www.bets.io/casino/games/lucky-drums-88",
+      "id": "lucky-drums-88",
+      "category": "new-releases"
+    },
+    {
+      "name": "Triumph of the 3 Gods",
+      "url": "https://www.bets.io/casino/games/triumph-of-the-3-gods",
+      "id": "triumph-of-the-3-gods",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ra vs Osiris",
+      "url": "https://www.bets.io/casino/games/ra-vs-osiris",
+      "id": "ra-vs-osiris",
+      "category": "new-releases"
+    },
+    {
+      "name": "THE VIP",
+      "url": "https://www.bets.io/casino/games/the-vip",
+      "id": "the-vip",
+      "category": "new-releases"
+    },
+    {
+      "name": "Tres Pinatas Hold & Win",
+      "url": "https://www.bets.io/casino/games/tres-pinatas-hold-win",
+      "id": "tres-pinatas-hold-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Aftermath",
+      "url": "https://www.bets.io/casino/games/aftermath",
+      "id": "aftermath",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Crown coins deluxe",
+      "url": "https://www.bets.io/casino/games/3-crown-coins-deluxe",
+      "id": "3-crown-coins-deluxe",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lava Power: Hold The Spin",
+      "url": "https://www.bets.io/casino/games/lava-power-hold-the-spin",
+      "id": "lava-power-hold-the-spin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gates of Olympus POP",
+      "url": "https://www.bets.io/casino/games/gates-of-olympus-pop",
+      "id": "gates-of-olympus-pop",
+      "category": "new-releases"
+    },
+    {
+      "name": "Toothrot Tilly",
+      "url": "https://www.bets.io/casino/games/toothrot-tilly",
+      "id": "toothrot-tilly",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sugar Plinko",
+      "url": "https://www.bets.io/casino/games/sugar-plinko",
+      "id": "sugar-plinko",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bounty Cove",
+      "url": "https://www.bets.io/casino/games/bounty-cove",
+      "id": "bounty-cove",
+      "category": "new-releases"
+    },
+    {
+      "name": "Beastbound Love",
+      "url": "https://www.bets.io/casino/games/beastbound-love",
+      "id": "beastbound-love",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hearts of Venus",
+      "url": "https://www.bets.io/casino/games/hearts-of-venus",
+      "id": "hearts-of-venus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fortune Trio: Minions of Fu",
+      "url": "https://www.bets.io/casino/games/fortune-trio-minions-of-fu",
+      "id": "fortune-trio-minions-of-fu",
+      "category": "new-releases"
+    },
+    {
+      "name": "Minted Mike",
+      "url": "https://www.bets.io/casino/games/minted-mike",
+      "id": "minted-mike",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bubble Up!",
+      "url": "https://www.bets.io/casino/games/bubble-up",
+      "id": "bubble-up",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Golden Chests",
+      "url": "https://www.bets.io/casino/games/3-golden-chests",
+      "id": "3-golden-chests",
+      "category": "new-releases"
+    },
+    {
+      "name": "Toxic Waste",
+      "url": "https://www.bets.io/casino/games/toxic-waste-jinxgaming",
+      "id": "toxic-waste-jinxgaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Pinball",
+      "url": "https://www.bets.io/casino/games/lucky-pinball",
+      "id": "lucky-pinball",
+      "category": "new-releases"
+    }
+  ]
+}
