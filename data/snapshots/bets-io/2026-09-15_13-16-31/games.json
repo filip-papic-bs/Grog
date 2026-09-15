@@ -1,0 +1,127 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-09-15T13:16:31.975Z",
+  "games": [
+    {
+      "name": "Helios - Triple Sun",
+      "url": "https://www.bets.io/casino/games/helios-triple-sun",
+      "id": "helios-triple-sun",
+      "category": "new-releases"
+    },
+    {
+      "name": "Vatica - Voice of Lost Souls",
+      "url": "https://www.bets.io/casino/games/vatica-voice-of-lost-souls",
+      "id": "vatica-voice-of-lost-souls",
+      "category": "new-releases"
+    },
+    {
+      "name": "Eternal Diamonds",
+      "url": "https://www.bets.io/casino/games/eternal-diamonds",
+      "id": "eternal-diamonds",
+      "category": "new-releases"
+    },
+    {
+      "name": "Joker Never Retires",
+      "url": "https://www.bets.io/casino/games/joker-never-retires",
+      "id": "joker-never-retires",
+      "category": "new-releases"
+    },
+    {
+      "name": "Golden Penny x1000: Super Wheel",
+      "url": "https://www.bets.io/casino/games/golden-penny-x1000-super-wheel",
+      "id": "golden-penny-x1000-super-wheel",
+      "category": "new-releases"
+    },
+    {
+      "name": "4 Super Clover Pots",
+      "url": "https://www.bets.io/casino/games/4-super-clover-pots",
+      "id": "4-super-clover-pots",
+      "category": "new-releases"
+    },
+    {
+      "name": "Good Girl Bad Girl 2",
+      "url": "https://www.bets.io/casino/games/good-girl-bad-girl-2",
+      "id": "good-girl-bad-girl-2",
+      "category": "new-releases"
+    },
+    {
+      "name": "Great Game Serengeti",
+      "url": "https://www.bets.io/casino/games/great-game-serengeti",
+      "id": "great-game-serengeti",
+      "category": "new-releases"
+    },
+    {
+      "name": "Devil's Wager",
+      "url": "https://www.bets.io/casino/games/devils-wager",
+      "id": "devils-wager",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zeus Powerstorm - Bonus Flash 3x3",
+      "url": "https://www.bets.io/casino/games/zeus-powerstorm-bonus-flash-3x3",
+      "id": "zeus-powerstorm-bonus-flash-3x3",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Volcanoes Blast",
+      "url": "https://www.bets.io/casino/games/3-volcanoes-blast",
+      "id": "3-volcanoes-blast",
+      "category": "new-releases"
+    },
+    {
+      "name": "Electro strike",
+      "url": "https://www.bets.io/casino/games/electro-strike",
+      "id": "electro-strike",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Drums 88",
+      "url": "https://www.bets.io/casino/games/lucky-drums-88",
+      "id": "lucky-drums-88",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dyna'Mike BoosterBelt",
+      "url": "https://www.bets.io/casino/games/dynamike-boosterbelt",
+      "id": "dynamike-boosterbelt",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wincent Wolf",
+      "url": "https://www.bets.io/casino/games/wincent-wolf",
+      "id": "wincent-wolf",
+      "category": "new-releases"
+    },
+    {
+      "name": "Triumph of the 3 Gods",
+      "url": "https://www.bets.io/casino/games/triumph-of-the-3-gods",
+      "id": "triumph-of-the-3-gods",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ra vs Osiris",
+      "url": "https://www.bets.io/casino/games/ra-vs-osiris",
+      "id": "ra-vs-osiris",
+      "category": "new-releases"
+    },
+    {
+      "name": "THE VIP",
+      "url": "https://www.bets.io/casino/games/the-vip",
+      "id": "the-vip",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jacka Beer",
+      "url": "https://www.bets.io/casino/games/jacka-beer",
+      "id": "jacka-beer",
+      "category": "new-releases"
+    },
+    {
+      "name": "Tres Pinatas Hold & Win",
+      "url": "https://www.bets.io/casino/games/tres-pinatas-hold-win",
+      "id": "tres-pinatas-hold-win",
+      "category": "new-releases"
+    }
+  ]
+}
