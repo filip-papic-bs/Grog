@@ -1,0 +1,127 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-09-22T13:12:07.749Z",
+  "games": [
+    {
+      "name": "Coven Rising",
+      "url": "https://www.bets.io/casino/games/coven-rising",
+      "id": "coven-rising",
+      "category": "new-releases"
+    },
+    {
+      "name": "Red Hot Chilli Chickens",
+      "url": "https://www.bets.io/casino/games/red-hot-chilli-chickens",
+      "id": "red-hot-chilli-chickens",
+      "category": "new-releases"
+    },
+    {
+      "name": "Space Mutants",
+      "url": "https://www.bets.io/casino/games/space-mutants",
+      "id": "space-mutants",
+      "category": "new-releases"
+    },
+    {
+      "name": "4 Dragon Pearls",
+      "url": "https://www.bets.io/casino/games/4-dragon-pearls",
+      "id": "4-dragon-pearls",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jelly Joker",
+      "url": "https://www.bets.io/casino/games/jelly-joker",
+      "id": "jelly-joker",
+      "category": "new-releases"
+    },
+    {
+      "name": "Minotaur ReBurn",
+      "url": "https://www.bets.io/casino/games/minotaur-reburn",
+      "id": "minotaur-reburn",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fist of Destruction Megamultiplier",
+      "url": "https://www.bets.io/casino/games/fist-of-destruction-megamultiplier",
+      "id": "fist-of-destruction-megamultiplier",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hot girls:Wheel of passion",
+      "url": "https://www.bets.io/casino/games/hot-girlswheel-of-passion",
+      "id": "hot-girlswheel-of-passion",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jack and the Beanstalk 2",
+      "url": "https://www.bets.io/casino/games/jack-and-the-beanstalk-2",
+      "id": "jack-and-the-beanstalk-2",
+      "category": "new-releases"
+    },
+    {
+      "name": "Royal Rail Coins",
+      "url": "https://www.bets.io/casino/games/royal-rail-coins",
+      "id": "royal-rail-coins",
+      "category": "new-releases"
+    },
+    {
+      "name": "True Crown Slot",
+      "url": "https://www.bets.io/casino/games/true-crown-slot",
+      "id": "true-crown-slot",
+      "category": "new-releases"
+    },
+    {
+      "name": "Triple Hop Pots",
+      "url": "https://www.bets.io/casino/games/triple-hop-pots",
+      "id": "triple-hop-pots",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Multifruit: Crystal Dust",
+      "url": "https://www.bets.io/casino/games/lucky-multifruit-crystal-dust",
+      "id": "lucky-multifruit-crystal-dust",
+      "category": "new-releases"
+    },
+    {
+      "name": "Johnny vs Chicken",
+      "url": "https://www.bets.io/casino/games/johnny-vs-chicken",
+      "id": "johnny-vs-chicken",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Fortune Pouches: Triple Wins",
+      "url": "https://www.bets.io/casino/games/3-fortune-pouches-triple-wins",
+      "id": "3-fortune-pouches-triple-wins",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Bandit Hold & Win",
+      "url": "https://www.bets.io/casino/games/le-bandit-hold-win",
+      "id": "le-bandit-hold-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Disco Inferno",
+      "url": "https://www.bets.io/casino/games/disco-inferno",
+      "id": "disco-inferno",
+      "category": "new-releases"
+    },
+    {
+      "name": "Helios - Triple Sun",
+      "url": "https://www.bets.io/casino/games/helios-triple-sun",
+      "id": "helios-triple-sun",
+      "category": "new-releases"
+    },
+    {
+      "name": "Vatica - Voice of Lost Souls",
+      "url": "https://www.bets.io/casino/games/vatica-voice-of-lost-souls",
+      "id": "vatica-voice-of-lost-souls",
+      "category": "new-releases"
+    },
+    {
+      "name": "Eternal Diamonds",
+      "url": "https://www.bets.io/casino/games/eternal-diamonds",
+      "id": "eternal-diamonds",
+      "category": "new-releases"
+    }
+  ]
+}
