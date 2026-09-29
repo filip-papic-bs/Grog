@@ -1,0 +1,283 @@
+{
+  "casino": "Gamdom",
+  "category": "gamdom",
+  "capturedAt": "2026-09-29T14:42:02.656Z",
+  "games": [
+    {
+      "name": "Blackjack",
+      "url": "https://gamdom.com/casino/blackjack-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/85fa3210-317c-4ab1-97fe-a0fdecdd0fbb-cdn_images.jpg",
+      "id": "ours_blackjack",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://gamdom.com/casino/limbo-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/4ca1070e-45e0-46a1-8ed1-fbd028224a69-cdn_images.jpg",
+      "id": "ours_limbo",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://gamdom.com/casino/keno-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/7d222fe5-208b-4f22-8bdd-a9bb20278529-cdn_images.jpg",
+      "id": "ours_keno",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://gamdom.com/casino/dice-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/58d86cbe-9afd-4ea9-95bf-c25fdb5884b3-cdn_images.jpg",
+      "id": "internal_dice",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://gamdom.com/casino/mines-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/bfd783e4-110a-4db7-93dd-3a80b11baf2d-cdn_images.jpg",
+      "id": "ours_mines",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://gamdom.com/casino/plinko-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/c294b2ae-eeb8-486e-90bd-9cddb0438cf2-cdn_images.jpg",
+      "id": "ours_plinko",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://gamdom.com/casino/crash-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/bb2bfe5f-e2aa-4af9-bd8b-9ca501ac80b4-cdn_images.jpg",
+      "id": "internal_crash",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://gamdom.com/casino/roulette-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/222d8a9c-20e0-4636-848e-40f473466b3c-cdn_images.jpg",
+      "id": "internal_roulette",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://gamdom.com/casino/hilo-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/d6a63b3a-45d8-4079-9fe0-bc20486c0835-cdn_images.jpg",
+      "id": "internal_hilo",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Twist",
+      "url": "https://gamdom.com/casino/twist-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/b4617eec-3280-49eb-bd5a-7e9b58b84a58-cdn_images.png",
+      "id": "ours_twist",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Pocket Dice",
+      "url": "https://gamdom.com/casino/pocket-dice-gamdom-originals",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/4761ad27-2ef4-4134-878a-a268729c2993-cdn_images.jpg",
+      "id": "ours_pocket_dice",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Moon Rush",
+      "url": "https://gamdom.com/casino/moon-rush-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20moonr/vs20moonr_325x234_NB.png",
+      "id": "pp_direct_vs20moonr",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Prechaun",
+      "url": "https://gamdom.com/casino/le-prechaun-hacksaw-gaming",
+      "thumb": "https://cdn.hub88.io/hacksawgaming/hsg_leprechaun.jpg",
+      "id": "hsg_direct_2413",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Samurai Kitty",
+      "url": "https://gamdom.com/casino/samurai-kitty-ludo-land",
+      "thumb": "https://static.ludoland.cloud/g/thumb/samurai_kitty.png",
+      "id": "ludoland_samurai_kitty",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Moon Princess Trinity",
+      "url": "https://gamdom.com/casino/moon-princess-trinity-play-n-go",
+      "thumb": "https://cdn.hub88.io/playngo/png_moonprincesstrinity.png",
+      "id": "png_moonprincesstrinity",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Max The Mathmagician",
+      "url": "https://gamdom.com/casino/max-the-mathmagician-kitsune-studios",
+      "id": "hsg_direct_2487",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Fury of Anubis",
+      "url": "https://gamdom.com/casino/fury-of-anubis-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20wraanu/vs20wraanu_325x234_NB.png",
+      "id": "pp_direct_vs20wraanu",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bloody Mary: Pray for Prey",
+      "url": "https://gamdom.com/casino/bloody-mary-pray-for-prey-peter-and-sons",
+      "thumb": "https://cdn.hub88.io/peterandsons/pets_bloodymaryprayforprey.jpg",
+      "id": "pets_bloodymaryprayforprey",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Shadow Pirates",
+      "url": "https://gamdom.com/casino/shadow-pirates-just-slots",
+      "thumb": "https://cdn.hub88.io/just%2520slots/js_shadowpirates.jpg",
+      "id": "js_shadowpirates",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Diner Dogs",
+      "url": "https://gamdom.com/casino/diner-dogs-wicked-games",
+      "id": "wicked_dinerdogs",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Toxic Waste",
+      "url": "https://gamdom.com/casino/toxic-waste-jinx-gaming",
+      "thumb": "https://cdn.hub88.io/hacksawgaming/hsg_toxicwaste.jpg",
+      "id": "hsg_direct_2354",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza 2500",
+      "url": "https://gamdom.com/casino/sweet-bonanza-2500-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20swbon2500/vs20swbon2500_325x234_NB.png",
+      "id": "pp_direct_vs20swbon2500",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Densho",
+      "url": "https://gamdom.com/casino/densho-hacksaw-gaming",
+      "thumb": "https://cdn.hub88.io/hacksawgaming/hsg_densho.jpg",
+      "id": "hsg_direct_1348",
+      "category": "trending-slots"
+    },
+    {
+      "name": "City Roulette",
+      "url": "https://gamdom.com/casino/city-roulette-animo-studios",
+      "thumb": "https://cdn.hub88.io/animo/9pmen_cityroulette.jpg",
+      "id": "9pmen_cityroulette",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus Super Scatter",
+      "url": "https://gamdom.com/casino/gates-of-olympus-super-scatter-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20olympgold/vs20olympgold_325x234_NB.png",
+      "id": "pp_direct_vs20olympgold",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gamdolls",
+      "url": "https://gamdom.com/casino/gamdolls-kitsune-studios",
+      "id": "hsg_direct_2433",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gates of Olympus 2500",
+      "url": "https://gamdom.com/casino/gates-of-olympus-2500-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20olympmmd/vs20olympmmd_325x234_NB.png",
+      "id": "pp_direct_vs20olympmmd",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Vampire",
+      "url": "https://gamdom.com/casino/le-vampire-hacksaw-gaming",
+      "id": "hsg_direct_2582",
+      "category": "new-releases"
+    },
+    {
+      "name": "Boogie Monsters Duel",
+      "url": "https://gamdom.com/casino/boogie-monsters-duel-ludo-land",
+      "thumb": "https://static.ludoland.cloud/g/thumb/boogie_monsters_duel.png",
+      "id": "ludoland_boogie_monsters_duel",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dr Zappo",
+      "url": "https://gamdom.com/casino/dr-zappo-hacksaw-gaming",
+      "thumb": "https://cdn.hub88.io/hacksawgaming/hsg_drzappo.jpg",
+      "id": "hsg_direct_2253",
+      "category": "new-releases"
+    },
+    {
+      "name": "Barbarossa: Beyond the Edge",
+      "url": "https://gamdom.com/casino/barbarossa-beyond-the-edge-peter-and-sons",
+      "thumb": "https://cdn.hub88.io/peterandsons/pets_barbarossabeyondtheedge.jpg",
+      "id": "pets_barbarossabeyondtheedge",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fist of Destruction Megamultiplier",
+      "url": "https://gamdom.com/casino/fist-of-destruction-megamultiplier-hacksaw-gaming",
+      "thumb": "https://cdn.hub88.io/hacksawgaming/hsg_fistofdestructionmegamultiplier.jpg",
+      "id": "hsg_direct_2536",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Piggy Brothers: Hold and Win",
+      "url": "https://gamdom.com/casino/3-piggy-brothers-hold-and-win-peter-and-sons",
+      "thumb": "https://cdn.hub88.io/peterandsons/pets_3piggybrothersholdandwin.jpg",
+      "id": "pets_3piggybrothersholdandwin",
+      "category": "new-releases"
+    },
+    {
+      "name": "Thunder Crown Dice",
+      "url": "https://gamdom.com/casino/thunder-crown-dice-endorphina",
+      "thumb": "https://cdn.hub88.io/endorphina/end_thundercrowndice.jpg",
+      "id": "end_thundercrowndice",
+      "category": "new-releases"
+    },
+    {
+      "name": "Royal Rage",
+      "url": "https://gamdom.com/casino/royal-rage-true-labs",
+      "thumb": "https://cdn.hub88.io/trueflip/trf_royalrage.jpg",
+      "id": "trf_royalrage",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dead Man's Crew",
+      "url": "https://gamdom.com/casino/dead-mans-crew-slotmill-games",
+      "thumb": "https://cdn.hub88.io/slotmill/slm_deadmanscrew.jpg",
+      "id": "slm_deadmanscrew",
+      "category": "new-releases"
+    },
+    {
+      "name": "Chicago Gold 2 LOCKNWINX",
+      "url": "https://gamdom.com/casino/chicago-gold-2-locknwinx-games-global",
+      "thumb": "https://cdn.hub88.io/microgaming/mgg_chicagogold2locknwinx.jpg",
+      "id": "mgg_chicagogold2locknwinx",
+      "category": "new-releases"
+    },
+    {
+      "name": "Three Pots of the Genie",
+      "url": "https://gamdom.com/casino/three-pots-of-the-genie-play-n-go",
+      "thumb": "https://cdn.hub88.io/playngo/png_threepotsofthegenie.jpg",
+      "id": "png_threepotsofthegenie",
+      "category": "new-releases"
+    },
+    {
+      "name": "Tower Of Atlantis",
+      "url": "https://gamdom.com/casino/tower-of-atlantis-games-global",
+      "thumb": "https://cdn.hub88.io/microgaming/mgg_towerofatlantis.jpg",
+      "id": "mgg_towerofatlantis",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ministry of Like",
+      "url": "https://gamdom.com/casino/ministry-of-like-exco",
+      "thumb": "https://usercontent.cc/i/s2/exco/MinistryofLike.png",
+      "id": "softswiss_exco:MinistryofLike",
+      "category": "new-releases"
+    }
+  ]
+}
