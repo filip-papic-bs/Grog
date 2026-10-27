@@ -1,0 +1,367 @@
+{
+  "casino": "Wild.io",
+  "category": "wild.io",
+  "capturedAt": "2026-10-27T14:08:23.396Z",
+  "games": [
+    {
+      "name": "Big Bass Halloween Splash 1000",
+      "url": "https://wild.io/games/big-bass-halloween-splash-1000",
+      "id": "big-bass-halloween-splash-1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bonanza Billion Merge Up+",
+      "url": "https://wild.io/games/bonanza-billion-merge-up",
+      "id": "bonanza-billion-merge-up",
+      "category": "new-releases"
+    },
+    {
+      "name": "Forever Split Megaways",
+      "url": "https://wild.io/games/forever-split-megaways",
+      "id": "forever-split-megaways",
+      "category": "new-releases"
+    },
+    {
+      "name": "Joker Miner",
+      "url": "https://wild.io/games/joker-miner",
+      "id": "joker-miner",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fortune Skull 500",
+      "url": "https://wild.io/games/fortune-skull-500",
+      "id": "fortune-skull-500",
+      "category": "new-releases"
+    },
+    {
+      "name": "Yo-Ho-Ho 2048",
+      "url": "https://wild.io/games/yo-ho-ho-2048",
+      "id": "yo-ho-ho-2048",
+      "category": "new-releases"
+    },
+    {
+      "name": "Noche de Almas",
+      "url": "https://wild.io/games/noche-de-almas",
+      "id": "noche-de-almas",
+      "category": "new-releases"
+    },
+    {
+      "name": "Deep Sea Frenzy",
+      "url": "https://wild.io/games/deep-sea-frenzy",
+      "id": "deep-sea-frenzy",
+      "category": "new-releases"
+    },
+    {
+      "name": "Vampires: Blood Moon",
+      "url": "https://wild.io/games/vampires-blood-moon",
+      "id": "vampires-blood-moon",
+      "category": "new-releases"
+    },
+    {
+      "name": "5 Witch Pots",
+      "url": "https://wild.io/games/5-witch-pots",
+      "id": "5-witch-pots",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dollar Vault",
+      "url": "https://wild.io/games/dollar-vault",
+      "id": "dollar-vault",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Vampire",
+      "url": "https://wild.io/games/le-vampire",
+      "id": "le-vampire",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sweet Pop 1000",
+      "url": "https://wild.io/games/sweet-pop-1000",
+      "id": "sweet-pop-1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Golden Joker Halloween",
+      "url": "https://wild.io/games/golden-joker-halloween",
+      "id": "golden-joker-halloween",
+      "category": "new-releases"
+    },
+    {
+      "name": "Coins Blast",
+      "url": "https://wild.io/games/coins-blast",
+      "id": "coins-blast",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wonders of Aztec",
+      "url": "https://wild.io/games/wonders-of-aztec",
+      "id": "wonders-of-aztec",
+      "category": "new-releases"
+    },
+    {
+      "name": "Epic SixSixSix",
+      "url": "https://wild.io/games/epic-sixsixsix",
+      "id": "epic-sixsixsix",
+      "category": "new-releases"
+    },
+    {
+      "name": "Six Feet Under",
+      "url": "https://wild.io/games/six-feet-under",
+      "id": "six-feet-under",
+      "category": "new-releases"
+    },
+    {
+      "name": "Love Nest",
+      "url": "https://wild.io/games/love-nest",
+      "id": "love-nest",
+      "category": "new-releases"
+    },
+    {
+      "name": "Primal Buffalo PowerGrid",
+      "url": "https://wild.io/games/primal-buffalo-powergrid",
+      "id": "primal-buffalo-powergrid",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sweet Bonanza 1000",
+      "url": "https://wild.io/games/sweet-bonanza-1000",
+      "id": "sweet-bonanza-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gemhalla",
+      "url": "https://wild.io/games/gemhalla",
+      "id": "gemhalla",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Hell Hot 1000",
+      "url": "https://wild.io/games/hell-hot-1000",
+      "id": "hell-hot-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus 1000",
+      "url": "https://wild.io/games/gates-of-olympus-1000",
+      "id": "gates-of-olympus-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonanza Trillion",
+      "url": "https://wild.io/games/bonanza-trillion",
+      "id": "bonanza-trillion",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Rush 1000",
+      "url": "https://wild.io/games/sugar-rush-1000",
+      "id": "sugar-rush-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Spin",
+      "url": "https://wild.io/games/wild-spin",
+      "id": "wild-spin",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Fortune Coins 2",
+      "url": "https://wild.io/games/fortune-coins-2",
+      "id": "fortune-coins-2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Long Neck Fortune",
+      "url": "https://wild.io/games/long-neck-fortune",
+      "id": "long-neck-fortune",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bass Splash 1000",
+      "url": "https://wild.io/games/big-bass-splash-1000",
+      "id": "big-bass-splash-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Tiger",
+      "url": "https://wild.io/games/wild-tiger",
+      "id": "wild-tiger",
+      "category": "trending-slots"
+    },
+    {
+      "name": "The Dog House Megaways 1000",
+      "url": "https://wild.io/games/the-dog-house-megaways-1000",
+      "id": "the-dog-house-megaways-1000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Bandit",
+      "url": "https://wild.io/games/le-bandit",
+      "id": "le-bandit",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Duck Hunters 2",
+      "url": "https://wild.io/games/duck-hunters-2",
+      "id": "duck-hunters-2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Train Heist Johnny Cash",
+      "url": "https://wild.io/games/train-heist-johnny-cash",
+      "id": "train-heist-johnny-cash",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Voodoo Coins",
+      "url": "https://wild.io/games/voodoo-coins",
+      "id": "voodoo-coins",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Burning Coins 100",
+      "url": "https://wild.io/games/burning-coins-100",
+      "id": "burning-coins-100",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bison Fortune Coins",
+      "url": "https://wild.io/games/bison-fortune-coins",
+      "id": "bison-fortune-coins",
+      "category": "trending-slots"
+    },
+    {
+      "name": "2026 Hit Slot",
+      "url": "https://wild.io/games/2026-hit-slot",
+      "id": "2026-hit-slot",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Bandit Hold & Win",
+      "url": "https://wild.io/games/le-bandit-hold-win",
+      "id": "le-bandit-hold-win",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://wild.io/games/blackjack-originals",
+      "id": "blackjack-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Chick 'N Run",
+      "url": "https://wild.io/games/chick-n-run",
+      "id": "chick-n-run",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://wild.io/games/crash-originals",
+      "id": "crash-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://wild.io/games/dice-originals",
+      "id": "dice-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Diamonds",
+      "url": "https://wild.io/games/diamonds-originals",
+      "id": "diamonds-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Indyz Gold",
+      "url": "https://wild.io/games/indyz-gold",
+      "id": "indyz-gold",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://wild.io/games/keno-originals",
+      "id": "keno-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://wild.io/games/limbo-originals",
+      "id": "limbo-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Coin Flip",
+      "url": "https://wild.io/games/coin-flip-originals",
+      "id": "coin-flip-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://wild.io/games/mines-originals",
+      "id": "mines-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Pachinko",
+      "url": "https://wild.io/games/pachinko",
+      "id": "pachinko",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://wild.io/games/plinko-originals",
+      "id": "plinko-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Pump",
+      "url": "https://wild.io/games/pump",
+      "id": "pump",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Ra Ra Riches",
+      "url": "https://wild.io/games/ra-ra-riches",
+      "id": "ra-ra-riches",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://wild.io/games/roulette-originals",
+      "id": "roulette-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Slot",
+      "url": "https://wild.io/games/slot",
+      "id": "slot",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Tower",
+      "url": "https://wild.io/games/tower-originals",
+      "id": "tower-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://wild.io/games/wheel-originals",
+      "id": "wheel-originals",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Croc Snap",
+      "url": "https://wild.io/games/croc-snap",
+      "id": "croc-snap",
+      "category": "wild-originals"
+    },
+    {
+      "name": "Darts",
+      "url": "https://wild.io/games/darts",
+      "id": "darts",
+      "category": "wild-originals"
+    }
+  ]
+}
