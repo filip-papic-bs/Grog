@@ -1,0 +1,637 @@
+{
+  "casino": "BC.Game",
+  "category": "bc.game",
+  "capturedAt": "2026-11-03T15:57:14.693Z",
+  "games": [
+    {
+      "name": "Wild Cash Gold",
+      "url": "https://bc.game/game/wild-cash-gold-by-bgaming",
+      "thumb": "https://imgxcut.com/game/image/0bd8511f06.png",
+      "id": "wild-cash-gold-by-bgaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Khonsu Merge Up",
+      "url": "https://bc.game/game/khonsu-merge-up-by-bgaming",
+      "thumb": "https://imgxcut.com/game/image/dd52f83ef3.png",
+      "id": "khonsu-merge-up-by-bgaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Charge the Reels 2",
+      "url": "https://bc.game/game/charge-the-reels-2-by-platipus",
+      "thumb": "https://imgxcut.com/game/image/3d6ebc6d7c.png",
+      "id": "charge-the-reels-2-by-platipus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Clubber",
+      "url": "https://bc.game/game/le-clubber-by-hacksaw",
+      "thumb": "https://imgxcut.com/game/image/bf833246c3.png",
+      "id": "le-clubber-by-hacksaw",
+      "category": "new-releases"
+    },
+    {
+      "name": "Azteca Legacy",
+      "url": "https://bc.game/game/azteca-legacy-by-pg-soft",
+      "thumb": "https://imgxcut.com/game/image/fb20985271.png",
+      "id": "azteca-legacy-by-pg-soft",
+      "category": "new-releases"
+    },
+    {
+      "name": "Frosty Wolf's Gold",
+      "url": "https://bc.game/game/frosty-wolf-s-gold-by-funta-gaming",
+      "thumb": "https://imgxcut.com/game/image/6a51fe290d.png",
+      "id": "frosty-wolf-s-gold-by-funta-gaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gummy Bears Kingdom",
+      "url": "https://bc.game/game/gummy-bears-kingdom-by-funta-gaming",
+      "thumb": "https://imgxcut.com/game/image/2fe318f081.png",
+      "id": "gummy-bears-kingdom-by-funta-gaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Mariachi",
+      "url": "https://bc.game/game/lucky-mariachi-by-amigo-gaming",
+      "thumb": "https://imgxcut.com/game/image/0cd68f1244.png",
+      "id": "lucky-mariachi-by-amigo-gaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Devil Redemption",
+      "url": "https://bc.game/game/devil-redemption-by-skywind",
+      "thumb": "https://imgxcut.com/game/image/ab69a4fb12.png",
+      "id": "devil-redemption-by-skywind",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jefe Calavera",
+      "url": "https://bc.game/game/jefe-calavera-by-happy-duck",
+      "thumb": "https://imgxcut.com/game/image/6eb62afd4b.png",
+      "id": "jefe-calavera-by-happy-duck",
+      "category": "new-releases"
+    },
+    {
+      "name": "Greedy for Gold: Power Hit 10,000",
+      "url": "https://bc.game/game/greedy-for-gold-power-hit-10-000-by-booming",
+      "thumb": "https://imgxcut.com/game/image/e8fd863c1d.png",
+      "id": "greedy-for-gold-power-hit-10-000-by-booming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Speed Blackjack Pro",
+      "url": "https://bc.game/game/speed-blackjack-pro-by-bgaming",
+      "thumb": "https://imgxcut.com/game/image/edb336120d.png",
+      "id": "speed-blackjack-pro-by-bgaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lucky Legion Fortune",
+      "url": "https://bc.game/game/lucky-legion-fortune-by-1spin4win",
+      "thumb": "https://imgxcut.com/game/image/9f765509a7.png",
+      "id": "lucky-legion-fortune-by-1spin4win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Brother CrossBolt",
+      "url": "https://bc.game/game/brother-crossbolt-by-belatra",
+      "thumb": "https://imgxcut.com/game/image/6bfc83f1cc.png",
+      "id": "brother-crossbolt-by-belatra",
+      "category": "new-releases"
+    },
+    {
+      "name": "Pulsar",
+      "url": "https://bc.game/game/pulsar-by-inout",
+      "thumb": "https://imgxcut.com/game/image/cb6cae4d0a.png",
+      "id": "pulsar-by-inout",
+      "category": "new-releases"
+    },
+    {
+      "name": "Avia Wheel",
+      "url": "https://bc.game/game/avia-wheel-by-inout",
+      "thumb": "https://imgxcut.com/game/image/915e10a28e.png",
+      "id": "avia-wheel-by-inout",
+      "category": "new-releases"
+    },
+    {
+      "name": "Pinata BON",
+      "url": "https://bc.game/game/pinata-bon-by-jdb",
+      "thumb": "https://imgxcut.com/game/image/dca81bb8ff.png",
+      "id": "pinata-bon-by-jdb",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mahjong Wins:Master",
+      "url": "https://bc.game/game/mahjong-wins-master-by-jdb",
+      "thumb": "https://imgxcut.com/game/image/77a19b5b1a.png",
+      "id": "mahjong-wins-master-by-jdb",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hot Rocket Mega Potz",
+      "url": "https://bc.game/game/hot-rocket-mega-potz-by-bgaming",
+      "thumb": "https://imgxcut.com/game/image/7307a5f088.png",
+      "id": "hot-rocket-mega-potz-by-bgaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "SweetPop1000!",
+      "url": "https://bc.game/game/sweetpop1000-by-betsoft",
+      "thumb": "https://imgxcut.com/game/image/2e778ce50f.png",
+      "id": "sweetpop1000-by-betsoft",
+      "category": "new-releases"
+    },
+    {
+      "name": "Coin Voltage - Bonus Flash 3x3",
+      "url": "https://bc.game/game/coin-voltage-bonus-flash-3x3-by-spinomenal",
+      "thumb": "https://imgxcut.com/game/image/258ed5e2a9.png",
+      "id": "coin-voltage-bonus-flash-3x3-by-spinomenal",
+      "category": "new-releases"
+    },
+    {
+      "name": "Spooky Halloween - Hold & Hit 3x3",
+      "url": "https://bc.game/game/spooky-halloween-hold-hit-3x3-by-spinomenal",
+      "thumb": "https://imgxcut.com/game/image/7998c0b82d.png",
+      "id": "spooky-halloween-hold-hit-3x3-by-spinomenal",
+      "category": "new-releases"
+    },
+    {
+      "name": "Vault Blitz",
+      "url": "https://bc.game/game/vault-blitz-by-skywind",
+      "thumb": "https://imgxcut.com/game/image/bbc921110c.png",
+      "id": "vault-blitz-by-skywind",
+      "category": "new-releases"
+    },
+    {
+      "name": "Secret of the Witch",
+      "url": "https://bc.game/game/secret-of-the-witch-by-onlyplay",
+      "thumb": "https://imgxcut.com/game/image/3b80226316.png",
+      "id": "secret-of-the-witch-by-onlyplay",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Luxury Piggies",
+      "url": "https://bc.game/game/3-luxury-piggies-by-onlyplay",
+      "thumb": "https://imgxcut.com/game/image/7f9dfde7b7.png",
+      "id": "3-luxury-piggies-by-onlyplay",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jaguar Spirit Scatter Storm",
+      "url": "https://bc.game/game/jaguar-spirit-scatter-storm-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/549fb31735.png",
+      "id": "jaguar-spirit-scatter-storm-by-ruby-play",
+      "category": "new-releases"
+    },
+    {
+      "name": "Voltage Blitz Hades Awakens",
+      "url": "https://bc.game/game/voltage-blitz-hades-awakens-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/d4745514c2.png",
+      "id": "voltage-blitz-hades-awakens-by-ruby-play",
+      "category": "new-releases"
+    },
+    {
+      "name": "20K+ Ways Joker Lights",
+      "url": "https://bc.game/game/20k-ways-joker-lights-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/07acc20304.png",
+      "id": "20k-ways-joker-lights-by-ruby-play",
+      "category": "new-releases"
+    },
+    {
+      "name": "Spooky Sweets",
+      "url": "https://bc.game/game/spooky-sweets-by-amigo-gaming",
+      "thumb": "https://imgxcut.com/game/image/d145cd3814.png",
+      "id": "spooky-sweets-by-amigo-gaming",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mummy Tumble",
+      "url": "https://bc.game/game/mummy-tumble-by-happy-duck",
+      "thumb": "https://imgxcut.com/game/image/81afc2b600.png",
+      "id": "mummy-tumble-by-happy-duck",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hades Power",
+      "url": "https://bc.game/game/hades-power-by-amigo-gaming",
+      "thumb": "https://imgxcut.com/game/image/208ef5ff90.png",
+      "id": "hades-power-by-amigo-gaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "QUEEN OF INCA",
+      "url": "https://bc.game/game/queen-of-inca-by-fa-chai",
+      "thumb": "https://imgxcut.com/game/image/3e53e2a6db.png",
+      "id": "queen-of-inca-by-fa-chai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dork Unit",
+      "url": "https://bc.game/game/dork-unit-by-hacksaw",
+      "thumb": "https://imgxcut.com/game/image/86761cd899.png",
+      "id": "dork-unit-by-hacksaw",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Le Prechaun",
+      "url": "https://bc.game/game/le-prechaun-by-hacksaw",
+      "thumb": "https://imgxcut.com/game/image/3b3db514a6.png",
+      "id": "le-prechaun-by-hacksaw",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Party Mode",
+      "url": "https://bc.game/game/party-mode-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/cf2bb82090.png",
+      "id": "party-mode-by-croco-gaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Red Hot Chilli Chickens",
+      "url": "https://bc.game/game/red-hot-chilli-chickens-by-bgaming",
+      "thumb": "https://imgxcut.com/game/image/21baa48bff.png",
+      "id": "red-hot-chilli-chickens-by-bgaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Merge Up",
+      "url": "https://bc.game/game/sugar-merge-up-by-bgaming",
+      "thumb": "https://imgxcut.com/game/image/f24a2e3c9d.png",
+      "id": "sugar-merge-up-by-bgaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "DJ BOOM BOOM",
+      "url": "https://bc.game/game/dj-boom-boom-by-fa-chai",
+      "thumb": "https://imgxcut.com/game/image/56b5c379db.png",
+      "id": "dj-boom-boom-by-fa-chai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Cocktail Nights",
+      "url": "https://bc.game/game/cocktail-nights-by-pg-soft",
+      "thumb": "https://imgxcut.com/game/image/333b3f7395.png",
+      "id": "cocktail-nights-by-pg-soft",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Voltage Blitz Heat Rush",
+      "url": "https://bc.game/game/voltage-blitz-heat-rush-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/a277ad2f27.png",
+      "id": "voltage-blitz-heat-rush-by-ruby-play",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Voltage Blitz Rapid Boost",
+      "url": "https://bc.game/game/voltage-blitz-rapid-boost-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/6bf0bc5b04.png",
+      "id": "voltage-blitz-rapid-boost-by-ruby-play",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Safari Wilds",
+      "url": "https://bc.game/game/safari-wilds-by-pg-soft",
+      "thumb": "https://imgxcut.com/game/image/327faea935.png",
+      "id": "safari-wilds-by-pg-soft",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Crystal Hot 40 Free Spins",
+      "url": "https://bc.game/game/crystal-hot-40-free-spins-by-fazi",
+      "thumb": "https://imgxcut.com/game/image/8a32a32569.png",
+      "id": "crystal-hot-40-free-spins-by-fazi",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Wild Bounty Showdown",
+      "url": "https://bc.game/game/wild-bounty-showdown-by-pg-soft",
+      "thumb": "https://imgxcut.com/game/image/5d62026fad.png",
+      "id": "wild-bounty-showdown-by-pg-soft",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Druid's Fortune",
+      "url": "https://bc.game/game/druid-s-fortune-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/5b5ce96ff2.png",
+      "id": "druid-s-fortune-by-croco-gaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Asgardian Rising",
+      "url": "https://bc.game/game/asgardian-rising-by-pg-soft",
+      "thumb": "https://imgxcut.com/game/image/ffb74f2472.png",
+      "id": "asgardian-rising-by-pg-soft",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Turbo Storm Tempest",
+      "url": "https://bc.game/game/turbo-storm-tempest-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/457cbecd7e.png",
+      "id": "turbo-storm-tempest-by-ruby-play",
+      "category": "trending-slots"
+    },
+    {
+      "name": "GOLDEN GENIE",
+      "url": "https://bc.game/game/golden-genie-by-fa-chai",
+      "thumb": "https://imgxcut.com/game/image/c406a8e39d.png",
+      "id": "golden-genie-by-fa-chai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "SUGAR BANG BANG 2",
+      "url": "https://bc.game/game/sugar-bang-bang-2-by-fa-chai",
+      "thumb": "https://imgxcut.com/game/image/5c9a2d4e03.png",
+      "id": "sugar-bang-bang-2-by-fa-chai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "CATLA&#39;S MONEY MACHINE",
+      "url": "https://bc.game/game/catla-39-s-money-machine-by-fa-chai",
+      "thumb": "https://imgxcut.com/game/image/2488f24ca6.png",
+      "id": "catla-39-s-money-machine-by-fa-chai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "J Mania Triple Jam",
+      "url": "https://bc.game/game/j-mania-triple-jam-by-ruby-play",
+      "thumb": "https://imgxcut.com/game/image/ed6ea9a8d7.png",
+      "id": "j-mania-triple-jam-by-ruby-play",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Ultra Wheel",
+      "url": "https://bc.game/game/ultra-wheel-by-popok-gaming",
+      "thumb": "https://imgxcut.com/game/image/0cddb59b58.png",
+      "id": "ultra-wheel-by-popok-gaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Doctor Dust",
+      "url": "https://bc.game/game/doctor-dust-by-bullshark",
+      "thumb": "https://imgxcut.com/game/image/8b2713ca79.png",
+      "id": "doctor-dust-by-bullshark",
+      "category": "trending-slots"
+    },
+    {
+      "name": "CRAZY BUFFALO",
+      "url": "https://bc.game/game/crazy-buffalo-by-fa-chai",
+      "thumb": "https://imgxcut.com/game/image/9f09490da1.png",
+      "id": "crazy-buffalo-by-fa-chai",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Ghost Boo-nanza",
+      "url": "https://bc.game/game/ghost-boo-nanza-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/60c108c5bb.png",
+      "id": "ghost-boo-nanza-by-croco-gaming",
+      "category": "trending-slots"
+    },
+    {
+      "name": "BreakBones",
+      "url": "https://bc.game/game/breakbones-by-hacksaw",
+      "thumb": "https://imgxcut.com/game/image/de0046c70c.png",
+      "id": "breakbones-by-hacksaw",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lucky Neko",
+      "url": "https://bc.game/game/lucky-neko-by-pg-soft",
+      "thumb": "https://imgxcut.com/game/image/0279065c51.png",
+      "id": "lucky-neko-by-pg-soft",
+      "category": "trending-slots"
+    },
+    {
+      "name": "TikiPop Spooky Temples",
+      "url": "https://bc.game/game/tikipop-spooky-temples-by-avatarux",
+      "thumb": "https://imgxcut.com/game/image/1374ef3a7f.png",
+      "id": "tikipop-spooky-temples-by-avatarux",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Piggy Bankroll: Vault Smash",
+      "url": "https://bc.game/game/piggy-bankroll-vault-smash-by-penguin-king",
+      "thumb": "https://imgxcut.com/game/image/2b6307e162.png",
+      "id": "piggy-bankroll-vault-smash-by-penguin-king",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dolphin's Wealth Hold And Win",
+      "url": "https://bc.game/game/dolphin-s-wealth-hold-and-win-by-1spin4win",
+      "thumb": "https://imgxcut.com/game/image/82ed5d0ff8.png",
+      "id": "dolphin-s-wealth-hold-and-win-by-1spin4win",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Crash",
+      "url": "https://bc.game/game/crash",
+      "thumb": "https://imgxcut.com/game/image/aeed34ec28.png",
+      "id": "crash",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://bc.game/game/mines",
+      "thumb": "https://imgxcut.com/game/image/2f23d49d72.png",
+      "id": "mines",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Ander & Meegan",
+      "url": "https://bc.game/game/ander-meegan-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/588b7135ef.png",
+      "id": "ander-meegan-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Classic Dice",
+      "url": "https://bc.game/game/classic-dice",
+      "thumb": "https://imgxcut.com/game/image/48299b352d.png",
+      "id": "classic-dice",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://bc.game/game/wheel",
+      "thumb": "https://imgxcut.com/game/image/0334b97bc0.png",
+      "id": "wheel",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://bc.game/game/limbo",
+      "thumb": "https://imgxcut.com/game/image/287ba05406.png",
+      "id": "limbo",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://bc.game/game/plinko",
+      "thumb": "https://imgxcut.com/game/image/398f320175.png",
+      "id": "plinko",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Tower Legend",
+      "url": "https://bc.game/game/tower-legend",
+      "thumb": "https://imgxcut.com/game/image/21de5426ca.png",
+      "id": "tower-legend",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Ganesha Golden Wheel",
+      "url": "https://bc.game/game/ganesha-golden-wheel-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/9668b63430.png",
+      "id": "ganesha-golden-wheel-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Twist",
+      "url": "https://bc.game/game/twist",
+      "thumb": "https://imgxcut.com/game/image/e96aed6cf5.png",
+      "id": "twist",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://bc.game/game/keno",
+      "thumb": "https://imgxcut.com/game/image/abea788fd0.png",
+      "id": "keno",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://bc.game/game/hilo",
+      "thumb": "https://imgxcut.com/game/image/e5c072e798.png",
+      "id": "hilo",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Knockoin",
+      "url": "https://bc.game/game/knockoin-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/8cabc54c4a.png",
+      "id": "knockoin-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "CoinFlip",
+      "url": "https://bc.game/game/coinflip",
+      "thumb": "https://imgxcut.com/game/image/cd1a10067d.png",
+      "id": "coinflip",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Deadliest Sea",
+      "url": "https://bc.game/game/deadliest-sea-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/89d619aa52.png",
+      "id": "deadliest-sea-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Blackjack Classic",
+      "url": "https://bc.game/game/blackjack-classic",
+      "thumb": "https://imgxcut.com/game/image/f5a9f23894.png",
+      "id": "blackjack-classic",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Party Mode",
+      "url": "https://bc.game/game/party-mode-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/cf2bb82090.png",
+      "id": "party-mode-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Oops! All Burger",
+      "url": "https://bc.game/game/oops-all-burger-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/2ac7013a6f.png",
+      "id": "oops-all-burger-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Druid's Fortune",
+      "url": "https://bc.game/game/druid-s-fortune-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/5b5ce96ff2.png",
+      "id": "druid-s-fortune-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Stellar Rush",
+      "url": "https://bc.game/game/stellar-rush",
+      "thumb": "https://imgxcut.com/game/image/03fc2c450d.png",
+      "id": "stellar-rush",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Ghost Boo-nanza",
+      "url": "https://bc.game/game/ghost-boo-nanza-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/60c108c5bb.png",
+      "id": "ghost-boo-nanza-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://bc.game/game/blackjack",
+      "thumb": "https://imgxcut.com/game/image/56da3f6c13.png",
+      "id": "blackjack",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Cursed Clown",
+      "url": "https://bc.game/game/cursed-clown-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/6c45127933.png",
+      "id": "cursed-clown-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://bc.game/game/baccarat",
+      "thumb": "https://imgxcut.com/game/image/a32cdec2c8.png",
+      "id": "baccarat",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Bubble Shooter",
+      "url": "https://bc.game/game/bubble-shooter",
+      "thumb": "https://imgxcut.com/game/image/9a31446205.png",
+      "id": "bubble-shooter",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Symbiote",
+      "url": "https://bc.game/game/symbiote-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/e5682380c5.png",
+      "id": "symbiote-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Cave Of Plunder",
+      "url": "https://bc.game/game/cave",
+      "thumb": "https://imgxcut.com/game/image/56efc8fc01.png",
+      "id": "cave",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Candy Fiesta 1000",
+      "url": "https://bc.game/game/candy-fiesta-1000-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/c25ea21283.png",
+      "id": "candy-fiesta-1000-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Cursed Doll",
+      "url": "https://bc.game/game/cursed-doll-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/8afc51d34b.png",
+      "id": "cursed-doll-by-croco-gaming",
+      "category": "bc-originals"
+    },
+    {
+      "name": "Lucky Ranch",
+      "url": "https://bc.game/game/lucky-ranch-by-croco-gaming",
+      "thumb": "https://imgxcut.com/game/image/195646dcb5.png",
+      "id": "lucky-ranch-by-croco-gaming",
+      "category": "bc-originals"
+    }
+  ]
+}
