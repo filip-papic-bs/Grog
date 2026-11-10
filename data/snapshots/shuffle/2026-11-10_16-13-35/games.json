@@ -1,0 +1,413 @@
+{
+  "casino": "Shuffle",
+  "category": "shuffle",
+  "capturedAt": "2026-11-10T16:13:35.572Z",
+  "games": [
+    {
+      "name": "Bonanza Billion Merge Up+",
+      "url": "https://shuffle.com/casino/games/bgmng-bonanza-billion-merge-up",
+      "thumb": "https://shuffle-com.imgix.net/4a120d8c-ab7d-4bb5-8550-0fc870988247",
+      "id": "bgmng-bonanza-billion-merge-up",
+      "category": "new-releases"
+    },
+    {
+      "name": "Barbarossa: Beyond the Edge",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-barbarossabeyondtheedge",
+      "thumb": "https://shuffle-com.imgix.net/0169c3e4-6b4f-4d6f-b0bc-2b0c218acf50",
+      "id": "peter-sons-pets-barbarossabeyondtheedge",
+      "category": "new-releases"
+    },
+    {
+      "name": "Apex Dregs",
+      "url": "https://shuffle.com/casino/games/exco-apex-dregs",
+      "thumb": "https://shuffle-com.imgix.net/0358107c-7328-49d8-9f7a-527528b9aabd",
+      "id": "exco-apex-dregs",
+      "category": "new-releases"
+    },
+    {
+      "name": "Egypt Dark Stories",
+      "url": "https://shuffle.com/casino/games/7-rings-egypt-dark-stories",
+      "thumb": "https://shuffle-com.imgix.net/50f4df67-db53-4973-b46c-0c4a2bb27b0d",
+      "id": "7-rings-egypt-dark-stories",
+      "category": "new-releases"
+    },
+    {
+      "name": "F* Louvre",
+      "url": "https://shuffle.com/casino/games/7-rings-f-louvre",
+      "thumb": "https://shuffle-com.imgix.net/20e6015a-5eae-46c0-9103-32e93d252c53",
+      "id": "7-rings-f-louvre",
+      "category": "new-releases"
+    },
+    {
+      "name": "Multi Bandit",
+      "url": "https://shuffle.com/casino/games/7-rings-multi-bandit",
+      "thumb": "https://shuffle-com.imgix.net/d8ab8e90-926b-40ae-8cbf-bfc579c555d8",
+      "id": "7-rings-multi-bandit",
+      "category": "new-releases"
+    },
+    {
+      "name": "CCTV Game - Footfall",
+      "url": "https://shuffle.com/casino/games/155-io-zcl-3-u-cctvgame-footfall",
+      "thumb": "https://shuffle-com.imgix.net/cff3d17f-8015-4841-8f5f-bd68e3e63156",
+      "id": "155-io-zcl-3-u-cctvgame-footfall",
+      "category": "new-releases"
+    },
+    {
+      "name": "Stonks",
+      "url": "https://shuffle.com/casino/games/originals/stonks",
+      "thumb": "https://shuffle-com.imgix.net/924dd3f5-2c7d-4787-896e-f41abab2dd6d",
+      "id": "originals/stonks",
+      "category": "new-releases"
+    },
+    {
+      "name": "MLK Voyage 50000X",
+      "url": "https://shuffle.com/casino/games/delulu-mlk-voyage-50000-x",
+      "thumb": "https://shuffle-com.imgix.net/53a0dc3c-9a8e-48f2-a5f5-da70166a54d9",
+      "id": "delulu-mlk-voyage-50000-x",
+      "category": "new-releases"
+    },
+    {
+      "name": "Coins'n Diamonds Fortune",
+      "url": "https://shuffle.com/casino/games/1-spin-4-win-coinsn-diamonds-fortune",
+      "thumb": "https://shuffle-com.imgix.net/6b54b527-118a-43b4-ab7c-9e13f82ddea4",
+      "id": "1-spin-4-win-coinsn-diamonds-fortune",
+      "category": "new-releases"
+    },
+    {
+      "name": "Toy Crush",
+      "url": "https://shuffle.com/casino/games/delulu-toy-crush",
+      "thumb": "https://shuffle-com.imgix.net/95620bea-97bb-4a48-a766-7078e538cf54",
+      "id": "delulu-toy-crush",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bloody Mary: Pray for Prey",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-bloodymaryprayforprey",
+      "thumb": "https://shuffle-com.imgix.net/b053f315-e441-4b0a-8997-6729c9a69b6a",
+      "id": "peter-sons-pets-bloodymaryprayforprey",
+      "category": "new-releases"
+    },
+    {
+      "name": "Classic Chilli Plus",
+      "url": "https://shuffle.com/casino/games/1-spin-4-win-classic-chilli-plus",
+      "thumb": "https://shuffle-com.imgix.net/dc0e0dac-7819-4812-8924-03f0c3a2b0d4",
+      "id": "1-spin-4-win-classic-chilli-plus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mystery Coin 27",
+      "url": "https://shuffle.com/casino/games/1-spin-4-win-mystery-coin-27",
+      "thumb": "https://shuffle-com.imgix.net/edd55ba4-f1c1-4d45-9f60-8da5c6cddc8d",
+      "id": "1-spin-4-win-mystery-coin-27",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Lucky Monkeys Hold & Win",
+      "url": "https://shuffle.com/casino/games/bgmng-three-lucky-monkeys-hold-and-win",
+      "thumb": "https://shuffle-com.imgix.net/abe41530-2abb-4a7e-a61b-0ac301f55a02",
+      "id": "bgmng-three-lucky-monkeys-hold-and-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wincent Wolf",
+      "url": "https://shuffle.com/casino/games/bgmng-wincent-wolf",
+      "thumb": "https://shuffle-com.imgix.net/00122735-c646-48e9-ab7a-f48905a93323",
+      "id": "bgmng-wincent-wolf",
+      "category": "new-releases"
+    },
+    {
+      "name": "Genie's Fortune Wishes",
+      "url": "https://shuffle.com/casino/games/microgaming-genies-fortune-wishes",
+      "thumb": "https://shuffle-com.imgix.net/0d320545-31d3-4e7f-be9e-eec306ae1e59",
+      "id": "microgaming-genies-fortune-wishes",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sweet Takes",
+      "url": "https://shuffle.com/casino/games/delulu-sweet-takes",
+      "thumb": "https://shuffle-com.imgix.net/4384e554-11e6-47b1-8b95-98add63b0d0a",
+      "id": "delulu-sweet-takes",
+      "category": "new-releases"
+    },
+    {
+      "name": "5 Witch Pots",
+      "url": "https://shuffle.com/casino/games/endorphina-end-5-witchpots",
+      "thumb": "https://shuffle-com.imgix.net/fe808f84-8d6f-484d-b788-1b91d82a6cec",
+      "id": "endorphina-end-5-witchpots",
+      "category": "new-releases"
+    },
+    {
+      "name": "Cricket Century Kings",
+      "url": "https://shuffle.com/casino/games/microgaming-cricket-century-kings",
+      "thumb": "https://shuffle-com.imgix.net/0556ec68-00e3-42f8-9325-9b039efd4040",
+      "id": "microgaming-cricket-century-kings",
+      "category": "new-releases"
+    },
+    {
+      "name": "Black Friday Madness",
+      "url": "https://shuffle.com/casino/games/bgmng-black-friday-madness",
+      "thumb": "https://shuffle-com.imgix.net/b97c50de-d4a1-42ad-8491-473d8efd8a12",
+      "id": "bgmng-black-friday-madness",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Barbarossa: Beyond the Edge",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-barbarossabeyondtheedge",
+      "thumb": "https://shuffle-com.imgix.net/0169c3e4-6b4f-4d6f-b0bc-2b0c218acf50",
+      "id": "peter-sons-pets-barbarossabeyondtheedge",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Formula x10000",
+      "url": "https://shuffle.com/casino/games/bgmng-formula-x-10000",
+      "thumb": "https://shuffle-com.imgix.net/a4eb1727-f760-4c37-abd6-86810b1a780a",
+      "id": "bgmng-formula-x-10000",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Merge Up 2",
+      "url": "https://shuffle.com/casino/games/softswiss-merge-up-2",
+      "thumb": "https://shuffle-com.imgix.net/90f58548-4ca7-4992-8def-a365aa4ccdb1",
+      "id": "softswiss-merge-up-2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Joker Mask",
+      "url": "https://shuffle.com/casino/games/bgmng-joker-mask",
+      "thumb": "https://shuffle-com.imgix.net/4b1aec6c-761e-4ba8-8a84-7bc574e473e5",
+      "id": "bgmng-joker-mask",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Clash of Gods: Power Duel",
+      "url": "https://shuffle.com/casino/games/softswiss-clashof-gods-anubisvs-hades",
+      "thumb": "https://shuffle-com.imgix.net/f5f48a8d-5dad-495f-acc7-e78b4d6e8def",
+      "id": "softswiss-clashof-gods-anubisvs-hades",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Khonsu Merge Up",
+      "url": "https://shuffle.com/casino/games/bgmng-khonsu-merge-up",
+      "thumb": "https://shuffle-com.imgix.net/15e52749-b1a1-4b4e-99ed-17b1a4c5aba9",
+      "id": "bgmng-khonsu-merge-up",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonanza Billion Merge Up+",
+      "url": "https://shuffle.com/casino/games/bgmng-bonanza-billion-merge-up",
+      "thumb": "https://shuffle-com.imgix.net/4a120d8c-ab7d-4bb5-8550-0fc870988247",
+      "id": "bgmng-bonanza-billion-merge-up",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sugar Merge Up",
+      "url": "https://shuffle.com/casino/games/softswiss-sugar-merge-up",
+      "thumb": "https://shuffle-com.imgix.net/b4d2051d-421e-4b9c-ac1b-a702cefb314f",
+      "id": "softswiss-sugar-merge-up",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Super Jungle",
+      "url": "https://shuffle.com/casino/games/endorphina-end-superjungle",
+      "thumb": "https://shuffle-com.imgix.net/84282645-6435-48d6-81a0-550476c7de07",
+      "id": "endorphina-end-superjungle",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Egypt Dark Stories",
+      "url": "https://shuffle.com/casino/games/7-rings-egypt-dark-stories",
+      "thumb": "https://shuffle-com.imgix.net/50f4df67-db53-4973-b46c-0c4a2bb27b0d",
+      "id": "7-rings-egypt-dark-stories",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aztec Clusters",
+      "url": "https://shuffle.com/casino/games/softswiss-aztec-clusters",
+      "thumb": "https://shuffle-com.imgix.net/330f2c86-c82c-402e-9fb7-e8d94cfb9d38",
+      "id": "softswiss-aztec-clusters",
+      "category": "trending-slots"
+    },
+    {
+      "name": "F* Louvre",
+      "url": "https://shuffle.com/casino/games/7-rings-f-louvre",
+      "thumb": "https://shuffle-com.imgix.net/20e6015a-5eae-46c0-9103-32e93d252c53",
+      "id": "7-rings-f-louvre",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Big Bounty Bandits: 3 Pots",
+      "url": "https://shuffle.com/casino/games/peter-sons-pets-bigbountybandits-3-pots",
+      "thumb": "https://shuffle-com.imgix.net/4ed04186-5303-4bb0-9610-24bb437c4226",
+      "id": "peter-sons-pets-bigbountybandits-3-pots",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Frog's Spell",
+      "url": "https://shuffle.com/casino/games/softswiss-frogs-spell",
+      "thumb": "https://shuffle-com.imgix.net/f98c14c9-84f3-4cae-825f-8d62d0948406",
+      "id": "softswiss-frogs-spell",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Lucky Legion Fortune",
+      "url": "https://shuffle.com/casino/games/1-spin-4-win-lucky-legion-fortune",
+      "thumb": "https://shuffle-com.imgix.net/7772aa5e-990b-47d3-ab55-235b9e809062",
+      "id": "1-spin-4-win-lucky-legion-fortune",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Snoop Dogg Dollars",
+      "url": "https://shuffle.com/casino/games/softswiss-snoop-dogg-dollars",
+      "thumb": "https://shuffle-com.imgix.net/e1efaeee-27ce-4228-a195-dd3c5183c6a3",
+      "id": "softswiss-snoop-dogg-dollars",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Hot Rocket Mega Potz",
+      "url": "https://shuffle.com/casino/games/bgmng-hot-rocket-mega-potz",
+      "thumb": "https://shuffle-com.imgix.net/ae4790f9-497b-482e-b4a3-e73c984bed9f",
+      "id": "bgmng-hot-rocket-mega-potz",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonanza Billion",
+      "url": "https://shuffle.com/casino/games/softswiss-bonanza-billion",
+      "thumb": "https://shuffle-com.imgix.net/1ce5fdb4-dcee-4cfd-9862-ca4a68578a77",
+      "id": "softswiss-bonanza-billion",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Joker Miner",
+      "url": "https://shuffle.com/casino/games/endorphina-end-jokerminer",
+      "thumb": "https://shuffle-com.imgix.net/9f35ab31-ae66-483b-9c6c-582cf5e63347",
+      "id": "endorphina-end-jokerminer",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Stonks",
+      "url": "https://shuffle.com/casino/games/originals/stonks",
+      "thumb": "https://shuffle-com.imgix.net/924dd3f5-2c7d-4787-896e-f41abab2dd6d",
+      "id": "originals/stonks",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://shuffle.com/casino/games/originals/dice",
+      "thumb": "https://shuffle-com.imgix.net/05042952-e1c7-4e31-9ce1-efc00c5406f7",
+      "id": "originals/dice",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://shuffle.com/casino/games/originals/mines",
+      "thumb": "https://shuffle-com.imgix.net/ce1a3b92-d1ef-4fe3-bdcc-090da156107f",
+      "id": "originals/mines",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://shuffle.com/casino/games/originals/keno",
+      "thumb": "https://shuffle-com.imgix.net/df79b349-2281-44fc-9718-5b8de8019124",
+      "id": "originals/keno",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://shuffle.com/casino/games/originals/limbo",
+      "thumb": "https://shuffle-com.imgix.net/eb03e747-04a1-43cd-9679-50aba4891484",
+      "id": "originals/limbo",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://shuffle.com/casino/games/originals/plinko",
+      "thumb": "https://shuffle-com.imgix.net/7e26da11-db56-4bdb-a9ec-81947440ed9f",
+      "id": "originals/plinko",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://shuffle.com/casino/games/originals/blackjack",
+      "thumb": "https://shuffle-com.imgix.net/516b04f0-4a5f-406b-94f0-d9de1cf1086b",
+      "id": "originals/blackjack",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://shuffle.com/casino/games/originals/coinflip",
+      "thumb": "https://shuffle-com.imgix.net/03189bea-9d73-4d51-8a03-3e3d27e18f7f",
+      "id": "originals/coinflip",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Slide",
+      "url": "https://shuffle.com/casino/games/originals/slide",
+      "thumb": "https://shuffle-com.imgix.net/6a1c2e34-1044-4990-b4d6-7b571e405288",
+      "id": "originals/slide",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Floor Is Lava",
+      "url": "https://shuffle.com/casino/games/originals/floor-is-lava",
+      "thumb": "https://shuffle-com.imgix.net/b8737ec1-7b94-49f4-899d-2f7c067eef10",
+      "id": "originals/floor-is-lava",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Blitz",
+      "url": "https://shuffle.com/casino/games/originals/blitz",
+      "thumb": "https://shuffle-com.imgix.net/47713ef4-a1a0-45eb-891e-8bbe97732b79",
+      "id": "originals/blitz",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://shuffle.com/casino/games/originals/hilo",
+      "thumb": "https://shuffle-com.imgix.net/a35c6296-630a-4368-ad45-e85d7afbd11e",
+      "id": "originals/hilo",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Waifu Tower",
+      "url": "https://shuffle.com/casino/games/originals/tower",
+      "thumb": "https://shuffle-com.imgix.net/0f248d91-6c5f-475e-82b9-8b5ca7b8b840",
+      "id": "originals/tower",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://shuffle.com/casino/games/originals/crash",
+      "thumb": "https://shuffle-com.imgix.net/72cd29e3-17d8-4699-97ab-d2c6a2164cd8",
+      "id": "originals/crash",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Chicken",
+      "url": "https://shuffle.com/casino/games/originals/chicken",
+      "thumb": "https://shuffle-com.imgix.net/a49e9ad2-f24a-40b3-824a-5661b7856f14",
+      "id": "originals/chicken",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://shuffle.com/casino/games/originals/baccarat",
+      "thumb": "https://shuffle-com.imgix.net/13367484-2d18-4499-8289-fd3585ba426e",
+      "id": "originals/baccarat",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://shuffle.com/casino/games/originals/roulette",
+      "thumb": "https://shuffle-com.imgix.net/a1b79643-331b-49a8-ae98-f827f7ca34ed",
+      "id": "originals/roulette",
+      "category": "shuffle-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://shuffle.com/casino/games/originals/wheel",
+      "thumb": "https://shuffle-com.imgix.net/c6797505-6bb7-48c9-b00b-1710642267ea",
+      "id": "originals/wheel",
+      "category": "shuffle-originals"
+    }
+  ]
+}

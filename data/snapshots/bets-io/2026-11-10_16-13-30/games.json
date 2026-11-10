@@ -1,0 +1,127 @@
+{
+  "casino": "Bets.io",
+  "category": "bets.io",
+  "capturedAt": "2026-11-10T16:13:30.281Z",
+  "games": [
+    {
+      "name": "Chronos – Sands of Eternity",
+      "url": "https://www.bets.io/casino/games/chronos-sands-of-eternity",
+      "id": "chronos-sands-of-eternity",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bling Blitz Power Nudge",
+      "url": "https://www.bets.io/casino/games/bling-blitz-power-nudge",
+      "id": "bling-blitz-power-nudge",
+      "category": "new-releases"
+    },
+    {
+      "name": "Buried By Night",
+      "url": "https://www.bets.io/casino/games/buried-by-night",
+      "id": "buried-by-night",
+      "category": "new-releases"
+    },
+    {
+      "name": "No Brainer",
+      "url": "https://www.bets.io/casino/games/no-brainer",
+      "id": "no-brainer",
+      "category": "new-releases"
+    },
+    {
+      "name": "Joker Mask",
+      "url": "https://www.bets.io/casino/games/joker-mask",
+      "id": "joker-mask",
+      "category": "new-releases"
+    },
+    {
+      "name": "Super Golden Spins",
+      "url": "https://www.bets.io/casino/games/super-golden-spins",
+      "id": "super-golden-spins",
+      "category": "new-releases"
+    },
+    {
+      "name": "Pawstar Beats",
+      "url": "https://www.bets.io/casino/games/pawstar-beats",
+      "id": "pawstar-beats",
+      "category": "new-releases"
+    },
+    {
+      "name": "4 Mine Carts",
+      "url": "https://www.bets.io/casino/games/4-mine-carts",
+      "id": "4-mine-carts",
+      "category": "new-releases"
+    },
+    {
+      "name": "Formula x10000",
+      "url": "https://www.bets.io/casino/games/formula-x10000",
+      "id": "formula-x10000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Supernova Shooting Stars",
+      "url": "https://www.bets.io/casino/games/supernova-shooting-stars",
+      "id": "supernova-shooting-stars",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Collector",
+      "url": "https://www.bets.io/casino/games/the-collector",
+      "id": "the-collector",
+      "category": "new-releases"
+    },
+    {
+      "name": "Diamond Prime",
+      "url": "https://www.bets.io/casino/games/diamond-prime",
+      "id": "diamond-prime",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hot chicks party",
+      "url": "https://www.bets.io/casino/games/hot-chicks-party",
+      "id": "hot-chicks-party",
+      "category": "new-releases"
+    },
+    {
+      "name": "Killer Night",
+      "url": "https://www.bets.io/casino/games/killer-night",
+      "id": "killer-night",
+      "category": "new-releases"
+    },
+    {
+      "name": "Space Fart Jump",
+      "url": "https://www.bets.io/casino/games/space-fart-jump",
+      "id": "space-fart-jump",
+      "category": "new-releases"
+    },
+    {
+      "name": "Khonsu Merge Up",
+      "url": "https://www.bets.io/casino/games/khonsu-merge-up",
+      "id": "khonsu-merge-up",
+      "category": "new-releases"
+    },
+    {
+      "name": "Azteca Legacy",
+      "url": "https://www.bets.io/casino/games/azteca-legacy",
+      "id": "azteca-legacy",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gates of Olympus 2500",
+      "url": "https://www.bets.io/casino/games/gates-of-olympus-2500",
+      "id": "gates-of-olympus-2500",
+      "category": "new-releases"
+    },
+    {
+      "name": "Deadline: Max Chaos",
+      "url": "https://www.bets.io/casino/games/deadline-max-chaos",
+      "id": "deadline-max-chaos",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sweet Loot",
+      "url": "https://www.bets.io/casino/games/sweet-loot",
+      "id": "sweet-loot",
+      "category": "new-releases"
+    }
+  ]
+}

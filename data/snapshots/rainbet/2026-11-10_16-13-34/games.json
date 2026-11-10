@@ -1,0 +1,294 @@
+{
+  "casino": "Rainbet",
+  "category": "rainbet",
+  "capturedAt": "2026-11-10T16:13:34.571Z",
+  "games": [
+    {
+      "name": "Sin City",
+      "url": "https://rainbet.com/casino/slots/xposed-studios-sin-city",
+      "thumb": "https://studio.engine.io/api/asset/image/01a19774-627a-72d2-a2da-bc7a2aaee5a8",
+      "id": "xposed-studios-sin-city",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hellborn",
+      "url": "https://rainbet.com/casino/slots/elevation-hellborn",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1680b-4dd4-7f37-a21f-47db9b238c64",
+      "id": "elevation-hellborn",
+      "category": "new-releases"
+    },
+    {
+      "name": "Biscuit Bazooka",
+      "url": "https://rainbet.com/casino/slots/phantom-interactive-biscuit-bazooka",
+      "thumb": "https://studio.engine.io/api/asset/image/01a198ff-11cd-7bce-9ea9-3423cc8694ff",
+      "id": "phantom-interactive-biscuit-bazooka",
+      "category": "new-releases"
+    },
+    {
+      "name": "Deep Dark Depths",
+      "url": "https://rainbet.com/casino/slots/uppercut-gaming-deep-dark-depths",
+      "thumb": "https://studio.engine.io/api/asset/image/01a19906-457e-7c2d-9c6a-78645f477102",
+      "id": "uppercut-gaming-deep-dark-depths",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bling Blitz Power Nudge",
+      "url": "https://rainbet.com/casino/slots/bgaming-bling-blitz-power-nudge",
+      "thumb": "https://usercontent.cc/i/s3/bgmng/BlingBlitzPowerNudge.png",
+      "id": "bgaming-bling-blitz-power-nudge",
+      "category": "new-releases"
+    },
+    {
+      "name": "Croc Pot",
+      "url": "https://rainbet.com/casino/slots/phantom-interactive-croc-pot",
+      "thumb": "https://studio.engine.io/api/asset/image/01a19904-386f-7aa6-8246-3b4bef7b7709",
+      "id": "phantom-interactive-croc-pot",
+      "category": "new-releases"
+    },
+    {
+      "name": "Farm Around",
+      "url": "https://rainbet.com/casino/slots/uppercut-gaming-farm-around",
+      "thumb": "https://studio.engine.io/api/asset/image/01a19907-aecf-76e8-83d6-8dba7d6f2023",
+      "id": "uppercut-gaming-farm-around",
+      "category": "new-releases"
+    },
+    {
+      "name": "Joker Mask",
+      "url": "https://rainbet.com/casino/slots/bgaming-joker-mask",
+      "thumb": "https://usercontent.cc/i/s3/bgmng/JokerMask.png",
+      "id": "bgaming-joker-mask",
+      "category": "new-releases"
+    },
+    {
+      "name": "De Generate",
+      "url": "https://rainbet.com/casino/slots/spinify-de-generate",
+      "thumb": "https://studio.engine.io/api/asset/image/01a188f1-a14e-7e2b-ad6c-421a6e9862b5",
+      "id": "spinify-de-generate",
+      "category": "new-releases"
+    },
+    {
+      "name": "City Nights",
+      "url": "https://rainbet.com/casino/slots/spinify-city-nights",
+      "thumb": "https://studio.engine.io/api/asset/image/01a07c46-5c1c-77e6-aea1-8fe2ee872146",
+      "id": "spinify-city-nights",
+      "category": "new-releases"
+    },
+    {
+      "name": "Raygun Riot",
+      "url": "https://rainbet.com/casino/slots/black-coffee-studios-raygun-riot",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1090d-17c3-7a52-b9d4-06370b2db92b",
+      "id": "black-coffee-studios-raygun-riot",
+      "category": "new-releases"
+    },
+    {
+      "name": "Arch Angel",
+      "url": "https://rainbet.com/casino/slots/donut-gaming-arch-angel",
+      "thumb": "https://studio.engine.io/api/asset/image/019fe1e6-5689-777e-84e9-6a304950c849",
+      "id": "donut-gaming-arch-angel",
+      "category": "new-releases"
+    },
+    {
+      "name": "Cattle Clash",
+      "url": "https://rainbet.com/casino/slots/donut-gaming-cattle-clash",
+      "thumb": "https://studio.engine.io/api/asset/image/01a03b5d-8cb2-78af-bdb5-518b8c2aebf2",
+      "id": "donut-gaming-cattle-clash",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gates of Destiny",
+      "url": "https://rainbet.com/casino/slots/donut-gaming-gates-of-destiny",
+      "thumb": "https://studio.engine.io/api/asset/image/019f8306-7dc9-7a0b-be5a-39b2cba8c52f",
+      "id": "donut-gaming-gates-of-destiny",
+      "category": "new-releases"
+    },
+    {
+      "name": "Solar Girl",
+      "url": "https://rainbet.com/casino/slots/donut-gaming-solar-girl",
+      "thumb": "https://studio.engine.io/api/asset/image/019db036-e7fa-7b17-9541-bd08b829d5c6",
+      "id": "donut-gaming-solar-girl",
+      "category": "new-releases"
+    },
+    {
+      "name": "Book of Death",
+      "url": "https://rainbet.com/casino/slots/valkyrie-book-of-death",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1ae75-4593-75aa-b6a4-28b144cf5669",
+      "id": "valkyrie-book-of-death",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mega Jail",
+      "url": "https://rainbet.com/casino/slots/shady-lady-mega-jail",
+      "thumb": "https://usercontent.cc/i/s3/shadylady/MegaJail.png",
+      "id": "shady-lady-mega-jail",
+      "category": "new-releases"
+    },
+    {
+      "name": "Triple Gobble Wobble",
+      "url": "https://rainbet.com/casino/slots/avatarux-triple-gobble-wobble",
+      "thumb": "https://usercontent.cc/i/s3/avatarux/TripleGobbleWobble.png",
+      "id": "avatarux-triple-gobble-wobble",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ancient Curse",
+      "url": "https://rainbet.com/casino/slots/uppercut-gaming-ancient-curse",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1917a-340a-7471-b3cf-9adfdb123ee6",
+      "id": "uppercut-gaming-ancient-curse",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ghost House",
+      "url": "https://rainbet.com/casino/slots/massive-studios-ghost-house",
+      "thumb": "https://live.massivestudios.io/games_assets/massive/tiles/g056.webp",
+      "id": "massive-studios-ghost-house",
+      "category": "new-releases"
+    },
+    {
+      "name": "Rainbet Aviamasters",
+      "url": "https://rainbet.com/casino/slots/bgaming-rainbet-aviamasters",
+      "thumb": "https://usercontent.cc/i/s3/softswiss/RainbetAviamasters.png",
+      "id": "bgaming-rainbet-aviamasters",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Crown Coins",
+      "url": "https://rainbet.com/casino/slots/endorphina-crown-coins",
+      "thumb": "https://usercontent.cc/i/s3/endorphina/endorphina2_CrownCoins.png",
+      "id": "endorphina-crown-coins",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Bonanza Billion",
+      "url": "https://rainbet.com/casino/slots/bgaming-bonanza-billion",
+      "thumb": "https://usercontent.cc/i/s3/softswiss/BonanzaBillion.png",
+      "id": "bgaming-bonanza-billion",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aviamasters 2",
+      "url": "https://rainbet.com/casino/slots/bgaming-aviamasters-2",
+      "thumb": "https://cdn.a8r.games/i/s3/bgmng/Aviamasters2.png",
+      "id": "bgaming-aviamasters-2",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Snoop Dogg Dollars",
+      "url": "https://rainbet.com/casino/slots/bgaming-snoop-dogg-dollars",
+      "thumb": "https://usercontent.cc/i/s3/softswiss/SnoopDoggDollars.png",
+      "id": "bgaming-snoop-dogg-dollars",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Aviator",
+      "url": "https://rainbet.com/casino/slots/spribe-aviator",
+      "thumb": "https://usercontent.cc/i/s3/spribe/aviator.png",
+      "id": "spribe-aviator",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://rainbet.com/casino/originals/baccarat",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/baccarat.webp",
+      "id": "baccarat",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://rainbet.com/casino/originals/coinflip",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/coinflip.webp",
+      "id": "coinflip",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Moles",
+      "url": "https://rainbet.com/casino/originals/moles",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/moles.webp",
+      "id": "moles",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "War",
+      "url": "https://rainbet.com/casino/originals/war",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/war.webp",
+      "id": "war",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://rainbet.com/casino/originals/hilo",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/hilo.webp",
+      "id": "hilo",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Chicken Cross",
+      "url": "https://rainbet.com/casino/originals/chicken-cross",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/chicken-cross.webp",
+      "id": "chicken-cross",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Tower",
+      "url": "https://rainbet.com/casino/originals/tower",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/tower.webp",
+      "id": "tower",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Rock Paper Scissors",
+      "url": "https://rainbet.com/casino/originals/rock-paper-scissors",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/rock-paper-scissors.webp",
+      "id": "rock-paper-scissors",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://rainbet.com/casino/originals/limbo",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/limbo.webp",
+      "id": "limbo",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://rainbet.com/casino/originals/blackjack",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/blackjack.webp",
+      "id": "blackjack",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://rainbet.com/casino/originals/keno",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/keno.webp",
+      "id": "keno",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://rainbet.com/casino/originals/mines-game",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/mines.webp",
+      "id": "mines-game",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://rainbet.com/casino/originals/roulette",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/roulette.webp",
+      "id": "roulette",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://rainbet.com/casino/originals/plinko",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/plinko.webp",
+      "id": "plinko",
+      "category": "rainbet-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://rainbet.com/casino/originals/dice",
+      "thumb": "https://static.raincdn.com/cdn/max-w-640/originals/dice.webp",
+      "id": "dice",
+      "category": "rainbet-originals"
+    }
+  ]
+}
