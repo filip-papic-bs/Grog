@@ -1,0 +1,667 @@
+{
+  "casino": "Duelbits",
+  "category": "duelbits",
+  "capturedAt": "2026-11-17T17:27:51.586Z",
+  "games": [
+    {
+      "name": "Fire In The Hole 4",
+      "url": "https://duelbits.com/casino/nolimit-city-fire-in-the-hole-4",
+      "id": "nolimit-city-fire-in-the-hole-4",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zeus vs Hades POP",
+      "url": "https://duelbits.com/casino/pragmaticplaypop-zeus-vs-hades-pop",
+      "id": "pragmaticplaypop-zeus-vs-hades-pop",
+      "category": "new-releases"
+    },
+    {
+      "name": "Marlin Masters: Frozen Frenzy",
+      "url": "https://duelbits.com/casino/hacksaw-marlin-masters-frozen-frenzy",
+      "id": "hacksaw-marlin-masters-frozen-frenzy",
+      "category": "new-releases"
+    },
+    {
+      "name": "Big Bass Christmas Blast 1000",
+      "url": "https://duelbits.com/casino/pragmatic-play-big-bass-christmas-blast-1000",
+      "id": "pragmatic-play-big-bass-christmas-blast-1000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Nom Nom Nom: Feed n' Win",
+      "url": "https://duelbits.com/casino/playnetic-nom-nom-nom-feed-n-win",
+      "id": "playnetic-nom-nom-nom-feed-n-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ants Attack",
+      "url": "https://duelbits.com/casino/bullsharkgames-ants-attack",
+      "id": "bullsharkgames-ants-attack",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Fortune Eye: Hold & Win",
+      "url": "https://duelbits.com/casino/penguinking-the-fortune-eye-hold-win",
+      "id": "penguinking-the-fortune-eye-hold-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mexican Standoff",
+      "url": "https://duelbits.com/casino/netent-mexican-standoff",
+      "id": "netent-mexican-standoff",
+      "category": "new-releases"
+    },
+    {
+      "name": "Willy Wildwing",
+      "url": "https://duelbits.com/casino/hacksaw-willy-wildwing",
+      "id": "hacksaw-willy-wildwing",
+      "category": "new-releases"
+    },
+    {
+      "name": "Jewels of Ra",
+      "url": "https://duelbits.com/casino/pragmatic-play-jewels-of-ra",
+      "id": "pragmatic-play-jewels-of-ra",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Aristocrats",
+      "url": "https://duelbits.com/casino/bsg-the-aristocrats",
+      "id": "bsg-the-aristocrats",
+      "category": "new-releases"
+    },
+    {
+      "name": "DarkBlood Rising: Hold n' Win",
+      "url": "https://duelbits.com/casino/playnetic-darkblood-rising-hold-n-win",
+      "id": "playnetic-darkblood-rising-hold-n-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Royal Hunt",
+      "url": "https://duelbits.com/casino/peterandsons-royal-hunt",
+      "id": "peterandsons-royal-hunt",
+      "category": "new-releases"
+    },
+    {
+      "name": "CROESUS CURSE",
+      "url": "https://duelbits.com/casino/tadagaming-croesus-curse",
+      "id": "tadagaming-croesus-curse",
+      "category": "new-releases"
+    },
+    {
+      "name": "Crown Voltage",
+      "url": "https://duelbits.com/casino/gamebeat-crown-voltage",
+      "id": "gamebeat-crown-voltage",
+      "category": "new-releases"
+    },
+    {
+      "name": "Baccarat",
+      "url": "https://duelbits.com/casino/duelbits/baccarat",
+      "id": "duelbits/baccarat",
+      "category": "new-releases"
+    },
+    {
+      "name": "Corporation Wars",
+      "url": "https://duelbits.com/casino/kitsunegaming-corporation-wars",
+      "id": "kitsunegaming-corporation-wars",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Pharaoh Mysteries",
+      "url": "https://duelbits.com/casino/popiplay-3-pharaoh-mysteries",
+      "id": "popiplay-3-pharaoh-mysteries",
+      "category": "new-releases"
+    },
+    {
+      "name": "G. I. Joe",
+      "url": "https://duelbits.com/casino/red-tiger-g-i-joe",
+      "id": "red-tiger-g-i-joe",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ho-Ho-Ho Roulette",
+      "url": "https://duelbits.com/casino/evolution-hohoho-roulette",
+      "id": "evolution-hohoho-roulette",
+      "category": "new-releases"
+    },
+    {
+      "name": "Hell Hot Volcano",
+      "url": "https://duelbits.com/casino/endorphina-hell-hot-volcano",
+      "id": "endorphina-hell-hot-volcano",
+      "category": "new-releases"
+    },
+    {
+      "name": "No Brainer",
+      "url": "https://duelbits.com/casino/red-tiger-no-brainer",
+      "id": "red-tiger-no-brainer",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bling Blitz Power Nudge",
+      "url": "https://duelbits.com/casino/bgmng-bling-blitz-power-nudge",
+      "id": "bgmng-bling-blitz-power-nudge",
+      "category": "new-releases"
+    },
+    {
+      "name": "Buried By Night",
+      "url": "https://duelbits.com/casino/hacksaw-buried-by-night",
+      "id": "hacksaw-buried-by-night",
+      "category": "new-releases"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://duelbits.com/casino/duelbits/limbo",
+      "id": "duelbits/limbo",
+      "category": "new-releases"
+    },
+    {
+      "name": "Chronos – Sands of Eternity",
+      "url": "https://duelbits.com/casino/pragmatic-play-chronos-sands-of-eternity",
+      "id": "pragmatic-play-chronos-sands-of-eternity",
+      "category": "new-releases"
+    },
+    {
+      "name": "Joker Mask",
+      "url": "https://duelbits.com/casino/bgmng-joker-mask",
+      "id": "bgmng-joker-mask",
+      "category": "new-releases"
+    },
+    {
+      "name": "Arcade Raider",
+      "url": "https://duelbits.com/casino/bullsharkgames-arcade-raider",
+      "id": "bullsharkgames-arcade-raider",
+      "category": "new-releases"
+    },
+    {
+      "name": "Pawstar Beats",
+      "url": "https://duelbits.com/casino/nownow-pawstar-beats",
+      "id": "nownow-pawstar-beats",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mega Jail",
+      "url": "https://duelbits.com/casino/shadylady-mega-jail",
+      "id": "shadylady-mega-jail",
+      "category": "new-releases"
+    },
+    {
+      "name": "Supernova Shooting Stars",
+      "url": "https://duelbits.com/casino/hacksaw-supernova-shooting-stars",
+      "id": "hacksaw-supernova-shooting-stars",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gears of Eternia Megaways",
+      "url": "https://duelbits.com/casino/fourleafgaming-gears-of-eternia-megaways",
+      "id": "fourleafgaming-gears-of-eternia-megaways",
+      "category": "new-releases"
+    },
+    {
+      "name": "The Collector",
+      "url": "https://duelbits.com/casino/bsg-the-collector",
+      "id": "bsg-the-collector",
+      "category": "new-releases"
+    },
+    {
+      "name": "Prosperity Coins: Hold n' Grow",
+      "url": "https://duelbits.com/casino/playnetic-prosperity-coins-hold-n-grow",
+      "id": "playnetic-prosperity-coins-hold-n-grow",
+      "category": "new-releases"
+    },
+    {
+      "name": "Super Golden Spins",
+      "url": "https://duelbits.com/casino/pragmatic-play-super-golden-spins",
+      "id": "pragmatic-play-super-golden-spins",
+      "category": "new-releases"
+    },
+    {
+      "name": "X500 HOT",
+      "url": "https://duelbits.com/casino/tadagaming-x500-hot",
+      "id": "tadagaming-x500-hot",
+      "category": "new-releases"
+    },
+    {
+      "name": "4 Mine Carts",
+      "url": "https://duelbits.com/casino/3oaks-4-mine-carts",
+      "id": "3oaks-4-mine-carts",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wild Cash Gold",
+      "url": "https://duelbits.com/casino/bgmng-wild-cash-gold",
+      "id": "bgmng-wild-cash-gold",
+      "category": "new-releases"
+    },
+    {
+      "name": "Formula x10000",
+      "url": "https://duelbits.com/casino/bgmng-formula-x10000",
+      "id": "bgmng-formula-x10000",
+      "category": "new-releases"
+    },
+    {
+      "name": "Khonsu Merge Up",
+      "url": "https://duelbits.com/casino/bgmng-khonsu-merge-up",
+      "id": "bgmng-khonsu-merge-up",
+      "category": "new-releases"
+    },
+    {
+      "name": "Zero To Hero",
+      "url": "https://duelbits.com/casino/popiplay-zero-to-hero",
+      "id": "popiplay-zero-to-hero",
+      "category": "new-releases"
+    },
+    {
+      "name": "Flaming Streaks",
+      "url": "https://duelbits.com/casino/push-gaming-flaming-streaks",
+      "id": "push-gaming-flaming-streaks",
+      "category": "new-releases"
+    },
+    {
+      "name": "Le Clubber",
+      "url": "https://duelbits.com/casino/hacksaw-le-clubber",
+      "id": "hacksaw-le-clubber",
+      "category": "new-releases"
+    },
+    {
+      "name": "Rattle Dime: Hold n' Win",
+      "url": "https://duelbits.com/casino/playnetic-rattle-dime-hold-n-win",
+      "id": "playnetic-rattle-dime-hold-n-win",
+      "category": "new-releases"
+    },
+    {
+      "name": "Fortune Garuda 500 JACKPOT",
+      "url": "https://duelbits.com/casino/tadagaming-fortune-garuda-500-jackpot",
+      "id": "tadagaming-fortune-garuda-500-jackpot",
+      "category": "new-releases"
+    },
+    {
+      "name": "Two Moons Baccarat",
+      "url": "https://duelbits.com/casino/creedroomz-two-moons-baccarat",
+      "id": "creedroomz-two-moons-baccarat",
+      "category": "new-releases"
+    },
+    {
+      "name": "Deadline: Max Chaos",
+      "url": "https://duelbits.com/casino/chaosclinic-deadline-max-chaos",
+      "id": "chaosclinic-deadline-max-chaos",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ouija",
+      "url": "https://duelbits.com/casino/red-tiger-ouija",
+      "id": "red-tiger-ouija",
+      "category": "new-releases"
+    },
+    {
+      "name": "Killer Night",
+      "url": "https://duelbits.com/casino/pragmatic-play-killer-night",
+      "id": "pragmatic-play-killer-night",
+      "category": "new-releases"
+    },
+    {
+      "name": "Keno",
+      "url": "https://duelbits.com/casino/duelbits/keno",
+      "id": "duelbits/keno",
+      "category": "popular"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://duelbits.com/casino/duelbits/blackjack",
+      "id": "duelbits/blackjack",
+      "category": "popular"
+    },
+    {
+      "name": "Mines",
+      "url": "https://duelbits.com/casino/duelbits/mines",
+      "id": "duelbits/mines",
+      "category": "popular"
+    },
+    {
+      "name": "Dice",
+      "url": "https://duelbits.com/casino/duelbits/dice",
+      "id": "duelbits/dice",
+      "category": "popular"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://duelbits.com/casino/duelbits/plinko",
+      "id": "duelbits/plinko",
+      "category": "popular"
+    },
+    {
+      "name": "Wanted Dead or a Wild",
+      "url": "https://duelbits.com/casino/hacksaw-wanted-dead-or-a-wild",
+      "id": "hacksaw-wanted-dead-or-a-wild",
+      "category": "popular"
+    },
+    {
+      "name": "Duelbits Blackjack 2",
+      "url": "https://duelbits.com/casino/evolution-duelbits-blackjack-2",
+      "id": "evolution-duelbits-blackjack-2",
+      "category": "popular"
+    },
+    {
+      "name": "Duelbits Blackjack",
+      "url": "https://duelbits.com/casino/evolution-duelbits-blackjack",
+      "id": "evolution-duelbits-blackjack",
+      "category": "popular"
+    },
+    {
+      "name": "Duelbits Blackjack 4",
+      "url": "https://duelbits.com/casino/evolution-duelbits-blackjack-4",
+      "id": "evolution-duelbits-blackjack-4",
+      "category": "popular"
+    },
+    {
+      "name": "Sweet Bonanza 1000",
+      "url": "https://duelbits.com/casino/pragmatic-play-sweet-bonanza-1000",
+      "id": "pragmatic-play-sweet-bonanza-1000",
+      "category": "popular"
+    },
+    {
+      "name": "Book of Time",
+      "url": "https://duelbits.com/casino/hacksaw-book-of-time",
+      "id": "hacksaw-book-of-time",
+      "category": "popular"
+    },
+    {
+      "name": "Duelbits Blackjack 3",
+      "url": "https://duelbits.com/casino/evolution-duelbits-blackjack-3",
+      "id": "evolution-duelbits-blackjack-3",
+      "category": "popular"
+    },
+    {
+      "name": "Release the Kraken Megaways",
+      "url": "https://duelbits.com/casino/pragmatic-play-release-the-kraken-megaways",
+      "id": "pragmatic-play-release-the-kraken-megaways",
+      "category": "popular"
+    },
+    {
+      "name": "Crazy Time",
+      "url": "https://duelbits.com/casino/evolution-crazy-time",
+      "id": "evolution-crazy-time",
+      "category": "popular"
+    },
+    {
+      "name": "Crash",
+      "url": "https://duelbits.com/casino/duelbits/crash",
+      "id": "duelbits/crash",
+      "category": "popular"
+    },
+    {
+      "name": "Gates of Olympus 1000",
+      "url": "https://duelbits.com/casino/pragmatic-play-gates-of-olympus-1000",
+      "id": "pragmatic-play-gates-of-olympus-1000",
+      "category": "popular"
+    },
+    {
+      "name": "Sweet Bonanza",
+      "url": "https://duelbits.com/casino/pragmatic-play-sweet-bonanza",
+      "id": "pragmatic-play-sweet-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "Sugar Rush 1000",
+      "url": "https://duelbits.com/casino/pragmatic-play-sugar-rush-1000",
+      "id": "pragmatic-play-sugar-rush-1000",
+      "category": "popular"
+    },
+    {
+      "name": "Le Bandit",
+      "url": "https://duelbits.com/casino/hacksaw-le-bandit",
+      "id": "hacksaw-le-bandit",
+      "category": "popular"
+    },
+    {
+      "name": "Gates of Olympus Super Scatter",
+      "url": "https://duelbits.com/casino/pragmatic-play-gates-of-olympus-super-scatter",
+      "id": "pragmatic-play-gates-of-olympus-super-scatter",
+      "category": "popular"
+    },
+    {
+      "name": "Fruit Party",
+      "url": "https://duelbits.com/casino/pragmatic-play-fruit-party",
+      "id": "pragmatic-play-fruit-party",
+      "category": "popular"
+    },
+    {
+      "name": "Sweet Bonanza 2500",
+      "url": "https://duelbits.com/casino/pragmatic-play-sweet-bonanza-2500",
+      "id": "pragmatic-play-sweet-bonanza-2500",
+      "category": "popular"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://duelbits.com/casino/evolution-roulette",
+      "id": "evolution-roulette",
+      "category": "popular"
+    },
+    {
+      "name": "Gates of Olympus",
+      "url": "https://duelbits.com/casino/pragmatic-play-gates-of-olympus",
+      "id": "pragmatic-play-gates-of-olympus",
+      "category": "popular"
+    },
+    {
+      "name": "Angel vs Sinner",
+      "url": "https://duelbits.com/casino/pragmatic-play-angel-vs-sinner",
+      "id": "pragmatic-play-angel-vs-sinner",
+      "category": "popular"
+    },
+    {
+      "name": "Barbarossa Dragon Empire",
+      "url": "https://duelbits.com/casino/peterandsons-barbarossa-dragon-empire",
+      "id": "peterandsons-barbarossa-dragon-empire",
+      "category": "popular"
+    },
+    {
+      "name": "The Magic Cauldron - Enchanted Brew",
+      "url": "https://duelbits.com/casino/pragmatic-play-the-magic-cauldron-enchanted-brew",
+      "id": "pragmatic-play-the-magic-cauldron-enchanted-brew",
+      "category": "popular"
+    },
+    {
+      "name": "Sweet Rush Bonanza",
+      "url": "https://duelbits.com/casino/pragmatic-play-sweet-rush-bonanza",
+      "id": "pragmatic-play-sweet-rush-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "Madame Destiny Megaways",
+      "url": "https://duelbits.com/casino/pragmatic-play-madame-destiny-megaways",
+      "id": "pragmatic-play-madame-destiny-megaways",
+      "category": "popular"
+    },
+    {
+      "name": "Big Bass Splash",
+      "url": "https://duelbits.com/casino/pragmatic-play-big-bass-splash",
+      "id": "pragmatic-play-big-bass-splash",
+      "category": "popular"
+    },
+    {
+      "name": "Eye of the Panda",
+      "url": "https://duelbits.com/casino/hacksaw-eye-of-the-panda",
+      "id": "hacksaw-eye-of-the-panda",
+      "category": "popular"
+    },
+    {
+      "name": "Duck Hunters",
+      "url": "https://duelbits.com/casino/nolimit-city-duck-hunters",
+      "id": "nolimit-city-duck-hunters",
+      "category": "popular"
+    },
+    {
+      "name": "Le Fisherman",
+      "url": "https://duelbits.com/casino/hacksaw-le-fisherman",
+      "id": "hacksaw-le-fisherman",
+      "category": "popular"
+    },
+    {
+      "name": "Sugar Rush Super Scatter",
+      "url": "https://duelbits.com/casino/pragmatic-play-sugar-rush-super-scatter",
+      "id": "pragmatic-play-sugar-rush-super-scatter",
+      "category": "popular"
+    },
+    {
+      "name": "Duelbits First Person Blackjack",
+      "url": "https://duelbits.com/casino/evolution-duelbits-first-person-blackjack",
+      "id": "evolution-duelbits-first-person-blackjack",
+      "category": "popular"
+    },
+    {
+      "name": "Speed Baccarat 1",
+      "url": "https://duelbits.com/casino/pragmatic-play-live-speed-baccarat-1",
+      "id": "pragmatic-play-live-speed-baccarat-1",
+      "category": "popular"
+    },
+    {
+      "name": "Benny the Beer",
+      "url": "https://duelbits.com/casino/hacksaw-benny-the-beer",
+      "id": "hacksaw-benny-the-beer",
+      "category": "popular"
+    },
+    {
+      "name": "MLK Voyage 50000X",
+      "url": "https://duelbits.com/casino/delulu-mlk-voyage-50000x",
+      "id": "delulu-mlk-voyage-50000x",
+      "category": "popular"
+    },
+    {
+      "name": "Bonanza Billion Merge Up+",
+      "url": "https://duelbits.com/casino/bgmng-bonanza-billion-merge-up",
+      "id": "bgmng-bonanza-billion-merge-up",
+      "category": "popular"
+    },
+    {
+      "name": "Gems Bonanza",
+      "url": "https://duelbits.com/casino/pragmatic-play-gems-bonanza",
+      "id": "pragmatic-play-gems-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "Duck Hunters 2",
+      "url": "https://duelbits.com/casino/nolimit-city-duck-hunters-2",
+      "id": "nolimit-city-duck-hunters-2",
+      "category": "popular"
+    },
+    {
+      "name": "Lucky Ducky",
+      "url": "https://duelbits.com/casino/bgmng-lucky-ducky",
+      "id": "bgmng-lucky-ducky",
+      "category": "popular"
+    },
+    {
+      "name": "Lightning Roulette",
+      "url": "https://duelbits.com/casino/evolution-lightning-roulette",
+      "id": "evolution-lightning-roulette",
+      "category": "popular"
+    },
+    {
+      "name": "Le Prechaun",
+      "url": "https://duelbits.com/casino/hacksaw-le-prechaun",
+      "id": "hacksaw-le-prechaun",
+      "category": "popular"
+    },
+    {
+      "name": "Bigger Bass Bonanza",
+      "url": "https://duelbits.com/casino/pragmatic-play-bigger-bass-bonanza",
+      "id": "pragmatic-play-bigger-bass-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "RIP City",
+      "url": "https://duelbits.com/casino/hacksaw-rip-city",
+      "id": "hacksaw-rip-city",
+      "category": "popular"
+    },
+    {
+      "name": "Pirots 5",
+      "url": "https://duelbits.com/casino/elk-pirots-5",
+      "id": "elk-pirots-5",
+      "category": "popular"
+    },
+    {
+      "name": "Floating Dragon Hold&Spin",
+      "url": "https://duelbits.com/casino/pragmatic-play-floating-dragon-holdspin",
+      "id": "pragmatic-play-floating-dragon-holdspin",
+      "category": "popular"
+    },
+    {
+      "name": "Big Bass Bonanza",
+      "url": "https://duelbits.com/casino/pragmatic-play-big-bass-bonanza",
+      "id": "pragmatic-play-big-bass-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "Better Barn House Bonanza",
+      "url": "https://duelbits.com/casino/pragmatic-play-better-barn-house-bonanza",
+      "id": "pragmatic-play-better-barn-house-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "Keno",
+      "url": "https://duelbits.com/casino/duelbits/keno",
+      "id": "duelbits/keno",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://duelbits.com/casino/duelbits/blackjack",
+      "id": "duelbits/blackjack",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://duelbits.com/casino/duelbits/mines",
+      "id": "duelbits/mines",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://duelbits.com/casino/duelbits/dice",
+      "id": "duelbits/dice",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://duelbits.com/casino/duelbits/plinko",
+      "id": "duelbits/plinko",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://duelbits.com/casino/duelbits/crash",
+      "id": "duelbits/crash",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Duel Poker",
+      "url": "https://duelbits.com/casino/duelbits/duelpoker",
+      "id": "duelbits/duelpoker",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://duelbits.com/casino/duelbits/hilo",
+      "id": "duelbits/hilo",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Dice Duels",
+      "url": "https://duelbits.com/casino/duelbits/duel",
+      "id": "duelbits/duel",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Instant Lottery",
+      "url": "https://duelbits.com/casino/duelbits/lottery",
+      "id": "duelbits/lottery",
+      "category": "duelbits-originals"
+    },
+    {
+      "name": "Moonshot",
+      "url": "https://duelbits.com/casino/duelbits/moonshot",
+      "id": "duelbits/moonshot",
+      "category": "duelbits-originals"
+    }
+  ]
+}
