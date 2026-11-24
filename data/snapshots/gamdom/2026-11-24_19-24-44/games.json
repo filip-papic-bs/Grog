@@ -1,0 +1,268 @@
+{
+  "casino": "Gamdom",
+  "category": "gamdom",
+  "capturedAt": "2026-11-24T19:24:44.650Z",
+  "games": [
+    {
+      "name": "Blackjack",
+      "url": "https://gamdom.com/casino/blackjack-gamdom-originals",
+      "thumb": "https://gamdom.combd43f0e5-9ddb-4065-b981-7ae85cec3bab-image_thumb.avif",
+      "id": "ours_blackjack",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://gamdom.com/casino/limbo-gamdom-originals",
+      "thumb": "https://gamdom.come71afb90-9e60-49c4-863d-e261c72ab8c9-image_thumb.avif",
+      "id": "ours_limbo",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://gamdom.com/casino/keno-gamdom-originals",
+      "thumb": "https://gamdom.com11cac236-aeea-4e2a-a36d-1e3f38c2c61c-image_thumb.avif",
+      "id": "ours_keno",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://gamdom.com/casino/dice-gamdom-originals",
+      "thumb": "https://gamdom.com8b46a6d4-e235-4a6e-af43-69cb85b0c604-image_thumb.avif",
+      "id": "internal_dice",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://gamdom.com/casino/mines-gamdom-originals",
+      "thumb": "https://gamdom.comb2607dc6-df9b-4a82-92d2-293f449e501d-image_thumb.avif",
+      "id": "ours_mines",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://gamdom.com/casino/plinko-gamdom-originals",
+      "thumb": "https://gamdom.coma87544c0-cb19-468a-a7c6-74d54e3ef3bb-image_thumb.avif",
+      "id": "ours_plinko",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://gamdom.com/casino/crash-gamdom-originals",
+      "thumb": "https://gamdom.coma9acdeb6-4d6b-4951-9ca8-84d0de02891c-image_thumb.avif",
+      "id": "internal_crash",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://gamdom.com/casino/roulette-gamdom-originals",
+      "thumb": "https://gamdom.comf490eeb4-77c0-447a-892d-77f087d7ec81-image_thumb.avif",
+      "id": "internal_roulette",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://gamdom.com/casino/hilo-gamdom-originals",
+      "thumb": "https://gamdom.com52b2c88b-1cf1-4a8f-82e9-25ed92710299-image_thumb.avif",
+      "id": "internal_hilo",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Twist",
+      "url": "https://gamdom.com/casino/twist-gamdom-originals",
+      "thumb": "https://gamdom.com160fde84-24c2-4251-ba1e-ab24d6f7a8b2-image_thumb.avif",
+      "id": "ours_twist",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Pocket Dice",
+      "url": "https://gamdom.com/casino/pocket-dice-gamdom-originals",
+      "thumb": "https://gamdom.com46e890e9-eb68-4396-8941-667b70f83526-image_thumb.avif",
+      "id": "ours_pocket_dice",
+      "category": "gamdom-originals"
+    },
+    {
+      "name": "Pots of Power: Dragon’s Blessing",
+      "url": "https://gamdom.com/casino/pots-of-power-dragons-blessing-avatarux",
+      "thumb": "https://cdn.hub88.io/avx/avx_potsofpowerdragonsblessing.jpg",
+      "id": "avx_potsofpowerdragonsblessing",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus 2500",
+      "url": "https://gamdom.com/casino/gates-of-olympus-2500-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20olympmmd/vs20olympmmd_325x234_NB.png",
+      "id": "pp_direct_vs20olympmmd",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Kitchen Hunt",
+      "url": "https://gamdom.com/casino/kitchen-hunt-ludo-land",
+      "thumb": "https://static.ludoland.cloud/g/thumb/kitchen_hunt.png",
+      "id": "ludoland_kitchen_hunt",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Epic Bullets and Bounty",
+      "url": "https://gamdom.com/casino/epic-bullets-and-bounty-hacksaw-gaming",
+      "thumb": "https://gamdom.com/static/dyn/cdn_images/f5c8aece-f6d5-4158-93a7-411868e1f224-cdn_images.png",
+      "id": "hsg_direct_2185",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Santa's Workhouse",
+      "url": "https://gamdom.com/casino/santas-workhouse-kitsune-studios",
+      "id": "hsg_direct_2860",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Moon Rush",
+      "url": "https://gamdom.com/casino/moon-rush-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20moonr/vs20moonr_325x234_NB.png",
+      "id": "pp_direct_vs20moonr",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Dark Desert Highway",
+      "url": "https://gamdom.com/casino/dark-desert-highway-just-slots",
+      "thumb": "https://cdn.hub88.io/js/js_darkdeserthighway.jpg",
+      "id": "js_darkdeserthighway",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gladiator Legends",
+      "url": "https://gamdom.com/casino/gladiator-legends-hacksaw-gaming",
+      "id": "hsg_direct_1160",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Sweet Bonanza 2500",
+      "url": "https://gamdom.com/casino/sweet-bonanza-2500-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20swbon2500/vs20swbon2500_325x234_NB.png",
+      "id": "pp_direct_vs20swbon2500",
+      "category": "trending-slots"
+    },
+    {
+      "name": "War Whore",
+      "url": "https://gamdom.com/casino/war-whore-wicked-games",
+      "id": "wicked_ww",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Hand of Anubis",
+      "url": "https://gamdom.com/casino/hand-of-anubis-hacksaw-gaming",
+      "id": "hsg_direct_1164",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gates of Olympus Super Scatter",
+      "url": "https://gamdom.com/casino/gates-of-olympus-super-scatter-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vs20olympgold/vs20olympgold_325x234_NB.png",
+      "id": "pp_direct_vs20olympgold",
+      "category": "trending-slots"
+    },
+    {
+      "name": "Gamdom City",
+      "url": "https://gamdom.com/casino/gamdom-city-peter-and-sons",
+      "thumb": "https://cdn.hub88.io/pets/pets_gamdomcity.jpg",
+      "id": "pets_gamdomcity",
+      "category": "new-releases"
+    },
+    {
+      "name": "Smelt Down",
+      "url": "https://gamdom.com/casino/smelt-down-reelistic",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1fa6b-ca5d-7b64-b190-1d98057ad7d0",
+      "id": "stakeengine_studio:reelistic:smelt-down",
+      "category": "new-releases"
+    },
+    {
+      "name": "Lead for Lunch",
+      "url": "https://gamdom.com/casino/lead-for-lunch-hacksaw-gaming",
+      "id": "hsg_direct_2395",
+      "category": "new-releases"
+    },
+    {
+      "name": "Slice Bandit",
+      "url": "https://gamdom.com/casino/slice-bandit-killshot",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1fb50-09b4-7dc2-be2d-637301d09ed2",
+      "id": "stakeengine_studio:killshot:slice-bandit",
+      "category": "new-releases"
+    },
+    {
+      "name": "Nuclear Farm",
+      "url": "https://gamdom.com/casino/nuclear-farm-ludo-land",
+      "thumb": "https://static.ludoland.cloud/g/thumb/nuclear_farm.png",
+      "id": "ludoland_nuclear_farm",
+      "category": "new-releases"
+    },
+    {
+      "name": "Gift Rush Merge Up",
+      "url": "https://gamdom.com/casino/gift-rush-merge-up-bgaming",
+      "thumb": "https://usercontent.cc/i/s2/bgmng/GiftRushMergeUp.png",
+      "id": "softswiss_bgmng:GiftRushMergeUp",
+      "category": "new-releases"
+    },
+    {
+      "name": "Xmas Guardians Megaways",
+      "url": "https://gamdom.com/casino/xmas-guardians-megaways-pragmatic-play",
+      "thumb": "https://common-static.ppgames.net/gs2c/common/lobby/v1/apps/slots-lobby-assets/vswaysxmasgd/vswaysxmasgd_325x234_NB.png",
+      "id": "pp_direct_vswaysxmasgd",
+      "category": "new-releases"
+    },
+    {
+      "name": "Roached",
+      "url": "https://gamdom.com/casino/roached-provably-random",
+      "thumb": "https://studio.engine.io/api/asset/image/01a1fe7c-a384-775b-9e51-9653070be111",
+      "id": "stakeengine_studio:provably-random:roached",
+      "category": "new-releases"
+    },
+    {
+      "name": "Triple Tumblin' Totems",
+      "url": "https://gamdom.com/casino/triple-tumblin-totems-play-n-go",
+      "thumb": "https://cdn.hub88.io/png/png_tripletumblintotems.jpg",
+      "id": "png_tripletumblintotems",
+      "category": "new-releases"
+    },
+    {
+      "name": "20 Lucky Wilds Hot Egypt Quest",
+      "url": "https://gamdom.com/casino/20-lucky-wilds-hot-egypt-quest-amusnet",
+      "thumb": "https://thumbs.alea.com/cf9b128c_amusnet_20-lucky-wilds-hot-egypt-quest_400x300.webp",
+      "id": "alea34423",
+      "category": "new-releases"
+    },
+    {
+      "name": "Legend of Zeus",
+      "url": "https://gamdom.com/casino/legend-of-zeus-amusnet",
+      "thumb": "https://thumbs.alea.com/5ef9a716_amusnet_legend-of-zeus_400x300.webp",
+      "id": "alea34425",
+      "category": "new-releases"
+    },
+    {
+      "name": "World Eaters 2",
+      "url": "https://gamdom.com/casino/world-eaters-2-elk-studios",
+      "thumb": "https://thumbs.alea.com/d26ba96b_elk-studios_world-eaters-2_400x300.webp",
+      "id": "alea34171",
+      "category": "new-releases"
+    },
+    {
+      "name": "5 Lucky Wilds Hot",
+      "url": "https://gamdom.com/casino/5-lucky-wilds-hot-amusnet",
+      "thumb": "https://thumbs.alea.com/d7f6ad4d_amusnet_5-lucky-wilds-hot_400x300.webp",
+      "id": "alea34144",
+      "category": "new-releases"
+    },
+    {
+      "name": "Chicão Sortudo Super Pot",
+      "url": "https://gamdom.com/casino/chicao-sortudo-super-pot-amusnet",
+      "thumb": "https://thumbs.alea.com/cfb1e428_amusnet_chicao-sortudo-super-pot_400x300.webp",
+      "id": "alea34146",
+      "category": "new-releases"
+    },
+    {
+      "name": "Kemet's Treasures Egypt Quest",
+      "url": "https://gamdom.com/casino/kemets-treasures-egypt-quest-amusnet",
+      "thumb": "https://thumbs.alea.com/02dcebc9_amusnet_kemets-treasures-egypt-quest_400x300.webp",
+      "id": "alea34422",
+      "category": "new-releases"
+    }
+  ]
+}

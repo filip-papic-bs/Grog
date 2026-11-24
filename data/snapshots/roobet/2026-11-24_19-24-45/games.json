@@ -1,0 +1,390 @@
+{
+  "casino": "Roobet",
+  "category": "roobet",
+  "capturedAt": "2026-11-24T19:24:45.251Z",
+  "games": [
+    {
+      "name": "Hydra's Lair",
+      "url": "https://roobet.com/casino/game/mascot-gaming-hydra-s-lair",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/mascot:hydras_lair-d9Ax3yutO.jpeg",
+      "id": "mascot-gaming-hydra-s-lair",
+      "category": "new-releases"
+    },
+    {
+      "name": "Dizzy's Wheel",
+      "url": "https://roobet.com/casino/game/degen-studios-dizzys-wheel",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/gamingcorps:DizzysWheel-jZso8rvHW.jpeg",
+      "id": "degen-studios-dizzys-wheel",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wild Fishman",
+      "url": "https://roobet.com/casino/game/triton-labs-wild-fishman",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/engine:wild-fishman-kvSzUPpUY.jpeg",
+      "id": "triton-labs-wild-fishman",
+      "category": "new-releases"
+    },
+    {
+      "name": "Croco Clover",
+      "url": "https://roobet.com/casino/game/hacksaw-gaming-croco-clover",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/hacksaw:2820-eoJiDFdaX.jpeg",
+      "id": "hacksaw-gaming-croco-clover",
+      "category": "new-releases"
+    },
+    {
+      "name": "Wheel Of Power",
+      "url": "https://roobet.com/casino/game/bgaming-wheel-of-power",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/softswiss:WheelOfPower-hhX-XlX_g.jpeg",
+      "id": "bgaming-wheel-of-power",
+      "category": "new-releases"
+    },
+    {
+      "name": "Bonanza More Gold",
+      "url": "https://roobet.com/casino/game/big-time-gaming-bonanza-more-gold",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/evo:btg-bonanza-more-gold-3-KOo5ZE_Ji.jpeg",
+      "id": "big-time-gaming-bonanza-more-gold",
+      "category": "new-releases"
+    },
+    {
+      "name": "Devils Coins Hotfire Hold and Win Extra Bet Buy Bonus",
+      "url": "https://roobet.com/casino/game/novomatic-devils-coins-hotfire-hold-and-win-extra-bet-buy-bonus",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/hub88:nvm_devilscoinshotfireholdwinextrabetbuybonus-T-W7FLqRf.jpeg",
+      "id": "novomatic-devils-coins-hotfire-hold-and-win-extra-bet-buy-bonus",
+      "category": "new-releases"
+    },
+    {
+      "name": "Smore Mallows WildSurge",
+      "url": "https://roobet.com/casino/game/games-global-smore-mallows-wild-surge",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/hub88:mgg_smoremallowswildsurge-YVBjWMoNk.jpeg",
+      "id": "games-global-smore-mallows-wild-surge",
+      "category": "new-releases"
+    },
+    {
+      "name": "Christmas Gold Heist",
+      "url": "https://roobet.com/casino/game/playngo-christmas-gold-heist",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/playngo:christmasgoldheist-UW6MWTbM1.jpeg",
+      "id": "playngo-christmas-gold-heist",
+      "category": "new-releases"
+    },
+    {
+      "name": "Mr.Bee",
+      "url": "https://roobet.com/casino/game/happy-pills-mr-bee",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/engine:mrbee-G_VHtEmMB.jpeg",
+      "id": "happy-pills-mr-bee",
+      "category": "new-releases"
+    },
+    {
+      "name": "World Eaters 2",
+      "url": "https://roobet.com/casino/game/elk-studios-world-eaters-2",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/elk:WorldEaters2-3H32dnyir.jpeg",
+      "id": "elk-studios-world-eaters-2",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Whales of Fortune Lock ’em & Load ’em",
+      "url": "https://roobet.com/casino/game/yggdrasil-3-whales-of-fortune-lockem-loadem",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/yggdrasil:10990-55G8lo9BX.jpeg",
+      "id": "yggdrasil-3-whales-of-fortune-lockem-loadem",
+      "category": "new-releases"
+    },
+    {
+      "name": "3 Gifts of Xmas Instant Blitz",
+      "url": "https://roobet.com/casino/game/gaming-corps-3-gifts-of-xmas-instant-blitz",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/gamingcorps:3GiftsofXmasInstantBlitz-PX7fAuu8G.jpeg",
+      "id": "gaming-corps-3-gifts-of-xmas-instant-blitz",
+      "category": "new-releases"
+    },
+    {
+      "name": "Ghostly Mansion",
+      "url": "https://roobet.com/casino/game/backseat-gaming-ghostly-mansion",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/hub88:bckg_ghostlymansion-fPv-ivSyF.jpeg",
+      "id": "backseat-gaming-ghostly-mansion",
+      "category": "new-releases"
+    },
+    {
+      "name": "El Frog X-mas Cruise",
+      "url": "https://roobet.com/casino/game/bgaming-el-frog-xmas-cruise",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/softswiss:ElFrogXmasCruise-1J7XAmz_T.jpeg",
+      "id": "bgaming-el-frog-xmas-cruise",
+      "category": "new-releases"
+    },
+    {
+      "name": "Big Money Piggy - Hold & Hit 3x3",
+      "url": "https://roobet.com/casino/game/spinomenal-big-money-piggy-hold-and-hit-3x3",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/spnmnl:BigMoneyPiggyHoldAndHit3x3-41T_YNmRZ.jpeg",
+      "id": "spinomenal-big-money-piggy-hold-and-hit-3x3",
+      "category": "new-releases"
+    },
+    {
+      "name": "Diamond Christmas Rush Express",
+      "url": "https://roobet.com/casino/game/games-global-diamond-christmas-rush-express",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/hub88:mgg_diamondchristmasrushexpress-wzpT7yLDY.jpeg",
+      "id": "games-global-diamond-christmas-rush-express",
+      "category": "new-releases"
+    },
+    {
+      "name": "Happy Gopher",
+      "url": "https://roobet.com/casino/game/heatcheck-happy-gopher",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/engine:happy-gopher-CPeSTXFZk.jpeg",
+      "id": "heatcheck-happy-gopher",
+      "category": "new-releases"
+    },
+    {
+      "name": "Pump'O'ween",
+      "url": "https://roobet.com/casino/game/evoslot-pump-o-ween",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/engine:pumpoween-a9NbURu8c.jpeg",
+      "id": "evoslot-pump-o-ween",
+      "category": "new-releases"
+    },
+    {
+      "name": "Sweet Infinite",
+      "url": "https://roobet.com/casino/game/evoslot-sweet-infinite",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/engine:sweet-infinite-CnB6Metlu.jpeg",
+      "id": "evoslot-sweet-infinite",
+      "category": "new-releases"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:blackjack-TfTb3tojO.jpeg",
+      "category": "popular"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://roobet.com/casino/game/roobet-plinko",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:Plinko-RC2bdK0aj.jpeg",
+      "id": "roobet-plinko",
+      "category": "popular"
+    },
+    {
+      "name": "Keno",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:keno-tMy7cCTHC.jpeg",
+      "category": "popular"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:limbo-htQ7OJaOm.png",
+      "category": "popular"
+    },
+    {
+      "name": "Dice",
+      "url": "https://roobet.com/casino/game/roobet-dice",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:dice-jmSK2qa8w.jpeg",
+      "id": "roobet-dice",
+      "category": "popular"
+    },
+    {
+      "name": "Mines",
+      "url": "https://roobet.com/casino/game/roobet-mines",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:mines-5tVyuS2-l.jpeg",
+      "id": "roobet-mines",
+      "category": "popular"
+    },
+    {
+      "name": "Mission Uncrossable",
+      "url": "https://roobet.com/casino/game/roobet-mission-uncrossable",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:linearmines-5jej2hLly.jpeg",
+      "id": "roobet-mission-uncrossable",
+      "category": "popular"
+    },
+    {
+      "name": "Crash",
+      "url": "https://roobet.com/casino/game/roobet-crash",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:crash-C4jtpyRc9.jpeg",
+      "id": "roobet-crash",
+      "category": "popular"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:wheel-HaJ9aT2v-.jpeg",
+      "category": "popular"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://roobet.com/casino/game/roobet-roulette",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:roulette-5ST9NhaBU.jpeg",
+      "id": "roobet-roulette",
+      "category": "popular"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:hilo-BldSCo2lS.jpeg",
+      "category": "popular"
+    },
+    {
+      "name": "Striker",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:highstriker-6DKo88B6u.jpeg",
+      "category": "popular"
+    },
+    {
+      "name": "Slide",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:slide-ubGsHLcVa.jpeg",
+      "category": "popular"
+    },
+    {
+      "name": "Towers",
+      "url": "https://roobet.com/casino/game/roobet-towers",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:towers-io2KZwO6X.jpeg",
+      "id": "roobet-towers",
+      "category": "popular"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:coinflip2-RZtHyfFSP.png",
+      "category": "popular"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://roobet.com/casino/game/roobet-coinflip",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:coinflip-ZauzeM30I.jpeg",
+      "id": "roobet-coinflip",
+      "category": "popular"
+    },
+    {
+      "name": "Tiki 21 Blackjack",
+      "url": "https://roobet.com/casino/game/lucky-pengwin-tiki-21",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/luckypengwin:tiki21-PzkRFqCJK.jpeg",
+      "id": "lucky-pengwin-tiki-21",
+      "category": "popular"
+    },
+    {
+      "name": "Blackjack Lobby",
+      "url": "https://roobet.com/casino/game/pragmatic-play-blackjack-lobby",
+      "thumb": "https://roobet-dev-public-images-prod.s3.eu-central-1.amazonaws.com/game-thumbs/pragmatic_103.jpg",
+      "id": "pragmatic-play-blackjack-lobby",
+      "category": "popular"
+    },
+    {
+      "name": "Baccarat Lobby",
+      "url": "https://roobet.com/casino/game/pragmatic-play-baccarat-lobby",
+      "thumb": "https://roobet-dev-public-images-prod.s3.eu-central-1.amazonaws.com/game-thumbs/pragmatic_104.jpg",
+      "id": "pragmatic-play-baccarat-lobby",
+      "category": "popular"
+    },
+    {
+      "name": "Sweet Bonanza",
+      "url": "https://roobet.com/casino/game/sweet-bonanza",
+      "thumb": "https://roobet-dev-public-images-prod.s3.eu-central-1.amazonaws.com/game-thumbs/pragmatic_vs20fruitsw.jpg",
+      "id": "sweet-bonanza",
+      "category": "popular"
+    },
+    {
+      "name": "Plinko",
+      "url": "https://roobet.com/casino/game/roobet-plinko",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:Plinko-RC2bdK0aj.jpeg",
+      "id": "roobet-plinko",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Towers",
+      "url": "https://roobet.com/casino/game/roobet-towers",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:towers-io2KZwO6X.jpeg",
+      "id": "roobet-towers",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Dice",
+      "url": "https://roobet.com/casino/game/roobet-dice",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:dice-jmSK2qa8w.jpeg",
+      "id": "roobet-dice",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Roulette",
+      "url": "https://roobet.com/casino/game/roobet-roulette",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:roulette-5ST9NhaBU.jpeg",
+      "id": "roobet-roulette",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://roobet.com/casino/game/roobet-coinflip",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:coinflip-ZauzeM30I.jpeg",
+      "id": "roobet-coinflip",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Mines",
+      "url": "https://roobet.com/casino/game/roobet-mines",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:mines-5tVyuS2-l.jpeg",
+      "id": "roobet-mines",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Crash",
+      "url": "https://roobet.com/casino/game/roobet-crash",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:crash-C4jtpyRc9.jpeg",
+      "id": "roobet-crash",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Mission Uncrossable",
+      "url": "https://roobet.com/casino/game/roobet-mission-uncrossable",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:linearmines-5jej2hLly.jpeg",
+      "id": "roobet-mission-uncrossable",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Blackjack",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:blackjack-TfTb3tojO.jpeg",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Tiki 21 Blackjack",
+      "url": "https://roobet.com/casino/game/lucky-pengwin-tiki-21",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/luckypengwin:tiki21-PzkRFqCJK.jpeg",
+      "id": "lucky-pengwin-tiki-21",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Keno",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:keno-tMy7cCTHC.jpeg",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Slide",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:slide-ubGsHLcVa.jpeg",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Limbo",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:limbo-htQ7OJaOm.png",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Striker",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:highstriker-6DKo88B6u.jpeg",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Hilo",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:hilo-BldSCo2lS.jpeg",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Wheel",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:wheel-HaJ9aT2v-.jpeg",
+      "category": "roobet-originals"
+    },
+    {
+      "name": "Coinflip",
+      "url": "https://roobet.com/casino/game/undefined",
+      "thumb": "https://roobet-dev-public-images-prod.s3.amazonaws.com/housegames:coinflip2-RZtHyfFSP.png",
+      "category": "roobet-originals"
+    }
+  ]
+}
